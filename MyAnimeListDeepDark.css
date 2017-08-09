@@ -1,0 +1,1104 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("myanimelist.net") {
+  
+/*Theme made by RaitaroH @https://github.com/RaitaroH/MAL-DeepDark*/
+  
+/*1.0.0*/
+	
+  /*Main color variables*/
+	:root
+	{
+		/*User colors*/
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818; 
+		--hover-background: #232323;
+		--main-text: #eff0f1;
+		--dimer-text: #CCCCCC;
+				
+		/*DeepDark colors*/
+		/*
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818; 
+		--hover-background: #3A3A3A;
+		--main-text: #eff0f1;
+		--dimer-text: #CCCCCC;
+		*/
+		
+		/*KDE colors*/
+		/*
+		--main-color: #3DAEE9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimer-text: #bdc3c7;
+		*/
+				
+		/*Vertex Dark colors*/
+		/*
+		--main-color: #4080fb;
+		--main-background: #2B2B2C;
+		--second-background: #353638;
+		--hover-background: #515254;
+		--main-text: #F3F3F5;
+		--dimer-text: #AEAFB0;
+		*/
+		
+		/*Arc Dark colors*/
+		/*
+		--main-color: #5294E2;
+		--main-background: #343944;
+		--second-background: #383C4A;
+		--hover-background: #414A59;
+		--main-text: #C1C8D1;
+		--dimer-text: #B3BAC5;
+		*/
+		
+		/*Firefox Dark colors*/
+		/*
+		--main-color: #5675B9;
+		--main-background: #272B35;
+		--second-background: #181D20;
+		--hover-background: #353A44;
+		--main-text: #E3EEF9;
+		--dimer-text: #606376;
+		*/
+		
+		/*Discord colors*/
+		/*
+		--main-color: #7289DA;
+		--main-background: #1E2124;
+		--second-background: #2F3136;
+		--hover-background: #484B51;
+		--main-text: #FFFFFF;
+		--dimer-text: #ADA8AA;
+		*/
+		
+		/*YouTube dark colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimer-text: #7F7F7F;
+		*/
+		
+		/*Mint-Y-Dark colors*/
+		/*
+		--main-color: #9AB87C;
+		--main-background: #2F2F2F;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #FFFFFF;
+		--dimer-text: #D5DADA;
+		*/
+	}
+	
+
+	/*Changed text highlight*/
+	::selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	::-moz-selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	
+	
+	/*Outline for links*/
+ 	a
+ 	{
+		outline-color: var(--main-color) !important;
+	}
+   
+	
+	/**Removing text decorations*/
+	*
+	{
+		text-decoration: none !important;
+	}
+	
+	
+	/*Body*/
+	html, body
+	{
+		background-color: var(--second-background) !important;
+	}
+  
+	
+  /*Logo*/
+  .page-common #headerSmall
+  {
+    background-color: var(--second-background) !important;
+    /*background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png");*/
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png");
+  }
+
+  /*Button*/
+  .page-common #header-menu .header-menu-login .btn-mal-service, .page-common #header-menu .header-menu-login .btn-signup, .page-common #header-menu .header-menu-login .btn-login, .page-common .header-menu-login .btn-signup
+  {
+    border-color: var(--main-color) !important;
+    background-color: var(--main-color) !important;
+    color: var(--main-text) !important;
+    opacity: .9;
+  }
+  .page-common #header-menu .header-menu-login .btn-mal-service:hover, .page-common #header-menu .header-menu-login .btn-signup:hover, .page-common #header-menu .header-menu-login .btn-login:hover, .page-common .header-menu-login .btn-signup:hover
+  {
+    opacity: 1;
+  }
+  
+  
+  /*Tabs*/
+  .page-common #menu
+  {
+    background-color: var(--main-background) !important;
+  }
+  .page-common #nav li a
+  {
+    color: var(--main-text) !important;
+  }
+  .page-common #nav li a:hover, .page-common #nav li.hover a, .page-common #nav ul a
+  {
+    background-color: var(--hover-background) !important
+  }
+  .page-common #nav ul a:hover
+  {
+    color: var(--main-color) !important;
+  }
+  
+  
+  /*Search*/
+  .page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon
+  {
+    background: var(--second-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;
+  }
+  .page-common #searchBar.searchBar #topSearchText:hover, .page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus
+  {
+    border: 1px solid var(--main-color) !important;
+  }
+  /*Search dropdown resuslts*/
+  .page-common .incrementalSearchResultList, .page-common .incrementalSearchResultList .list.separator, .page-common .incrementalSearchResultList .list, .page-common .incrementalSearchResultList .list:last-of-type, .page-common .incrementalSearchResultList .list:last-of-type
+  {
+    background-color: var(--second-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;    
+  }
+  .page-common .incrementalSearchResultList .list .off .info.anime .name, .page-common .incrementalSearchResultList .list .off .info.manga .name, .page-common .incrementalSearchResultList .list .off .info.news .name, .page-common .incrementalSearchResultList .list .off .info.featured .name, .page-common .incrementalSearchResultList .list .off .info.forum .name, .page-common .incrementalSearchResultList .list .off .info.character .name, .page-common .incrementalSearchResultList .list .off .info.person .name, .page-common .incrementalSearchResultList .list .off .info.club .name, .page-common .incrementalSearchResultList .list .off .info.user .name, .page-common .incrementalSearchResultList .list .on .info .name
+  {
+    color: var(--main-color) !important;
+  }
+  .page-common .incrementalSearchResultList .list .off .info.anime .media-type, .page-common .incrementalSearchResultList .list .off .info.manga .media-type, .page-common .incrementalSearchResultList .list .off .info.news .media-type, .page-common .incrementalSearchResultList .list .off .info.featured .media-type, .page-common .incrementalSearchResultList .list .off .info.forum .media-type, .page-common .incrementalSearchResultList .list .on .info .media-type, .page-common .incrementalSearchResultList .list .on .info .extra-info
+  {
+    color: var(--dimer-text) !important;
+  }
+  .page-common .incrementalSearchResultList .list.list-bottom.focus a
+  {
+    color: var(--main-text) !important;
+  }
+  .page-common .incrementalSearchResultList .list a:hover
+  {
+    background-color: var(--hover-background) !important;
+  }
+  
+	
+	/*Search results*/
+	.anime-search-form-block .anime-search-form-search .inputtext, .anime-search-form-block .anime-search-form-search .inputButton
+	{
+    background-color: var(--second-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;
+  }
+	.anime-search-form-block .anime-search-form-search .inputtext:hover,.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus
+	{
+		border-color: var(--main-color) !important;
+	}
+  .page-common .normal_header, .seasonal-anime-list .seasonal-anime .information .scormem, .seasonal-anime-list .seasonal-anime .information .info
+	{
+		color: var(--main-text) !important;
+	}
+	.anime-manga-search .genre-link .genre-list .genre-name-link:hover, .seasonal-anime-list .seasonal-anime .genres, .seasonal-anime-list .seasonal-anime .information .info, .seasonal-anime-list .seasonal-anime .information .scormem
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.anime-manga-search .genre-link .genre-list, .seasonal-anime-list .seasonal-anime, .seasonal-anime-list .seasonal-anime .prodsrc .eps, .seasonal-anime-list .seasonal-anime .prodsrc .source, .seasonal-anime-list .seasonal-anime .genres, .seasonal-anime-list .seasonal-anime .information
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .prodsrc
+	{
+		background-color: var(--second-background) !important;
+	}
+	/*image taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
+	.seasonal-anime-list .seasonal-anime .information .scormem .score::after, .seasonal-anime-list .seasonal-anime .information .scormem .member::after
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon_pict_score_mem.png");
+	}
+
+	.seasonal-anime-list .seasonal-anime .genres .genre
+	{
+		background-color: transparent !important;
+		border-color: transparent !important;
+	}
+	.view-style .btn-view-style
+	{
+		filter: grayscale(100%);
+	}
+	.page-common .pagination .link
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common .pagination .link.current
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common .pagination .link:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+  /*Welcome*/
+	.page-common .h1
+	{
+    background-color: var(--hover-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important; 		
+	}
+  
+  
+  /*Page*/
+	.page-common #content, .page-common #contentWrapper
+	{
+		background-color: var(--main-background) !important;
+	}
+	body.index .widget .widget-header, .page-common #content, .widget-slide-block .widget-slide .btn-anime, body.index .left-column
+	{
+		border-color: var(--hover-background) !important;
+	}
+  body.index .widget .widget-header, .widget-slide-block .widget-slide .btn-anime .link .title
+	{
+		color: var(--main-text) !important;
+	}
+	.widget-slide-block .widget-slide .btn-anime .link .title
+	{
+		text-shadow: none !important;
+	}
+	.auto-recommendations.no-suggestions
+	{
+		color: var(--dimer-text) !important;
+	}
+	
+	/*Latest Updated Episode Videos*/
+  .page-common a, .page-common a:visited
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+  .page-common a:hover, .page-common a:visited:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1;
+	}
+  .page-common .fn-grey6
+	{
+		color: var(--dimer-text) !important;
+	}
+  .index-watch-description .btn-watch-video
+	{
+		border-color: var(--main-color) !important;
+    background-color: var(--second-background) !important;
+    color: var(--main-text) !important;
+    opacity: .9;
+		transition: none !important;
+	}
+  .index-watch-description .btn-watch-video:hover
+	{
+		background-color: var(--hover-background) !important;
+		opacity: 1;
+		transition: none !important;
+	}
+  #widget-promotional-video .widget-slide .btn-anime.episode .link a:hover, #widget-episode-video .widget-slide .btn-anime.episode .link a:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+  #widget-promotional-video .widget-slide .btn-anime.episode .link a, #widget-episode-video .widget-slide .btn-anime.episode .link a
+	{
+		color: var(--main-text) !important;
+	}
+  .widget-slide-block .widget-slide .btn-anime .external-link
+	{
+		background-color: transparent !important;
+	}
+  
+  /*Anime & Manga News*/
+  .widget.featured .news-list.widget .news-unit .text, .widget.news .news-list.widget .news-unit .text, .news-list .comment-list .text, .news-list .news-unit .text
+	{
+		color: var(--dimer-text) !important;
+	}
+  .news-list .comment-list, .news-list .news-unit
+	{
+		border-color: var(--hover-background) !important;
+	}
+  
+  
+  /*Recent Anime Discussions*/
+	.page-common .borderClass
+  {
+		border-color: var(--hover-background) !important;
+	}
+  .page-common .lightLink, .page-common .lightLink:link, .page-common .lightLink:visited, .page-common .lightLink:active
+  {
+		color: var(--dimer-text) !important;
+	}
+  
+  
+  /*Featured Articles*/
+	.news-list .comment-list .information .info, .news-list .news-unit .information .info, .news-list .comment-list .information .pv, .news-list .news-unit .information .pv
+  {
+		color: var(--dimer-text) !important;
+	}
+  .news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
+	{
+		background-color: transparent !important;
+	}
+  .news-list .comment-list .information .tags .tag.tag-color-feature-advertorial, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial, .news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover
+	{
+		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
+		background-color: var(--main-color) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
+	{
+		color: var(--main-text) !important;
+		border-color: #ff2c55 !important;
+		background-color: #ff2c55 !important;		
+	}
+  .news-list .comment-list .information .pv, .news-list .news-unit .information .pv, .news-list .comment-list .information .tags, .news-list .news-unit .information .tags
+	{
+		border-color: var(--hover-background) !important;
+	}
+  
+  
+  /*Latest Anime Reviews*/
+	body.index .widget.reviews.left .textReadability
+  {
+		color: var(--dimer-text) !important;
+	}
+  body.index .widget.my_list_updates .item, body.index .widget.friend_list_updates .item, body.index .widget.clubs .item, body.index .widget.reviews .item
+  {
+		border-color: var(--hover-background) !important;
+	}
+  
+  /*add button*/
+	.page-common a.button_add.button_add, .page-common a.button_add.button_edit, .page-common a.button_edit.button_add, .page-common a.button_edit.button_edit
+	{
+		border-color: transparent !important;
+    background-color: transparent !important;		
+	}
+  .page-common a.button_add.button_add:hover, .page-common a.button_add.button_edit:hover, .page-common a.button_edit.button_add:hover, .page-common a.button_edit.button_edit:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		opacity: 1;
+		transition: none !important;
+	}
+  
+  
+	/*Latest Anime Recommendations*/
+	.page-common .spaceit_pad
+	{
+		color: var(--main-text) !important;
+	}
+  .page-common .spaceit
+  {
+		color: var(--dimer-text) !important;
+	}
+	
+	
+	/*Right side divs*/
+	.ranking-digest .ranking-header
+	{
+    background-color: var(--hover-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;
+	}
+	.ranking-digest
+	{
+    background-color: var(--main-background) !important;
+    color: var(--main-text) !important;
+    border: 1px solid var(--hover-background);
+		border-top: none !important;
+	}
+  .ranking-digest .ranking-unit .info, .ranking-digest .ranking-unit .members, .ranking-digest .ranking-unit .rank
+	{
+		color: var(--dimer-text) !important;
+	}
+
+	
+	/*Footer*/
+	.page-common .footer-ranking, .page-common #footer-block
+	{
+		background-color: var(--second-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;
+	}
+	.page-common .footer-ranking .ranking-unit h3.title, .page-common #footer-block .footer-link.home, .page-common #footer-block .footer-link.login
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .footer-ranking .ranking-unit ol li .rank, .page-common #footer-block .footer-social-media::after, .page-common #footer-block .footer-recommended::after
+	{
+		color: var(--dimer-text) !important;
+	}
+	.page-common #footer-block #copyright
+	{
+		color: var(--main-text) !important;
+	}
+	
+	
+	/*Anime page*/
+	.page-common #horiznav_nav ul li .horiznav_active
+	{
+		background-color: var(--main-color) !important;
+	}
+	.page-common #horiznav_nav ul li a, .page-common #horiznav_nav ul li
+	{
+		background-color: var(--second-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;
+	}
+	.page-common #horiznav_nav
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common #horiznav_nav ul li a:hover, .page-common #horiznav_nav ul li:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.page-common .breadcrumb, .anime-detail-header-stats .stats-block .score, .anime-detail-header-stats .stats-block .numbers
+	{
+		color: var(--main-text) !important;
+	}
+	.anime-detail-header-stats .stats-block .score::after, .anime-detail-header-stats .anime-detail-header-affiliate-dialog::before
+	{
+		color: var(--dimer-text) !important;
+	}
+	/*Ranking (score)*/
+	.anime-detail-header-stats .stats-block, .anime-detail-header-stats .user-status-block
+	{
+		background-color: var(--second-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;
+	}
+	.anime-detail-header-stats .stats-block .score::before, .user-status-block .btn-user-status-add-list
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
+	}
+	.user-status-block .btn-user-status-add-list
+	{
+		opacity: .9;
+	}
+	.user-status-block .btn-user-status-add-list:hover
+	{
+		opacity: 1;
+	}
+	.user-status-block .form-user-score, .user-status-block .form-user-episode, .user-status-block .form-user-episode input[type="text"], .anime-detail-header-stats .anime-detail-header-affiliate-dialog
+	{
+		background-color: var(--main-background) !important;
+    color: var(--main-text) !important;
+    border-color: var(--hover-background) !important;		
+	}
+	
+	.page-common h2
+	{
+		color: var(--main-text) !important;
+	}
+	.page-common h2, .page-common .border_top, .page-common #profileRows a, .page-common .profileRows a, .detail-characters-list .left-column.divider::after, .page-common .borderDark, div.borderDark > div
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common p, .page-common .textReadability, .page-common span, .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
+	{
+		color: var(--dimer-text) !important;
+	}
+	.page-common #profileRows a:hover, .page-common .profileRows a:hover, .detail-characters-list .left-column table:nth-of-type(2n), .detail-characters-list .left-right table:nth-of-type(2n)
+	{
+		background-color: var(--hover-background) !important;
+	}
+	/*recent forum discussion*/
+	.page-forum .forum_boardrow2, .page-forum .forum_boardrow1
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Videos*/
+	.video-block.episode-video .outside-region .outside-region-block
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/arrows.png") !important;
+	}
+	
+	
+	/*Episodes*/
+	.episode_list .episode-list-header td, .episode_list .episode-list-data:nth-of-type(2n+1) td, .episode_list .episode-list-header td:last-of-type
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.episode_list .episode-list-header, .episode_list .episode-list-data:nth-of-type(2n+1) td, .di-t, .contents-video-embed .episode-information
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.episode_list .episode-list-header .episode-number .btn-sort-outer
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-sort-triangle.png") !important;
+	}
+	.episode_list .episode-list-data:nth-of-type(2n) td
+	{
+		border-color: var(--hover-background) !important;
+		background-color: var(--second-background) !important;
+	}
+	.page-common .fn-grey2
+	{
+		color: var(--dimer-text) !important;
+	}
+	.user-status-block .btn-forum-episode, .contents-video-embed .btn-rect
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9;
+	}
+	.user-status-block .btn-forum-episode:hover, .contents-video-embed .btn-rect:hover
+	{
+		opacity: 1;
+		color: var(--main-text) !important;
+	}
+	.contents-video-embed .btn-video-anime-slide.hori, .contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime
+	{
+		background-color: var(--second-background) !important;
+	}
+	.contents-video-embed .btn-video-anime-slide.hori:hover, .contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime.play .link, .contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime:hover .link
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.contents-video-embed .video-anime-slide-block.hori
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime .link .text
+	{
+		color: var(--dimer-text) !important;
+	}
+	
+	
+	/*Reviews*/
+	.reviews-horiznav-nav-sort-block, .page-common .border_bottom, .js-scrollfix-bottom-rel > div
+	{
+		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Recommendations*/
+	.page-common .bgColor1
+	{
+		background-color: var(--second-background) !important;
+	}
+	
+	
+	/*Stats*/
+	.page-common div.updatesBar
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.table-recently-updated tr:nth-of-type(2n) td
+	{
+		background-color: var(--second-background) !important;
+	}
+	.table-recently-updated tr:nth-of-type(2n+1) td
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Characters & Voice Actors*/
+	.page-common .bgColor2
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Forum*/
+	.page-common .normal_header, .page-forum .forum-table-header, .page-common .quotetext, .page-common .codetext
+	{
+		border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+	}
+	a.icon-team-title.manga_db_moderator,.icon-team-title.social_media_moderator, .icon-team-title.social_media_moderator:hover, a.icon-team-title.forum_moderator, a.icon-team-title.review_recommendation_moderator
+	{
+		color: var(--main-text) !important;
+		transition: none !important;
+	}
+	.page-forum .sig
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-forum .forum_boardrowspacer
+	{
+		background-color: transparent !important;
+	}
+	.page-forum .forum_category
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-forum .forum_locheader
+	{
+		color: var(--main-text) !important;
+	}
+	.page-forum .btn-forum, .page-forum .btn-forum, .btn-rect-grey1
+	{
+		background-color: var(--second-background) !important;
+		border-color: transparent !important;
+	}
+	.page-forum .btn-forum:hover, .page-forum .btn-forum:hover, .btn-rect-grey1:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Top anime page*/
+	.top-ranking-table .table-header td
+	{
+		border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+	}
+	/*Buttons*/
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist, .page-common .pagination .link-blue-box
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		transition: none !important;
+		opacity: 1 !important;
+	}
+	.icon-top-ranking-page .prev:hover, .icon-top-ranking-page .next:hover, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist:hover, .page-common .pagination .link-blue-box:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.icon-top-ranking-page .prev, .icon-top-ranking-page .next
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		transition: none !important;
+		opacity: 1 !important;
+	}
+	/*Rows odd*/
+	.top-ranking-table tr.ranking-list:nth-of-type(2n+1) td
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	/*Rows even*/
+	.top-ranking-table tr.ranking-list:nth-of-type(2n) td
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.top-ranking-table .title .information
+	{
+		color: var(--dimer-text) !important;
+	}
+	.top-ranking-table tr:last-of-type
+	{
+		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Seasonal anime*/
+	.navi-seasonal
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;		
+	}
+	.navi-seasonal .horiznav_nav ul li a, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;		
+		color: var(--main-text) !important;
+	}
+	.navi-seasonal .horiznav_nav ul li a:hover, .navi-seasonal .horiznav_nav ul li a.horiznav_active, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type:hover, .navi-seasonal .horiznav_nav ul li a.on:hover, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type.on:hover, .page-common .inputButton:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;	
+		transition: none !important;
+	}
+	.navi-seasonal .horiznav_nav ul li a.on, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type.on
+	{
+		background-color:  var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type
+	{
+		color: var(--main-text) !important;
+	}
+	.navi-seasonal .horiznav-nav-seasonal, .navi-seasonal .horiznav_nav
+	{
+		border-color: var(--main-color) !important;
+	}
+	.page-common .inputtext
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;		
+	}
+	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	.season .btn-show-sort:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.season .btn-show-kids, .season .btn-show-r18
+	{
+		filter: grayscale(100%);
+	}
+	.page-common .inputButton, .seasonal-anime-list .anime-header
+	{
+		background-color:  var(--main-color) !important;
+		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
+	}
+	
+	
+	/*Episode*/
+	.watch .video-menu-category .btn-category.on
+	{
+		background-color:  var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.watch .video-menu-category .btn-category:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;	
+		transition: none !important;
+	}
+	.watch .video-menu-category .btn-category
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;		
+		color: var(--main-text) !important;
+	}
+	.video-menu-category
+	{
+		border-color: var(--hover-background) !important;	
+	}
+	.watch .video-menu-category .btn-hide-blocked-video
+	{
+		filter: grayscale(100%);
+	}
+	.video-block .video-list.episode a
+	{
+		color: var(--main-text) !important;
+	}
+.video-block .video-list.episode a:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Industry forums*/
+	.forum .forum-header
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.forum .forum-board:nth-of-type(2n)
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.forum .forum-board, .forum .content-container .container-left, .forum .forum-side-block .header, .forum .forum-side-block .forum-side-list .forum-post
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .fn-grey4
+	{
+		color: var(--dimer-text) !important;
+	}
+	.page-common .fn-blue1
+	{
+		color: var(--main-color) !important;
+	}
+	
+
+	.forum .forum-search-side .forum-search-select
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles.png") !important;
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.forum .forum-search-side .forum-search-input-text, .forum .forum-search-side .forum-search-input-submit.notActive, .forum .forum-search-side .forum-search-input-submit
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}	
+	.forum .forum-search-side .forum-search-input-text:hover, .forum .forum-search-side .forum-search-input-text:active, .forum .forum-search-side .forum-search-input-text:focus
+	{
+		border-color: var(--main-color) !important;
+	}
+	
+	
+	/*Login pge*/
+	#dialog, #dialog td, .page-common .social-login-block, .page-common .login-inputtext
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .social-login-block::after
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.page-common .icon-social-login.icon-fb, .page-common .icon-social-login.icon-tw, .page-common .icon-social-login.icon-gp
+	{
+		color: var(--main-text) !important;
+	}
+	.page-common .login-inputtext:hover, .page-common .login-inputtext:active, .page-common .login-inputtext:focus
+	{
+		border-color: var(--main-color) !important;
+	}
+	
+	
+	/*User name*/
+	.page-common .header-profile.link-bg
+	{
+		background-color: transparent !important;
+	}
+	
+	
+	/*SVGs*/
+	.page-common .header-list-button .fa, .page-common .header-message-button .fa, .page-common .header-notification-button .fa, a.header-message-button, a.header-list-button, a.header-notification-button
+	{
+		color: var(--main-text) !important;
+		opacity: 1 !important;
+	}
+	.page-common .header-list-button .fa:hover, .page-common .header-message-button .fa:hover, .page-common .header-notification-button .fa:hover
+	{
+		color: var(--main-color) !important;
+	}
+	
+	
+	/*Icon borders near username*/
+  .page-common #header-menu > .border::before
+	{
+		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Notifications*/
+	.page-common .header-notification-dropdown .arrow_box, .page-common .header-notification-view-all a
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .header-notification-dropdown-inner h3, .page-common .header-notification-item
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .header-notification-item:hover, .page-common .header-notification-view-all a:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Messages*/
+	.message-container, .total_messages
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.message.read > .mym
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.message.read:hover > .mym, .private-message-content .message.selected:first-of-type > .mym, .pmessage-checked-action .pmessage-checked-action-button, .private-message-content .message.selected > .mym, .pmessage-checkbox-block .mym-checkbox-pulldown-button.on
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.message.read .mym_subject > a.subject-link .text
+	{
+		color: var(--main-text) !important;
+	}
+	.pmessage-checkbox-block, .pmessage-select > a
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.mym_checkboxes input[type="checkbox"] + label
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-checkbox-set2.png") !important;
+	}
+	.pmessage-select > a, .total_messages
+	{
+		color: var(--main-text) !important;
+	}
+	.message.read .mym_date
+	{
+		color: var(--dimer-text) !important;
+	}
+	.page-common .textarea
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .textarea:hover, .page-common .textarea:active, .page-common .textarea:focus
+	{
+		border-color: var(--main-color) !important;
+	}
+	
+	
+	/*My Panel*/
+	.page-common table.forum-topics tr td:nth-child(2n+1)
+	{
+		background-color: var(--main-background) !important;
+	}
+	.page-common table.forum-topics tr td:nth-child(2n+1), .page-common table.forum-topics tr td
+	{
+		border-color: var(--hover-background) !important;
+	}
+	/*Image and code taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
+	img[src*="ignorethread.gif"]
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/ignorethread.png");
+		box-sizing: border-box;
+		width: 12px;
+		height: 12px;
+		padding-left: 12px;
+	}
+	/*Image and code taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
+	img[src*="watch_y.gif"]
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/watch_y.png");
+		box-sizing: border-box;
+		width: 15px;
+		height: 15px;
+		padding-left: 15px;
+	}
+	.icon-about-recommendations
+	{
+		color: var(--main-color) !important;
+	}
+	.icon-about-recommendations::after
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	
+	
+	/*Image borders*/
+	.page-common div.picSurround img, .profile .user-favorites .favorites-list .list .image, .profile .user-comments .comment .image img, .page-common .header-profile-button, .profile .statistics-updates .image
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.ranking-digest .ranking-unit .image, .user-profile .user-friends .icon-friend, .page-common .header-profile-button
+	{
+		box-shadow: 0 0 0 1px var(--hover-background),0 0 0 2px var(--hover-background) !important;
+	}
+	
+	
+	/*Profile page*/
+	.user-profile .user-function .icon-user-function, .profile .statistics-updates .data .graph-content, .page-common .content-container .container-right h5, .page-common .pt8
+	{
+		background-color: transparent !important;
+	}
+	.user-profile .user-function .icon-user-function, .user-profile .user-status.border-top, .user-profile h4, .page-common .content-container .container-left, .page-common .content-container .container-right h5, .profile .statistics-updates .data .graph, .user-profile .user-compatability-graph .bar-outer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.user-profile .user-function .icon-user-function:hover, .profile .statistics-updates .data .graph
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.user-profile .user-function .icon-user-function
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon_profile_sprite2.png") !important;
+	}
+	.user-profile .user-status li, .user-profile .user-compatability-graph .bar-outer
+	{
+		background-color: var(--second-background) !important;
+	}
+	.user-profile h4, .page-common .content-container .container-right h5, .page-common .content-container .container-right .fw-b, .user-profile .user-compatability-graph .bar-outer .bar-outer-positive .bar-inner, div.user-profile-sns
+	{
+		color: var(--main-text) !important;
+	}
+	.user-profile .user-button .btn-profile-submit
+	{
+		color: var(--main-text) !important;
+		background-color: var(--main-color) !important;
+	}
+	.js-truncate-outer .btn-truncate
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/arrows.png") !important;
+	}
+	.js-truncate-outer, .profile .user-favorites, .profile .user-favorites .favorites-list .list
+	{
+		background-color: var(--main-background) !important;
+	}
+	/*Comments*/
+	.profile .user-comments .comment .text .comment-text
+	{
+		color: var(--dimer-text) !important;
+	}
+	.profile .user-comments .comment:nth-of-type(2n+1)
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.profile .user-comments .comment:nth-of-type(2n)
+	{
+		background-color: var(--second-background) !important;
+	}
+	.page-common .content-container .container-right a.fw-b
+	{
+		color: var(--main-color) !important;
+	}
+	.page-common .btn-form-submit
+	{
+		color: var(--main-text) !important;
+		background-color: var(--main-color) !important;
+	}
+	.page-common .btn-form-submit:hover
+	{
+		color: var(--main-color) !important;
+		background-color: var(--hover-background) !important;
+	}
+	.page-common .floatRightHeader
+	{
+		color: var(--hover-background) !important;
+	}
+	.page-common a.floatRightHeader
+	{
+		color: var(--main-color) !important;
+	}
+	
+	
+	
+}
