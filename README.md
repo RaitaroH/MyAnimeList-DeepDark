@@ -10,6 +10,8 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 Theme as a userstyle [here](https://userstyles.org/styles/146429/myanimelist-deepdark).
 
 # Screenshots
+NOTE: Ads removal is not a part of the style. That has been done with [uBlock](https://github.com/gorhill/uBlock/).
+
 Main page
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Page.png)
 
