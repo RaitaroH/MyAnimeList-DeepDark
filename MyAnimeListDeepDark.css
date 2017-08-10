@@ -2,9 +2,9 @@
 
 @-moz-document domain("myanimelist.net") {
   
-/*Theme made by RaitaroH @https://github.com/RaitaroH/MAL-DeepDark*/
+/*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.0.0*/
+/*1.0.1*/
 	
   /*Main color variables*/
 	:root
@@ -22,7 +22,7 @@
 		--main-color: #00adee;
 		--main-background: #111111;
 		--second-background: #181818; 
-		--hover-background: #3A3A3A;
+		--hover-background: #232323;
 		--main-text: #eff0f1;
 		--dimer-text: #CCCCCC;
 		*/
@@ -137,8 +137,8 @@
   .page-common #headerSmall
   {
     background-color: var(--second-background) !important;
-    /*background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png");*/
-		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png");
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png");
+		/*background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png");*/
   }
 
   /*Button*/
@@ -175,13 +175,13 @@
   
   
   /*Search*/
-  .page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon
+  .page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-text, .news.featured .featured-search-side .featured-search-input-submit
   {
     background: var(--second-background) !important;
     color: var(--main-text) !important;
     border-color: var(--hover-background) !important;
   }
-  .page-common #searchBar.searchBar #topSearchText:hover, .page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus
+  .page-common #searchBar.searchBar #topSearchText:hover, .page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus, .news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:hover, .news.featured .featured-search-side .featured-search-input-text:focus
   {
     border: 1px solid var(--main-color) !important;
   }
@@ -360,6 +360,10 @@
   {
 		color: var(--dimer-text) !important;
 	}
+	.page-common .lightLink:hover
+	{
+		color: var(--main-color) !important;
+	}
   
   
   /*Featured Articles*/
@@ -412,8 +416,106 @@
 		opacity: 1;
 		transition: none !important;
 	}
+	.page-common a.button_add.button_add.reading, .page-common a.button_add.button_add.watching, .page-common a.button_add.button_edit.reading, .page-common a.button_add.button_edit.watching, .page-common a.button_edit.button_add.reading, .page-common a.button_edit.button_add.watching, .page-common a.button_edit.button_edit.reading, .page-common a.button_edit.button_edit.watching
+	{
+    background-color: #2db039 !important;
+    color: #fff !important;
+	}
+  .page-common a.button_add.button_add.plantoread, .page-common a.button_add.button_add.plantowatch, .page-common a.button_add.button_edit.plantoread, .page-common a.button_add.button_edit.plantowatch, .page-common a.button_edit.button_add.plantoread, .page-common a.button_edit.button_add.plantowatch, .page-common a.button_edit.button_edit.plantoread, .page-common a.button_edit.button_edit.plantowatch
+	{
+    background-color: #888 !important;
+    color: #fff !important;
+	}
+  .page-common a.button_add.button_add.completed, .page-common a.button_add.button_edit.completed, .page-common a.button_edit.button_add.completed, .page-common a.button_edit.button_edit.completed
+	{
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+  }
+  .page-common a.button_add.button_add.dropped, .page-common a.button_add.button_edit.dropped, .page-common a.button_edit.button_add.dropped, .page-common a.button_edit.button_edit.dropped
+	{
+    background-color: #a12f31 !important;
+    color: #fff !important;
+  }
+  .page-common a.button_add.button_add.on-hold, .page-common a.button_add.button_edit.on-hold, .page-common a.button_edit.button_add.on-hold, .page-common a.button_edit.button_edit.on-hold
+	{
+    background-color: #f1c83e !important;
+    color: #fff !important;
+  }
+	
+	.profile .user-statistics .stats-graph .graph.completed, .profile .user-statistics .stats-status .circle.completed::after, .profile .statistics-updates .data .graph .graph-inner.completed
+	{
+		background-color: var(--main-color) !important;
+	}
+	.profile .user-statistics .stats-graph
+	{
+		background-color: #c3c3c3 !important;
+	}
+	
+	.user-status-block .form-user-score
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-star-score.png"),url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png");
+	}
+	.user-status-block .form-user-status
+	{
+		background-color: transparent !important;
+		border-color: var(--hover-background) !important;		
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png") !important;
+		color: var(--main-text) !important;
+	}
+	.user-status-block .form-user-status[data-class="completed"], .user-status-block .form-user-status[data-class="reading"], .user-status-block .form-user-status[data-class="watching"], .user-status-block .form-user-status[data-class="dropped"], .user-status-block .form-user-status[data-class="plantoread"], .user-status-block .form-user-status[data-class="plantowatch"], .user-status-block .form-user-status[data-class="on-hold"]
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png") !important;
+		color: var(--main-text) !important;
+	}
+	.user-status-block .form-user-status[data-class="completed"]
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	.user-status-block .form-user-status[data-class="reading"], .user-status-block .form-user-status[data-class="watching"]
+	{
+		background-color: #2db039 !important;
+    border-color: #2db039 !important;
+	}
+  .user-status-block .form-user-status[data-class="dropped"]
+	{
+		background-color: #a12f31 !important;
+    border-color: #a12f31 !important;
+	}
+	.user-status-block .form-user-status[data-class="plantoread"], .user-status-block .form-user-status[data-class="plantowatch"]
+	{
+		background-color: #8f8f8f !important;
+    border-color: #8f8f8f !important;
+	}
+  .user-status-block .form-user-status[data-class="on-hold"]
+	{
+		background-color: #e7b715 !important;
+    border-color: #e7b715 !important;
+	}
+
   
-  
+	/*Add anime*/
+	.ownlist_anime_update #advanced-button .toggle-button, .ownlist_manga_update #advanced-button .toggle-button
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.ownlist_anime_update #advanced-button .toggle-button:hover, .ownlist_manga_update #advanced-button .toggle-button:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.ownlist_anime_update #advanced-button .separator, .ownlist_manga_update #advanced-button .separator
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .goodresult, .page-common .successQuery
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	
+	
 	/*Latest Anime Recommendations*/
 	.page-common .spaceit_pad
 	{
@@ -648,7 +750,7 @@
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
 	}
-	a.icon-team-title.manga_db_moderator,.icon-team-title.social_media_moderator, .icon-team-title.social_media_moderator:hover, a.icon-team-title.forum_moderator, a.icon-team-title.review_recommendation_moderator
+	a.icon-team-title.manga_db_moderator,.icon-team-title.social_media_moderator, .icon-team-title.social_media_moderator:hover, a.icon-team-title.forum_moderator, a.icon-team-title.review_recommendation_moderator, .icon-team-title.database_administrator
 	{
 		color: var(--main-text) !important;
 		transition: none !important;
@@ -666,11 +768,11 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.page-forum .forum_locheader
+	.page-forum .forum_locheader, #content > div, .page-common .fn-grey5
 	{
 		color: var(--main-text) !important;
 	}
-	.page-forum .btn-forum, .page-forum .btn-forum, .btn-rect-grey1
+	.page-forum .btn-forum, .page-forum .btn-forum, .btn-rect-grey1, .page-common .forum-topic-sort
 	{
 		background-color: var(--second-background) !important;
 		border-color: transparent !important;
@@ -688,13 +790,55 @@
 		background-color: var(--hover-background) !important;
 	}
 	/*Buttons*/
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist, .page-common .pagination .link-blue-box
+	.page-common .pagination .link-blue-box
 	{
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 		transition: none !important;
 		opacity: 1 !important;
 	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+		transition: none !important;
+		opacity: 1 !important;
+	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.completed, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.dropped, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantoread, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantowatch, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.on-hold
+	{
+		color: var(--main-text) !important;
+	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.completed
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.dropped
+	{
+		background-color: #a12f31 !important;
+		border-color: #a12f31 !important;
+	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantoread, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantowatch
+	{
+		background-color: #8f8f8f !important;
+		border-color: #8f8f8f !important;
+	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching
+	{
+		background-color: #2db039 !important;
+		border-color: #2db039 !important;
+	}
+	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.on-hold
+	{
+		background-color: #e7b715 !important;
+		border-color: #e7b715 !important;
+	}
+	
+	.top-ranking-table .icon-score-star
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-rank-stars.png") !important;
+	}
+	
 	.icon-top-ranking-page .prev:hover, .icon-top-ranking-page .next:hover, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist:hover, .page-common .pagination .link-blue-box:hover
 	{
 		background-color: var(--hover-background) !important;
@@ -904,6 +1048,20 @@
 	}
 	
 	
+	/*Dropdown menu*/
+	.page-common .header-profile .header-profile-dropdown ul li a, .page-common .header-profile .header-profile-dropdown, .page-common .header-list .header-list-dropdown ul li a, .page-common .header-list .header-list-dropdown
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common .header-profile .header-profile-dropdown ul li a:hover, .page-common .header-list .header-list-dropdown ul li a:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+		transition: none !important;
+	}
+	
 	/*Icon borders near username*/
   .page-common #header-menu > .border::before
 	{
@@ -924,6 +1082,47 @@
 	.page-common .header-notification-item:hover, .page-common .header-notification-view-all a:hover
 	{
 		background-color: var(--hover-background) !important;
+	}
+	.page-common .header-notification-button.new::after
+	{
+		background-color: var(--main-color) !important;
+	}
+  .page-common .header-notification-button.has-unread::after, .page-common .header-notification-button.has-unread::after
+	{
+		border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+	}
+	.page-common .header-notification-item.new
+	{
+		background-color: var(--second-background) !important;
+	}
+	.page-common .header-notification-item.new:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.page-common .header-notification-item-header .is-read .fa-check-circle
+	{
+		color: var(--main-color) !important;
+	}
+	
+	/*Notification settings*/
+	.notification_settings .notification-setting-content .settings-notification .setting.header td, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label
+	{
+		border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+	}
+	.notification_settings .notification-setting-content .settings-notification .setting td.label, .notification_settings .notification-setting-content .settings-notification .setting td.button
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::before, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after
+	{
+		color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after
+	{
+		background-color: var(--main-color) !important;
 	}
 	
 	
@@ -1001,6 +1200,46 @@
 		height: 15px;
 		padding-left: 15px;
 	}
+	img[src*="watch_n.gif"]
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/watch_n.png");
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    padding-left: 15px;
+	}
+  img[src*="images/bad-off.gif"]
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/bad-off.png");
+    height: 0px;
+    width: 0px;
+    margin: 0px auto;
+    padding: 13px 13px 0px 0px;
+	}
+  img[src*="images/cancel-fsg.gif"]
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/cancel-fsg.png");
+    height: 0px;
+    width: 0px;
+    margin: 0px auto;
+    padding: 13px 13px 0px 0px;
+	}
+  img[src*="images/good-off.gif"]
+	{
+    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/good-off.png");
+    height: 0px;
+    width: 0px;
+    margin: 0px auto;
+    padding: 13px 13px 0px 0px;
+	}
+  .page-common .quote-inline-text
+	{
+    background-color: transparent !important;
+    border-color: var(--hover-background) !important;
+	}
+
+	
+	
 	.icon-about-recommendations
 	{
 		color: var(--main-color) !important;
@@ -1014,7 +1253,7 @@
 	
 	
 	/*Image borders*/
-	.page-common div.picSurround img, .profile .user-favorites .favorites-list .list .image, .profile .user-comments .comment .image img, .page-common .header-profile-button, .profile .statistics-updates .image
+	.page-common div.picSurround img, .profile .user-favorites .favorites-list .list .image, .profile .user-comments .comment .image img, .page-common .header-profile-button, .profile .statistics-updates .image, .forum .forum-side-block .forum-side-list img.thumbs
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -1100,5 +1339,276 @@
 	}
 	
 	
+	/*Manga and anime history*/
+  #content > div:nth-child(2)
+	{
+		color: var(--main-text) !important;
+	}
+
 	
+	/*Clubs*/
+	.club-search-form-search .select
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.club-search-form-search .inputtext, .page-common .word-break
+	{
+		color: var(--main-text) !important;
+	}
+	.club-list .table-data td .informantion
+	{
+		color: var(--dimer-text) !important;
+	}
+	.club-list .table-data td
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.club-list .table-data:nth-of-type(2n+1) td
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.club-list .btn-club-join:hover
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.club-list .btn-club-join
+	{
+		color: var(--main-color) !important;
+		background-color: var(--second-background) !important;
+		border-color: var(--main-color) !important;
+	}
+	
+	
+	/*Account settings*/
+	.page-common .login-form-header-text
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .icon-sns-connect
+	{
+		filter: grayscale(100%);
+	}
+	.setting-row.locate-right, .setting-row.show-hidden
+	{
+		color: var(--main-text) !important;
+		background-color: var(--main-background) !important;
+	}
+	.settings-cunstom-forum-title input:disabled, .sns-setting .table tr:nth-of-type(2n+1) td
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	ul.ignored-user-list, .sns-setting .cell-border-vertical, .sns-setting .cell-border-vertical, .sns-setting .sns-setting-default, .sns-setting .cell-border-vertical, .sns-setting, .ownlist_style .style-setting .style-setting-form-button
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.btn-sns-setting, .btn-sns-setting span, .sns-setting .setting-input-button, .ownlist_style .style-setting .setting-switch input[type="radio"]:checked + label
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.ownlist_style .style-setting .setting-switch input[type="radio"] + label, .ownlist_style #new-style .info
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.ownlist_style .new-theme-list .new-theme-unit.selected
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.ownlist_style .new-theme-list .new-theme-unit
+  {
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	
+	.membership .about-membership .plan-header, .membership .about-membership .plan, .membership .about-membership .about-new-feature, .membership .about-membership .about-no-ads
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.membership .about-membership .plan .plan-monthly .button, .membership .about-membership .plan .plan-annually .button, .membership .about-membership .about-new-feature .new, .membership .about-membership .btn-subscription
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.membership .about-membership .about-extras .about-extras-content .header
+	{
+		color: var(--main-text) !important;
+	}
+	
+	
+	/*Anime & Manga News and Featured Articles*/
+	body.news .menu-category, body.news .content-left, body.news .news-side-block .header, body.news .featured-side-block .header, body.news .news-side-block .news-list .news, body.news .news-side-block .news-list .featured, body.news .news-side-block .featured-list .news, body.news .news-side-block .featured-list .featured, body.news .featured-side-block .news-list .news, body.news .featured-side-block .news-list .featured, body.news .featured-side-block .featured-list .news, body.news .featured-side-block .featured-list .featured, body.news .tag-side-block .header, body.news .columnist-side-block .header, body.news .news-content-block.news-tags h2.news-tags-header, body.news .news-content-block.news-tags .news-tags-table.news td, body.news .news-breadcrumbs, .featured-pickup .featured-pickup-unit .information .pv, .featured-pickup .featured-pickup-unit .information .tags, .featured-content-block-outer
+	{
+		border-color: var(--hover-background) !important;
+	}
+	body.news .menu-category .btn-category.selected
+	{
+		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
+	}
+	body.news .menu-category .btn-category
+	{
+		color: var(--dimer-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	body.news .menu-category .btn-category:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	#all > svg:nth-child(1) > circle:nth-child(1)
+	{
+		fill: var(--main-color) !important;
+	}
+	/*Tags*/
+	body.news .menu-category .btn-edit-tags
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color1, .news-list .news-unit .information .tags .tag.tag-color1, body.news .tag-side-block .tag-cloud .tag.tag-color1, .featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-spoiler, body.news .news-side-block .news-list .text-color-spoiler, body.news .news-side-block .featured-list .text-color-spoiler, body.news .featured-side-block .news-list .text-color-spoiler, body.news .featured-side-block .featured-list .text-color-spoiler
+	{
+		background-color: #ff2c55 !important;
+		border-color: #ff2c55 !important;
+		color: var(--main-text) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color4, .news-list .news-unit .information .tags .tag.tag-color4, body.news .tag-side-block .tag-cloud .tag.tag-color4, .featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-advertorial
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color6, .news-list .news-unit .information .tags .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag, .news-list .comment-list .information .tags .tag, .news-list .news-unit .information .tags .tag
+	{
+		background-color: #8e8e93 !important;
+		border-color: #8e8e93 !important;
+		color: var(--main-text) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color2, .news-list .news-unit .information .tags .tag.tag-color2, body.news .tag-side-block .tag-cloud .tag.tag-color2
+	{
+		background-color: #ffcc01 !important;
+		border-color: #ffcc01 !important;
+		color: #fff !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color3, .news-list .news-unit .information .tags .tag.tag-color3, body.news .tag-side-block .tag-cloud .tag.tag-color3
+	{
+		background-color: #4cd963 !important;
+		border-color: #4cd963 !important;
+		color: var(--main-text) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color5, .news-list .news-unit .information .tags .tag.tag-color5, body.news .tag-side-block .tag-cloud .tag.tag-color5
+	{
+		background-color: #9b26af !important;
+		border-color: #9b26af !important;
+		color: var(--main-text) !important;
+	}
+	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color1, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color2, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color3, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color4, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color5, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color6, .page-common .fn-black
+	{
+		color: var(--main-text) !important;
+	}
+	/*Image border*/
+	body.news .columnist-side-block .columnist-list .columnists-unit-side .image
+	{
+		-webkit-box-shadow: var(--hover-background) 0 0 2px,var(--hover-background) 0 0 0 1px
+	}
+	body.news .news-side-block .news-list img.thumbs, body.news .news-side-block .featured-list img.thumbs, body.news .featured-side-block .news-list img.thumbs, body.news .featured-side-block .featured-list img.thumbs, .news-list .comment-list .image-link, .news-list .news-unit .image-link, body.news .news-content-block.news-tags .news-tags-table.news tr:nth-of-type(2n+1)
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.featured-pickup .featured-pickup-unit .image
+	{
+		box-shadow: var(--hover-background) 0 0 2px,var(--hover-background) 0 0 0 1px;
+	}
+	
+	
+	/*People and Characters */
+	.people-favorites-ranking-table tr.ranking-list:nth-of-type(2n+1) td, .people-favorites-ranking-table .table-header td, .characters-favorites-ranking-table tr.ranking-list:nth-of-type(2n+1) td, .characters-favorites-ranking-table .table-header td
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--second-background) !important;
+	}
+	.people-favorites-ranking-table tr.ranking-list:nth-of-type(2n) td, .characters-favorites-ranking-table tr.ranking-list:nth-of-type(2n) td
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.btn-choose-your-own
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.btn-choose-your-own:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.people-search-form-search .inputtext, .characters-search-form-search .inputtext
+	{
+		color: var(--main-text) !important;
+	}
+	.people-favorites-ranking-table tr:last-of-type, .characters-favorites-ranking-table tr:last-of-type, .page-common .incrementalSearchResultList .list .image
+	{
+		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Help*/
+	.about-content-box.l, .about-content-box.r
+	{
+		background-color: transparent !important;
+	}
+	.about-content.content-bg-grey, .page-advertising #ad_menu, .page-advertising section.ad_section:nth-of-type(2n) div.ad_section
+	{
+		background-color: var(--main-background) !important;
+	}
+	.pt16, .page-advertising .ad_form_content label.required, .page-advertising .ad_form_content label
+	{
+		color: var(--dimer-text) !important;
+	}
+	.btn-switch-lang
+	{
+		color: var(--hover-background) !important;
+	}
+	.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell.on, .page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell:hover
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell, .page-advertising .ad_form_content .ad_select
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-advertising .ad-spec-sample-list
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .mauto, .btn-switch-lang, .membership .about-membership .about-extras
+	{
+		background-color: var(--second-background) !important;
+	}
+	.membership .membership-faq .question, .membership .membership-faq .answer, .membership .membership-faq .answer .answer-detail, .membership .membership-faq .faq-img
+	{
+		color: var(--dimer-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.membership .membership-faq .question:hover, .membership .membership-faq .question.on
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 }
