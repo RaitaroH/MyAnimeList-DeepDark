@@ -10,12 +10,12 @@
 	:root
 	{
 		/*User colors*/
-		--main-color: #00adee;
-		--main-background: #111111;
-		--second-background: #181818; 
-		--hover-background: #232323;
-		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimer-text: /*[[dimerText]]*/;
 				
 		/*DeepDark colors*/
 		/*
