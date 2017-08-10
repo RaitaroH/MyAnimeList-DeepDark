@@ -13,7 +13,8 @@ Theme as a userstyle [here]().
 Main page
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Page.png)
 
-I offer the normal logo or 2 katakana variants [マイアニメリスト](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png) (default) and even 私のアニメリスト(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana_V2.png) (in case you want some more grammatically correct).
+I offer the normal logo or 2 katakana variants [マイアニメリスト](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png) (default) and even [私のアニメリスト](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana_V2.png).
+
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Logo1.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Logo2.png)
 
@@ -23,9 +24,11 @@ Top anime page
 Reviews
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Reviews.png)
 
+Seasonal anime
+![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Seasonal.png)
+
 The forum
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Forum1.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Forum2.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Forum.png)
 
 News
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/News.png)
