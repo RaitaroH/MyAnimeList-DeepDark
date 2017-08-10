@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.0.2*/
+/*1.0.3*/
 	
   /*Main color variables*/
 	:root
@@ -137,8 +137,8 @@
 	.page-common #headerSmall
 	{
 		background-color: var(--second-background) !important;
-		/*background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png");*/
-		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png");
+		/*background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png") !important;*/
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png") !important;
 	}
 
 	/*Button*/
@@ -1611,4 +1611,137 @@
 		background-color: var(--hover-background) !important;
 	}
 
+	
+	/* Thanks to Dark/Night MyAnimeList for the following code */
+	.page-common #headerSmall .banner-header-anime-straming {
+		display: none !important;
+	}
+	*[id*=div-gpt-ad] {
+		display: none !important;
+	}
+	/* > Panel */
+	.widget.right_top_ad.right, .widget.left_bottom_ad.left {
+		display: none !important;
+	}
+	.page-common.ad-skin #myanimelist .ad-skin-side-outer.bg-left, .page-common.ad-skin #myanimelist .ad-skin-side-outer.bg-right {
+		display: none !important;
+	}
+	/* > Browse Anime */
+	.side-ad.side-ad--l, .side-ad.side-ad--r {
+		display: none !important;
+	}
+	/* > View Anime/Manga */
+	div[style="padding: 20px 0 20px 40px; float: left; position: relative; z-index: 1;"], div[style="padding: 20px 40px 20px 0; float: right; position: relative;"] {
+		display: none !important;
+	}
+	div[style="padding: 20px 0 20px 40px; float: left;"], div[style="padding: 20px 40px 20px 0; float: right;"], div[style="padding: 20px 40px;display: inline-block;"], div[style="padding: 20px 0px;display: inline-block;"], div[class="mauto clearfix pt24"] {
+		display: none !important;
+	}
+	div[class="clearfix mauto mt16"] {
+		display: none !important;
+	}
+	div[style="padding:16px 0px 0px 0px;"] {
+		display: none !important;
+	}
+	.amazon-ads {
+		display: none !important;
+	}
+	.kskdDiv {
+		display: none !important;
+	}
+	/* > Add/Edit detailed info */
+	.vrl-unit-container {
+		display: none !important;
+	}
+	/* > Reviews */
+	div[style="width:728px; margin:0 auto"] {
+		display: none !important;
+	}
+	div[style="overflow: hidden; padding: 10px 0; border-bottom: solid #cdcdcd 1px"] {
+		display: none !important;
+	}
+	div[class="borderDark pt4 pb8 pl4 pr4 mb8"] + div[class="border_bottom pt12 pb12 mb4"] {
+		display: none !important;
+	}
+	/* > Recommendations */
+	.border_bottom[style="padding:8px 0px 8px 0px;margin:0px 0px 8px 0px;"] {
+		display: none !important;
+	}
+	/* > Watch Videos */
+	.clearfix[style="padding:16px 3px 20px 100px;width:880px;"] {
+		display: none !important;
+	}
+	/* > Watch Episode */
+	div[style="padding:16px 0px 0px 0px;margin:14px 0px 0px 0px;"] {
+		display: none !important;
+	}
+	div[style="float:left; padding:25px 25px 10px;"], div[style="float:right; padding:25px 25px 10px;"] {
+		display: none !important;
+	}
+	/* > Forums */
+	._unit[style="width:300px; height:250px; display: block !important;"] {
+		height: 0px !important;
+	}
+	table[style="width:100%;height:100%;text-align:center;border-collapse:collapse;"] {
+		display: none !important;
+	}
+	.clearfix.pt24[style="width:720px;"] {
+		display: none !important;
+	}
+	#pc_forum_top_middle_rec_l {
+		display: none !important;
+	}
+	#pc_forum_top_middle_rec_r {
+		display: none !important;
+	}
+	.forum_boardrowspacer + .di-t {
+		display: none !important;
+	}
+	/* > Profile */
+	.clearfix[style="padding:16px 3px 20px;"] {
+		display: none !important;
+	}
+	/* > Users */
+	.clearfix[style="padding:16px 3px 20px 10px;width:100%;"] {
+		display: none !important;
+	}
+	/* > News */
+	table[style="width:160px;height:100%;text-align:center;border-collapse:collapse;margin:auto;"] {
+		display: none !important;
+	}
+	.clearfix[style="padding:16px 24px 20px;"] {
+		display: none !important;
+	}
+	.clearfix[style="padding:16px 8px 20px 0px;"] {
+		display: none !important;
+	}
+	#pc_news_top_1st_rec, #pc_news_top_2nd_rec {
+		display: none !important;
+	}
+	.js-scrollfix-bottom div[style="margin-top: 8px; text-align: center;"] {
+		display: none !important;
+	}
+	/* Social buttons hidden */
+	.page-common .icon-block .icon-social {
+		display: none !important;
+	}
+	*[class*=PIN] {
+		display: none !important;
+	}
+	body.news .news-container .news-info-block .sns-unit .sprite-icon-social.rect.icon-social {
+		display: none !important;
+	}
+	.page-common .sprite-icon-social.rect.wide.icon-social {
+		display: none !important;
+	}
+	body.news .news-container .news-info-block {
+		background-color: #1e1e1e !important;
+	}
+	.js-sns-icon-container.icon-block-small {
+		display: none !important;
+	}
+	.fb-page
+	{
+		display: none !important;
+	}
 }
