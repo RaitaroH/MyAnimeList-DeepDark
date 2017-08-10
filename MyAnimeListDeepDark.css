@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.0.4*/
+/*1.0.5*/
 	
   /*Main color variables*/
 	:root
@@ -1171,7 +1171,11 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	
+	.page-common .bgbdrContainer
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
 	
 	/*My Panel*/
 	.page-common table.forum-topics tr td:nth-child(2n+1)
