@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.0.6*/
+/*1.0.7*/
 	
   /*Main color variables*/
 	:root
@@ -1167,6 +1167,7 @@
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 	.page-common .textarea:hover, .page-common .textarea:active, .page-common .textarea:focus
 	{
@@ -1199,7 +1200,7 @@
 	/*Image and code taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	img[src*="watch_y.gif"]
 	{
-    background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/watch_y.png") !important;
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/watch_y.png") !important;
 		box-sizing: border-box;
 		width: 15px;
 		height: 15px;
@@ -1242,7 +1243,12 @@
 		background-color: transparent !important;
 		border-color: var(--hover-background) !important;
 	}
-
+	.show_button, .hide_button
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
 	
 	
 	.icon-about-recommendations
@@ -1422,7 +1428,7 @@
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	.ownlist_style .new-theme-list .new-theme-unit.selected
+	.ownlist_style .new-theme-list .new-theme-unit.selected, #dialog > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > textarea:nth-child(8)
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
