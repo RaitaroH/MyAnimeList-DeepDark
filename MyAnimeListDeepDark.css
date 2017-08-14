@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.0.8*/
+/*1.0.9*/
 	
   /*Main color variables*/
 	:root
@@ -1784,5 +1784,32 @@
 	#fancybox-outer
 	{
 		background-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Modern list settings*/
+	.ownlist_style_theme .customize-content-left .theme-custom-content, .ownlist_style_theme .customize-content-left .theme-custom-content, .ownlist_style_theme .customize-content-left h3.theme-custom-header, .ace_editor.ace_autocomplete, .ace_editor.ace_autocomplete .ace_line-hover
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.ownlist_style_theme .customize-content-left h2.theme-custom-header, .ace_editor.ace_autocomplete
+	{
+		background-color: var(--second-background) !important;
+	}
+	.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line, .ace_editor.ace_autocomplete .ace_line-hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.ownlist_style_theme .customize-content-left h3.theme-custom-header, .ownlist_style_theme .customize-content-left .header, .ownlist_style_theme .customize-content-left .header .header-text, .ace_editor.ace_autocomplete, .ace_gutter-cell
+	{
+		color: var(--main-text) !important;
+	}
+	.ownlist_style_theme .customize-content-left
+	{
+		color: var(--dimer-text) !important;
+	}
+	.ownlist_style_theme .customize-content-left .header
+	{
+		background-color: var(--main-color) !important;
 	}
 }
