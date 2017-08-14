@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.0.7*/
+/*1.0.8*/
 	
   /*Main color variables*/
 	:root
@@ -423,7 +423,7 @@
 	}
 	.page-common a.button_add.button_add.plantoread, .page-common a.button_add.button_add.plantowatch, .page-common a.button_add.button_edit.plantoread, .page-common a.button_add.button_edit.plantowatch, .page-common a.button_edit.button_add.plantoread, .page-common a.button_edit.button_add.plantowatch, .page-common a.button_edit.button_edit.plantoread, .page-common a.button_edit.button_edit.plantowatch
 	{
-    background-color: #888 !important;
+		background-color: #888 !important;
 		color: #fff !important;
 	}
 	.page-common a.button_add.button_add.completed, .page-common a.button_add.button_edit.completed, .page-common a.button_edit.button_add.completed, .page-common a.button_edit.button_edit.completed
@@ -620,8 +620,8 @@
 	.user-status-block .form-user-score, .user-status-block .form-user-episode, .user-status-block .form-user-episode input[type="text"], .anime-detail-header-stats .anime-detail-header-affiliate-dialog
 	{
 		background-color: var(--main-background) !important;
-    color: var(--main-text) !important;
-    border-color: var(--hover-background) !important;		
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;		
 	}
 	
 	.page-common h2
@@ -962,7 +962,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-.video-block .video-list.episode a:hover
+	.video-block .video-list.episode a:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -1011,7 +1011,7 @@
 	}
 	
 	
-	/*Login pge*/
+	/*Login page*/
 	#dialog, #dialog td, .page-common .social-login-block, .page-common .login-inputtext
 	{
 		border-color: var(--hover-background) !important;
@@ -1062,6 +1062,7 @@
 		color: var(--main-color) !important;
 		transition: none !important;
 	}
+	
 	
 	/*Icon borders near username*/
 	.page-common #header-menu > .border::before
@@ -1746,7 +1747,7 @@
 		display: none !important;
 	}
 	body.news .news-container .news-info-block {
-		background-color: #1e1e1e !important;
+		background-color: var(--main-background) !important;
 	}
 	.js-sns-icon-container.icon-block-small {
 		display: none !important;
@@ -1754,5 +1755,34 @@
 	.fb-page
 	{
 		display: none !important;
+	}
+	
+	
+	/*Search all*/
+	#pc_search_1st_rec
+	{
+		display: none !important;
+	}
+	.search_all .result-header, .search_all .btn-search-more, .search_all .link-content-jump .link.on, .search_all .link-content-jump .link:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.search_all .content-result .list:nth-of-type(2n)
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.search_all .content-result .list:nth-of-type(2n+1)
+	{
+		background-color: var(--second-background) !important;
+	}
+	.search_all .content-result .list, .search_all .content-result .content-left
+	{
+		border-color: var(--hover-background) !important;
+	}
+		
+	/*Editing anime entires*/
+	#fancybox-outer
+	{
+		background-color: var(--hover-background) !important;
 	}
 }
