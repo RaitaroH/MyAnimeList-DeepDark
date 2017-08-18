@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.1.0*/
+/*1.1.1*/
 	
   /*Main color variables*/
 	:root
@@ -717,6 +717,15 @@
 	.reviews-horiznav-nav-sort-block, .page-common .border_bottom, .js-scrollfix-bottom-rel > div
 	{
 		border-color: var(--hover-background) !important;
+	}
+	.page-common .button_form
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .button_form:hover
+	{
+		background-color: var(--hover-background) !important;
 	}
 	
 	
