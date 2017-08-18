@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.1.1*/
+/*1.1.2*/
 	
   /*Main color variables*/
 	:root
@@ -131,7 +131,11 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-  
+	/*Popup windows text*/
+	body:not(.ownlist)
+	{
+		color: var(--dimer-text);
+	}  
 	
 	/*Logo*/
 	.page-common #headerSmall
@@ -1837,5 +1841,16 @@
 	.page-common .profile_leftcell
 	{
 		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Hover details for anime*/
+	.page-common .hoverinfo
+	{
+		background: var(--main-background) !important;
+	}
+	.page-common .hoverinfo::after
+	{
+		background: none !important;
 	}
 }
