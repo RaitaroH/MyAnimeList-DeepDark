@@ -1858,7 +1858,7 @@
 	/*Shared anime list*/
 	.borderClass[style="background-color: #f6f6f6;"]
 	{
-		background-color: var(--hover-background) !important;
-		border-color: var(--second-background) !important;
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 }
