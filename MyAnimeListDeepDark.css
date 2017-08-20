@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.1.3*/
+/*1.1.4*/
 	
   /*Main color variables*/
 	:root
@@ -1860,5 +1860,12 @@
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	
+	
+	/*Set to completed warning*/
+	#fancybox-inner
+	{
+		color: var(--main-text) !important;
 	}
 }
