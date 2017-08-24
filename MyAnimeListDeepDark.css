@@ -4,7 +4,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.1.4*/
+/*1.1.5*/
 	
   /*Main color variables*/
 	:root
@@ -620,6 +620,7 @@
 	.user-status-block .btn-user-status-add-list:hover
 	{
 		opacity: 1;
+		color: var(--main-text) !important;
 	}
 	.user-status-block .form-user-score, .user-status-block .form-user-episode, .user-status-block .form-user-episode input[type="text"], .anime-detail-header-stats .anime-detail-header-affiliate-dialog
 	{
