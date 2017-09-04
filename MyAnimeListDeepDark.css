@@ -2,7 +2,7 @@
   
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.1.8*/
+/*1.1.9*/
 	
   /*Main color variables*/
 	:root
@@ -806,7 +806,6 @@
 		background-color: var(--hover-background) !important;
 	}
 	
-	
 	/*Top anime page*/
 	.top-ranking-table .table-header td
 	{
@@ -1506,6 +1505,22 @@
 	#all > svg:nth-child(1) > circle:nth-child(1)
 	{
 		fill: var(--main-color) !important;
+	}
+	body.news .news-container .content, body.news .news-container .information, .news-list .comment-list .quotetext
+	{
+		color: var(--dimer-text) !important;
+	}
+	body.news .news-container .tags, .news-list .comment-list:nth-of-type(2n)
+	{
+		background-color: var(--second-background) !important;
+	}
+	body.news .news-container .tags .tag, .news-list .comment-list .quotetext
+	{
+		background-color: var(--hover-background) !important;
+	}
+	body.news .news-container .tags .tag, .news-list .comment-list:nth-of-type(2n), body.news .news-content-block .news-related-database tr td
+	{
+		border-color: var(--hover-background) !important;
 	}
 	/*Tags*/
 	body.news .menu-category .btn-edit-tags
