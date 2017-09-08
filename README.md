@@ -50,3 +50,4 @@ Colors Showcase (the colors are available in the code; different colors can be u
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Mint-Y-DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/VertexDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/YoutubeColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/9animeColors.png)
