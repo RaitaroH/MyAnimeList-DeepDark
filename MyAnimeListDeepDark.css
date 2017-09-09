@@ -1,3 +1,4 @@
+@-moz-document domain("myanimelist.net") {
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
 /*1.2.2*/
@@ -1964,3 +1965,5 @@
 	{
 		color: var(--main-text) !important;
 	}
+
+}
