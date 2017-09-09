@@ -1,20 +1,25 @@
-@-moz-document domain("myanimelist.net") {
-  
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.1*/
+/*1.2.2*/
 	
 	/*Main color variables*/
 	:root
 	{
 		/*User colors*/
-		--main-color: /*[[mainColor]]*/;
-		--main-background: /*[[mainBackground]]*/;
-		--second-background: /*[[secondBackground]]*/;
-		--hover-background: /*[[hoverBackground]]*/;
-		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
-				
+		--main-color: #00ADEE;
+		--main-background: #111111;
+		--second-background: #181818;
+		--hover-background: #232323;
+		--main-text: #EFF0F1;
+		--dimer-text: #CCCCCC;
+		
+		/*MAL colors for stats*/
+		--red: #a12f31;
+		--green: #2db039;
+		--gray: #8f8f8f;
+		--purple: #9b26af;
+		--yellow: #e7b715;
+		
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
@@ -395,9 +400,9 @@
 	}
 	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
 	{
-		color: var(--main-text) !important;
-		border-color: #ff2c55 !important;
-		background-color: #ff2c55 !important;		
+		color: #fff !important;
+		border-color: var(--red) !important;
+		background-color: var(--red) !important;		
 	}
 	.news-list .comment-list .information .pv, .news-list .news-unit .information .pv, .news-list .comment-list .information .tags, .news-list .news-unit .information .tags
 	{
@@ -430,12 +435,12 @@
 	}
 	.page-common a.button_add.button_add.reading, .page-common a.button_add.button_add.watching, .page-common a.button_add.button_edit.reading, .page-common a.button_add.button_edit.watching, .page-common a.button_edit.button_add.reading, .page-common a.button_edit.button_add.watching, .page-common a.button_edit.button_edit.reading, .page-common a.button_edit.button_edit.watching
 	{
-		background-color: #2db039 !important;
+		background-color: var(--green) !important;
 		color: #fff !important;
 	}
 	.page-common a.button_add.button_add.plantoread, .page-common a.button_add.button_add.plantowatch, .page-common a.button_add.button_edit.plantoread, .page-common a.button_add.button_edit.plantowatch, .page-common a.button_edit.button_add.plantoread, .page-common a.button_edit.button_add.plantowatch, .page-common a.button_edit.button_edit.plantoread, .page-common a.button_edit.button_edit.plantowatch
 	{
-		background-color: #888 !important;
+		background-color: var(--gray) !important;
 		color: #fff !important;
 	}
 	.page-common a.button_add.button_add.completed, .page-common a.button_add.button_edit.completed, .page-common a.button_edit.button_add.completed, .page-common a.button_edit.button_edit.completed
@@ -445,22 +450,75 @@
 	}
 	.page-common a.button_add.button_add.dropped, .page-common a.button_add.button_edit.dropped, .page-common a.button_edit.button_add.dropped, .page-common a.button_edit.button_edit.dropped
 	{
-		background-color: #a12f31 !important;
+		background-color: var(--red) !important;
 		color: #fff !important;
 	}
 	.page-common a.button_add.button_add.on-hold, .page-common a.button_add.button_edit.on-hold, .page-common a.button_edit.button_add.on-hold, .page-common a.button_edit.button_edit.on-hold
 	{
-		background-color: #f1c83e !important;
+		background-color: var(--yellow) !important;
 		color: #fff !important;
 	}
-	
+
+	/*Progress*/
+	.profile .user-statistics .stats-graph .graph.watching, .profile .user-statistics .stats-graph .graph.reading, .profile .user-statistics .stats-status .circle.watching::after, .profile .user-statistics .stats-status .circle.reading::after
+	{
+		background-color: var(--green) !important;
+	}
 	.profile .user-statistics .stats-graph .graph.completed, .profile .user-statistics .stats-status .circle.completed::after, .profile .statistics-updates .data .graph .graph-inner.completed
 	{
 		background-color: var(--main-color) !important;
 	}
-	.profile .user-statistics .stats-graph
+	.profile .user-statistics .stats-graph .graph.on_hold, .profile .user-statistics .stats-status .circle.on_hold::after
 	{
-		background-color: #c3c3c3 !important;
+		background-color: var(--yellow) !important;
+	}
+	.profile .user-statistics .stats-graph .graph.dropped, .profile .user-statistics .stats-status .circle.dropped::after
+	{
+		background-color: var(--red) !important;
+	}
+	.profile .user-statistics .stats-graph, .profile .user-statistics .stats-graph .graph.plan_to_watch, .profile .user-statistics .stats-graph .graph.plan_to_read, .profile .user-statistics .stats-status .circle.plan_to_watch::after, .profile .user-statistics .stats-status .circle.plan_to_read::after
+	{
+		background-color: var(--gray) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.watching,.profile .statistics-updates .data .graph .graph-inner.re-watching,.profile .statistics-updates .data .graph .graph-inner.reading,.profile .statistics-updates .data .graph .graph-inner.re-reading
+	{
+		background-color: var(--green) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.completed
+	{
+		background-color: var(--main-color) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.on_hold
+	{
+		background-color: var(--yellow) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.dropped
+	{
+		background-color: var(--red) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.plan_to_watch,.profile .statistics-updates .data .graph .graph-inner.plan_to_read
+	{
+		background-color: var(--gray) !important;
+	}
+	.profile .statistics-updates .data .text.watching,.profile .statistics-updates .data .text.re-watching,.profile .statistics-updates .data .text.reading,.profile .statistics-updates .data .text.re-reading 
+	{
+		color: var(--green) !important;
+	}
+	.profile .statistics-updates .data .text.completed 
+	{
+		color: var(--main-color) !important;
+	}
+	.profile .statistics-updates .data .text.on_hold 
+	{
+		color: var(--yellow) !important;
+	}
+	.profile .statistics-updates .data .text.dropped 
+	{
+		color: var(--red) !important;
+	}
+	.profile .statistics-updates .data .text.plan_to_watch,.profile .statistics-updates .data .text.plan_to_read 
+	{
+		color: var(--gray) !important;
 	}
 	
 	.user-status-block .form-user-score
@@ -486,23 +544,23 @@
 	}
 	.user-status-block .form-user-status[data-class="reading"], .user-status-block .form-user-status[data-class="watching"]
 	{
-		background-color: #2db039 !important;
-		border-color: #2db039 !important;
+		background-color: var(--green) !important;
+		border-color: var(--green) !important;
 	}
 	.user-status-block .form-user-status[data-class="dropped"]
 	{
-		background-color: #a12f31 !important;
-		border-color: #a12f31 !important;
+		background-color: var(--red) !important;
+		border-color: var(--red) !important;
 	}
 	.user-status-block .form-user-status[data-class="plantoread"], .user-status-block .form-user-status[data-class="plantowatch"]
 	{
-		background-color: #8f8f8f !important;
-		border-color: #8f8f8f !important;
+		background-color: var(--gray) !important;
+		border-color: var(--gray) !important;
 	}
 	.user-status-block .form-user-status[data-class="on-hold"]
 	{
-		background-color: #e7b715 !important;
-		border-color: #e7b715 !important;
+		background-color: var(--yellow) !important;
+		border-color: var(--yellow) !important;
 	}
 
   
@@ -848,23 +906,23 @@
 	}
 	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.dropped
 	{
-		background-color: #a12f31 !important;
-		border-color: #a12f31 !important;
+		background-color: var(--red) !important;
+		border-color: var(--red) !important;
 	}
 	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantoread, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantowatch
 	{
-		background-color: #8f8f8f !important;
-		border-color: #8f8f8f !important;
+		background-color: var(--gray) !important;
+		border-color: var(--gray) !important;
 	}
 	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching
 	{
-		background-color: #2db039 !important;
-		border-color: #2db039 !important;
+		background-color: var(--green) !important;
+		border-color: var(--green) !important;
 	}
 	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.on-hold
 	{
-		background-color: #e7b715 !important;
-		border-color: #e7b715 !important;
+		background-color: var(--yellow) !important;
+		border-color: var(--yellow) !important;
 	}
 	
 	.top-ranking-table .icon-score-star
@@ -1545,9 +1603,9 @@
 	}
 	.news-list .comment-list .information .tags .tag.tag-color1, .news-list .news-unit .information .tags .tag.tag-color1, body.news .tag-side-block .tag-cloud .tag.tag-color1, .featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-spoiler, body.news .news-side-block .news-list .text-color-spoiler, body.news .news-side-block .featured-list .text-color-spoiler, body.news .featured-side-block .news-list .text-color-spoiler, body.news .featured-side-block .featured-list .text-color-spoiler
 	{
-		background-color: #ff2c55 !important;
-		border-color: #ff2c55 !important;
-		color: var(--main-text) !important;
+		background-color: var(--red) !important;
+		border-color: var(--red) !important;
+		color: #fff !important;
 	}
 	.news-list .comment-list .information .tags .tag.tag-color4, .news-list .news-unit .information .tags .tag.tag-color4, body.news .tag-side-block .tag-cloud .tag.tag-color4, .featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-advertorial
 	{
@@ -1557,26 +1615,26 @@
 	}
 	.news-list .comment-list .information .tags .tag.tag-color6, .news-list .news-unit .information .tags .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag, .news-list .comment-list .information .tags .tag, .news-list .news-unit .information .tags .tag
 	{
-		background-color: #8e8e93 !important;
-		border-color: #8e8e93 !important;
+		background-color: var(--gray) !important;
+		border-color: var(--gray) !important;
 		color: var(--main-text) !important;
 	}
 	.news-list .comment-list .information .tags .tag.tag-color2, .news-list .news-unit .information .tags .tag.tag-color2, body.news .tag-side-block .tag-cloud .tag.tag-color2
 	{
-		background-color: #ffcc01 !important;
-		border-color: #ffcc01 !important;
+		background-color: var(--yellow) !important;
+		border-color: var(--yellow) !important;
 		color: #fff !important;
 	}
 	.news-list .comment-list .information .tags .tag.tag-color3, .news-list .news-unit .information .tags .tag.tag-color3, body.news .tag-side-block .tag-cloud .tag.tag-color3
 	{
-		background-color: #4cd963 !important;
-		border-color: #4cd963 !important;
+		background-color: var(--green) !important;
+		border-color: var(--green) !important;
 		color: var(--main-text) !important;
 	}
 	.news-list .comment-list .information .tags .tag.tag-color5, .news-list .news-unit .information .tags .tag.tag-color5, body.news .tag-side-block .tag-cloud .tag.tag-color5
 	{
-		background-color: #9b26af !important;
-		border-color: #9b26af !important;
+		background-color: var(--purple) !important;
+		border-color: var(--purple) !important;
 		color: var(--main-text) !important;
 	}
 	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color1, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color2, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color3, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color4, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color5, body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color6, .page-common .fn-black
@@ -1906,4 +1964,3 @@
 	{
 		color: var(--main-text) !important;
 	}
-}
