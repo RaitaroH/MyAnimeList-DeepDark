@@ -1,7 +1,7 @@
 @-moz-document domain("myanimelist.net") {
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.2*/
+/*1.2.3*/
 	
 	/*Main color variables*/
 	:root
@@ -1270,6 +1270,11 @@
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	.page-common .header-message-button.has-unread::after
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 	}
 	
 	/*My Panel*/
