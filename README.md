@@ -1,6 +1,6 @@
 # MyAnimeList-DeepDark
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/MAL%20-%20DeepDark.png)
-Grow your anime and manga list without hurting your eyes. (MyAnimeList Dark Theme)
+Grow your anime and manga list without hurting your eyes. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 
 This is a dark theme for MyAnimeList inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
 
