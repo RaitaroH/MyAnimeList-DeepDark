@@ -1,7 +1,7 @@
 @-moz-document domain("myanimelist.net") {
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.4*/
+/*1.2.5*/
 	
 	/*Main color variables*/
 	:root
@@ -431,7 +431,7 @@
 		border-color: var(--hover-background) !important;
 	}
   
-	/*add button*/
+	/*Add button*/
 	.page-common a.button_add.button_add, .page-common a.button_add.button_edit, .page-common a.button_edit.button_add, .page-common a.button_edit.button_edit
 	{
 		border-color: transparent !important;
@@ -1568,6 +1568,16 @@
 	.membership .about-membership .about-extras .about-extras-content .header
 	{
 		color: var(--main-text) !important;
+	}
+	
+	/*Favorites*/
+	.page-common .normal_header
+	{		
+		padding-left: 5px !important;
+	}
+	.page-common .draggable_list li:hover
+	{
+		background-color: var(--hover-background) !important;
 	}
 	
 	
