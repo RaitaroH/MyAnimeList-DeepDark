@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.5*/
+/*1.2.6*/
 	
 	/*Main color variables*/
 	:root
@@ -213,6 +213,19 @@
 	.page-common #searchBar.searchBar #topSearchText:hover, .page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus, .news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:hover, .news.featured .featured-search-side .featured-search-input-text:focus
 	{
 		border: 1px solid var(--main-color) !important;
+	}
+	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar .form-select-outer
+	{
+		height: 22px !important;
+	}
+	.page-common #searchBar.searchBar #topSearchValue:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.page-common #searchBar.searchBar #topSearchText
+	{
+		border: 1px solid var(--hover-background) !important;
 	}
 	/*Search dropdown resuslts*/
 	.page-common .incrementalSearchResultList, .page-common .incrementalSearchResultList .list.separator, .page-common .incrementalSearchResultList .list, .page-common .incrementalSearchResultList .list:last-of-type, .page-common .incrementalSearchResultList .list:last-of-type
@@ -1352,11 +1365,23 @@
 		background-color: transparent !important;
 		border-color: var(--hover-background) !important;
 	}
-	.show_button, .hide_button, .button.expand_quote
+	.show_button, .hide_button, .button.expand_quote, select[name="uloc"]
+	{
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.show_button:hover, .hide_button:hover, .button.expand_quote:hover, select[name="uloc"]:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	
+	.page-common .badresult
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
+		color: var(--main-color) !important;
 	}
 	
 	
