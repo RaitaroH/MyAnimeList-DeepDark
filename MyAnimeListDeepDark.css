@@ -1,4 +1,5 @@
 @-moz-document domain("myanimelist.net") {
+
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
 /*1.2.5*/
@@ -7,12 +8,12 @@
 	:root
 	{
 		/*User colors*/
-		--main-color: #00ADEE;
-		--main-background: #111111;
-		--second-background: #181818;
-		--hover-background: #232323;
-		--main-text: #EFF0F1;
-		--dimer-text: #CCCCCC;
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimer-text: /*[[dimerText]]*/;
 		
 		/*MAL colors for stats*/
 		--red: #a12f31;
