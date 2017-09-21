@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.6*/
+/*1.2.7*/
 	
 	/*Main color variables*/
 	:root
@@ -1486,6 +1486,11 @@
 	.user-profile .user-profile-sns .icon-profile-sns.icon-url::after
 	{
 		filter: invert(100%) !important;
+	}
+	/*RSS*/
+	.user-profile h4.icon-rss::after
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/rss.png") !important;
 	}
 	
 	/*Manga and anime history*/
