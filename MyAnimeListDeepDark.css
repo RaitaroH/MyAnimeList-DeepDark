@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.7*/
+/*1.2.8*/
 	
 	/*Main color variables*/
 	:root
@@ -1446,6 +1446,15 @@
 	.js-truncate-outer, .profile .user-favorites, .profile .user-favorites .favorites-list .list
 	{
 		background-color: var(--main-background) !important;
+	}
+	/*User image links*/
+	.word-break > a[rel="nofollow"]
+	{
+		opacity: 1 !important;
+	}
+	.word-break > a[rel="nofollow"]:hover
+	{
+		filter: brightness(110%);
 	}
 	/*Comments*/
 	.profile .user-comments .comment .text .comment-text
