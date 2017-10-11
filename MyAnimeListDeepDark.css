@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
   
-/*1.2.9*/
+/*1.3.0*/
 	
 	/*Main color variables*/
 	:root
@@ -1968,13 +1968,15 @@
 	}
 	#fancybox-close
 	{
-		opacity: .9;
+		background: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/close_sprite.png) no-repeat !important;
+		height: 24px !important;
+		width: 24px !important;
 	}
 	#fancybox-close:hover
 	{
-		opacity: 1 !important;
+		background-position-y: -24px !important;
+		transition: none !important;
 	}
-	
 	
 	/*Modern list settings*/
 	.ownlist_style_theme .customize-content-left .theme-custom-content, .ownlist_style_theme .customize-content-left .theme-custom-content, .ownlist_style_theme .customize-content-left h3.theme-custom-header, .ace_editor.ace_autocomplete, .ace_editor.ace_autocomplete .ace_line-hover
