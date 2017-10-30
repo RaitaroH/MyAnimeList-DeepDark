@@ -1,11 +1,11 @@
 @-moz-document domain("myanimelist.net") {
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
-	
+
 /*GNU General Public License v3.0*/
-  
+
 /*1.3.2*/
-	
+
 	/*Main color variables*/
 	:root
 	{
@@ -16,24 +16,24 @@
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
 		--dimer-text: /*[[dimerText]]*/;
-		
+
 		/*MAL colors for stats*/
 		--red: #a12f31;
 		--green: #2db039;
 		--gray: #8f8f8f;
 		--purple: #9b26af;
 		--yellow: #e7b715;
-		
+
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
 		--main-background: #111111;
-		--second-background: #181818; 
+		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
 		--dimer-text: #CCCCCC;
 		*/
-		
+
 		/*KDE colors*/
 		/*
 		--main-color: #3DAEE9;
@@ -43,7 +43,7 @@
 		--main-text: #eff0f1;
 		--dimer-text: #bdc3c7;
 		*/
-				
+
 		/*Vertex Dark colors*/
 		/*
 		--main-color: #4080fb;
@@ -53,7 +53,7 @@
 		--main-text: #F3F3F5;
 		--dimer-text: #AEAFB0;
 		*/
-		
+
 		/*Arc Dark colors*/
 		/*
 		--main-color: #5294E2;
@@ -63,7 +63,7 @@
 		--main-text: #C1C8D1;
 		--dimer-text: #B3BAC5;
 		*/
-		
+
 		/*Firefox Dark colors*/
 		/*
 		--main-color: #5675B9;
@@ -73,7 +73,7 @@
 		--main-text: #E3EEF9;
 		--dimer-text: #606376;
 		*/
-		
+
 		/*Firefox57 Dark colors*/
 		/*
 		--main-color: #4080FB;
@@ -83,7 +83,7 @@
 		--main-text: #F9F9FA;
 		--dimer-text: #D0D0D0;
 		*/
-		
+
 		/*Discord colors*/
 		/*
 		--main-color: #7289DA;
@@ -93,7 +93,7 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #ADA8AA;
 		*/
-		
+
 		/*YouTube dark colors*/
 		/*
 		--main-color: #E52117;
@@ -103,7 +103,7 @@
 		--main-text: #E1E1E1;
 		--dimer-text: #7F7F7F;
 		*/
-		
+
 		/*Mint-Y-Dark colors*/
 		/*
 		--main-color: #9AB87C;
@@ -113,7 +113,7 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #D5DADA;
 		*/
-		
+
 		/*9anime colors*/
 		/*
 		--main-color: #723f8c;
@@ -123,7 +123,7 @@
 		--main-text: #B4B4B4;
 		--dimer-text: #747474;
 		*/
-		
+
 		/*Black and white*/
 		/*
 		--main-color: #ffffff;
@@ -133,7 +133,7 @@
 		--main-text: #b4b4b4;
 		--dimer-text: #828282;
 		*/
-		
+
 		/*Yellow (colors from petrocompletions)*/
 		/*
 		--main-color: #FFC700;
@@ -143,7 +143,7 @@
 		--main-text: #EFF0F1;
 		--dimer-text: #9F9999;
 		*/
-		
+
 		/*Yellow 2*/
 		/*
 		--main-color: #ffc700;
@@ -153,27 +153,27 @@
 		--main-text: #fffdf5;
 		--dimer-text: #fff8e1;
 		*/
-		
+
 		/*Ubuntu grey colors*/
 		/*
 		--main-color: #EF7847;
 		--main-background: #312D2A;
-		--second-background: #3D3C38; 
+		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
 		--dimer-text: #E6E5E3;
 		*/
-		
+
 		/*Ubuntu purple colors*/
 		/*
 		--main-color: #EF7847;
 		--main-background: #2C071A;
-		--second-background: #430B28; 
+		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
 		--dimer-text: #E6E5E3;
 		*/
-		
+
 		/*Orange*/
 		/*
 		--main-color: #ff6905;
@@ -183,7 +183,7 @@
 		--main-text: #fff9f5;
 		--dimer-text: #ffede1;
 		*/
-		
+
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
 		/*
 		--main-color: #EF7D6C;
@@ -194,7 +194,7 @@
 		--dimer-text: #986E3F;
 		*/
 	}
-	
+
 
 	/*Changed text highlight*/
 	::selection
@@ -207,22 +207,22 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	
-	
+
+
 	/*Outline for links*/
  	a
  	{
 		outline-color: var(--main-color) !important;
 	}
-   
-	
+
+
 	/**Removing text decorations*/
 	*
 	{
 		text-decoration: none !important;
 	}
-	
-	
+
+
 	/*Body*/
 	body
 	{
@@ -232,8 +232,8 @@
 	body:not(.ownlist)
 	{
 		color: var(--dimer-text);
-	}  
-	
+	}
+
 	/*Logo*/
 	.page-common #headerSmall
 	{
@@ -254,8 +254,8 @@
 	{
 	opacity: 1;
 	}
-  
-  
+
+
   	/*Tabs*/
   	.page-common #menu
   	{
@@ -273,8 +273,8 @@
   	{
 		color: var(--main-color) !important;
   	}
-  
-  
+
+
 	/*Search*/
 	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-text, .news.featured .featured-search-side .featured-search-input-submit
 	{
@@ -304,7 +304,7 @@
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
-		border-color: var(--hover-background) !important;    
+		border-color: var(--hover-background) !important;
 	}
 	.page-common .incrementalSearchResultList .list .off .info.anime .name, .page-common .incrementalSearchResultList .list .off .info.manga .name, .page-common .incrementalSearchResultList .list .off .info.news .name, .page-common .incrementalSearchResultList .list .off .info.featured .name, .page-common .incrementalSearchResultList .list .off .info.forum .name, .page-common .incrementalSearchResultList .list .off .info.character .name, .page-common .incrementalSearchResultList .list .off .info.person .name, .page-common .incrementalSearchResultList .list .off .info.club .name, .page-common .incrementalSearchResultList .list .off .info.user .name, .page-common .incrementalSearchResultList .list .on .info .name
 	{
@@ -322,8 +322,8 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-  
-	
+
+
 	/*Search results*/
 	.anime-search-form-block .anime-search-form-search .inputtext, .anime-search-form-block .anime-search-form-search .inputButton
 	{
@@ -380,16 +380,16 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
+
 	/*Welcome*/
 	.page-common .h1
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
-		border-color: var(--hover-background) !important; 		
+		border-color: var(--hover-background) !important;
 	}
-  
-  
+
+
 	/*Page*/
 	.page-common #content, .page-common #contentWrapper
 	{
@@ -411,7 +411,7 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	
+
 	/*Latest Updated Episode Videos*/
 	.page-common a, .page-common a:visited
 	{
@@ -453,7 +453,7 @@
 	{
 		background-color: transparent !important;
 	}
-  
+
 	/*Anime & Manga News*/
 	.widget.featured .news-list.widget .news-unit .text, .widget.news .news-list.widget .news-unit .text, .news-list .comment-list .text, .news-list .news-unit .text
 	{
@@ -463,8 +463,8 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-  
-  
+
+
 	/*Recent Anime Discussions*/
 	.page-common .borderClass
 	{
@@ -478,8 +478,8 @@
 	{
 		color: var(--main-color) !important;
 	}
-  
-  
+
+
 	/*Featured Articles*/
 	.news-list .comment-list .information .info, .news-list .news-unit .information .info, .news-list .comment-list .information .pv, .news-list .news-unit .information .pv
 	{
@@ -499,14 +499,14 @@
 	{
 		color: #fff !important;
 		border-color: var(--red) !important;
-		background-color: var(--red) !important;		
+		background-color: var(--red) !important;
 	}
 	.news-list .comment-list .information .pv, .news-list .news-unit .information .pv, .news-list .comment-list .information .tags, .news-list .news-unit .information .tags
 	{
 		border-color: var(--hover-background) !important;
 	}
-  
-  
+
+
 	/*Latest Anime Reviews*/
 	body.index .widget.reviews.left .textReadability
 	{
@@ -516,12 +516,12 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-  
+
 	/*Add button*/
 	.page-common a.button_add.button_add, .page-common a.button_add.button_edit, .page-common a.button_edit.button_add, .page-common a.button_edit.button_edit
 	{
 		border-color: transparent !important;
-	background-color: transparent !important;		
+	background-color: transparent !important;
 	}
 	.page-common a.button_add.button_add:hover, .page-common a.button_add.button_edit:hover, .page-common a.button_edit.button_add:hover, .page-common a.button_edit.button_edit:hover
 	{
@@ -597,27 +597,27 @@
 	{
 		background-color: var(--gray) !important;
 	}
-	.profile .statistics-updates .data .text.watching,.profile .statistics-updates .data .text.re-watching,.profile .statistics-updates .data .text.reading,.profile .statistics-updates .data .text.re-reading 
+	.profile .statistics-updates .data .text.watching,.profile .statistics-updates .data .text.re-watching,.profile .statistics-updates .data .text.reading,.profile .statistics-updates .data .text.re-reading
 	{
 		color: var(--green) !important;
 	}
-	.profile .statistics-updates .data .text.completed 
+	.profile .statistics-updates .data .text.completed
 	{
 		color: var(--main-color) !important;
 	}
-	.profile .statistics-updates .data .text.on_hold 
+	.profile .statistics-updates .data .text.on_hold
 	{
 		color: var(--yellow) !important;
 	}
-	.profile .statistics-updates .data .text.dropped 
+	.profile .statistics-updates .data .text.dropped
 	{
 		color: var(--red) !important;
 	}
-	.profile .statistics-updates .data .text.plan_to_watch,.profile .statistics-updates .data .text.plan_to_read 
+	.profile .statistics-updates .data .text.plan_to_watch,.profile .statistics-updates .data .text.plan_to_read
 	{
 		color: var(--gray) !important;
 	}
-	
+
 	.user-status-block .form-user-score
 	{
 		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-star-score.png"),url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png") !important;
@@ -625,7 +625,7 @@
 	.user-status-block .form-user-status
 	{
 		background-color: transparent !important;
-		border-color: var(--hover-background) !important;		
+		border-color: var(--hover-background) !important;
 		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png") !important;
 		color: var(--main-text) !important;
 	}
@@ -660,7 +660,7 @@
 		border-color: var(--yellow) !important;
 	}
 
-  
+
 	/*Add anime*/
 	.ownlist_anime_update #advanced-button .toggle-button, .ownlist_manga_update #advanced-button .toggle-button
 	{
@@ -681,8 +681,8 @@
 		color: var(--main-text) !important;
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Latest Anime Recommendations*/
 	.page-common .spaceit_pad
 	{
@@ -692,8 +692,8 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	
-	
+
+
 	/*Right side divs*/
 	.ranking-digest .ranking-header
 	{
@@ -713,7 +713,7 @@
 		color: var(--dimer-text) !important;
 	}
 
-	
+
 	/*Footer*/
 	.page-common .footer-ranking, .page-common #footer-block
 	{
@@ -733,8 +733,8 @@
 	{
 		color: var(--main-text) !important;
 	}
-	
-	
+
+
 	/*Anime page*/
 	.page-common #horiznav_nav ul li .horiznav_active
 	{
@@ -789,15 +789,15 @@
 	{
 		background-color: var(--main-background) !important;
 		color: var(--main-text) !important;
-		border-color: var(--hover-background) !important;		
+		border-color: var(--hover-background) !important;
 	}
 	/*Ranking*/
 	.di-t.w100.mt12
 	{
 		background-color: var(--main-background) !important;
 	}
-	
-	
+
+
 	.page-common h2
 	{
 		color: var(--main-text) !important;
@@ -820,21 +820,21 @@
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	
+
 	/*Text in polls*/
 	.page-forum .forum_boardrow1
 	{
 		color: var(--dimer-text) !important;
 	}
-	
-	
+
+
 	/*Videos*/
 	.video-block.episode-video .outside-region .outside-region-block
 	{
 		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/arrows.png") !important;
 	}
-	
-	
+
+
 	/*Episodes*/
 	.episode_list .episode-list-header td, .episode_list .episode-list-data:nth-of-type(2n+1) td, .episode_list .episode-list-header td:last-of-type
 	{
@@ -885,8 +885,8 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	
-	
+
+
 	/*Reviews*/
 	.reviews-horiznav-nav-sort-block, .page-common .border_bottom, .js-scrollfix-bottom-rel > div
 	{
@@ -901,15 +901,15 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Recommendations*/
 	.page-common .bgColor1
 	{
 		background-color: var(--second-background) !important;
 	}
-	
-	
+
+
 	/*Stats*/
 	.page-common div.updatesBar
 	{
@@ -924,15 +924,15 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Characters & Voice Actors*/
 	.page-common .bgColor2
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Forum*/
 	.page-common .normal_header, .page-forum .forum-table-header, .page-common .quotetext, .page-common .codetext
 	{
@@ -970,7 +970,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
+
 	/*Top anime page*/
 	.top-ranking-table .table-header td
 	{
@@ -1021,12 +1021,12 @@
 		background-color: var(--yellow) !important;
 		border-color: var(--yellow) !important;
 	}
-	
+
 	.top-ranking-table .icon-score-star
 	{
 		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-rank-stars.png") !important;
 	}
-	
+
 	.icon-top-ranking-page .prev:hover, .icon-top-ranking-page .next:hover, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist:hover, .page-common .pagination .link-blue-box:hover
 	{
 		background-color: var(--hover-background) !important;
@@ -1059,25 +1059,25 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Seasonal anime*/
 	.navi-seasonal
 	{
 		background-color: var(--hover-background) !important;
-		border-color: var(--hover-background) !important;		
+		border-color: var(--hover-background) !important;
 	}
 	.navi-seasonal .horiznav_nav ul li a, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type
 	{
 		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;		
+		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
 	.navi-seasonal .horiznav_nav ul li a:hover, .navi-seasonal .horiznav_nav ul li a.horiznav_active, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type:hover, .navi-seasonal .horiznav_nav ul li a.on:hover, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type.on:hover, .page-common .inputButton:hover
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
-		border-color: var(--hover-background) !important;	
+		border-color: var(--hover-background) !important;
 		transition: none !important;
 	}
 	.navi-seasonal .horiznav_nav ul li a.on, .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type.on
@@ -1117,8 +1117,8 @@
 		color: var(--main-text) !important;
 		border-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Episode*/
 	.watch .video-menu-category .btn-category.on
 	{
@@ -1129,18 +1129,18 @@
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
-		border-color: var(--hover-background) !important;	
+		border-color: var(--hover-background) !important;
 		transition: none !important;
 	}
 	.watch .video-menu-category .btn-category
 	{
 		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;		
+		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
 	.video-menu-category
 	{
-		border-color: var(--hover-background) !important;	
+		border-color: var(--hover-background) !important;
 	}
 	.watch .video-menu-category .btn-hide-blocked-video
 	{
@@ -1154,8 +1154,8 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Industry forums*/
 	.forum .forum-header
 	{
@@ -1178,7 +1178,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 
 	.forum .forum-search-side .forum-search-select
 	{
@@ -1192,13 +1192,13 @@
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
-	}	
+	}
 	.forum .forum-search-side .forum-search-input-text:hover, .forum .forum-search-side .forum-search-input-text:active, .forum .forum-search-side .forum-search-input-text:focus
 	{
 		border-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Login page*/
 	#dialog, #dialog td, .page-common .social-login-block, .page-common .login-inputtext
 	{
@@ -1216,15 +1216,15 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*User name*/
 	.page-common .header-profile.link-bg
 	{
 		background-color: transparent !important;
 	}
-	
-	
+
+
 	/*SVGs*/
 	.page-common .header-list-button .fa, .page-common .header-message-button .fa, .page-common .header-notification-button .fa, a.header-message-button, a.header-list-button, a.header-notification-button
 	{
@@ -1235,8 +1235,8 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Dropdown menu*/
 	.page-common .header-profile .header-profile-dropdown ul li a, .page-common .header-profile .header-profile-dropdown, .page-common .header-list .header-list-dropdown ul li a, .page-common .header-list .header-list-dropdown
 	{
@@ -1250,15 +1250,15 @@
 		color: var(--main-color) !important;
 		transition: none !important;
 	}
-	
-	
+
+
 	/*Icon borders near username*/
 	.page-common #header-menu > .border::before
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Notifications*/
 	.page-common .header-notification-dropdown .arrow_box, .page-common .header-notification-view-all a
 	{
@@ -1294,7 +1294,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
+
 	/*Notification settings*/
 	.notification_settings .notification-setting-content .settings-notification .setting.header td, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label
 	{
@@ -1314,8 +1314,8 @@
 	{
 		background-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Messages*/
 	.message-container, .total_messages
 	{
@@ -1372,7 +1372,7 @@
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
-	
+
 	/*My Panel*/
 	.page-common table.forum-topics tr td:nth-child(2n+1)
 	{
@@ -1448,15 +1448,15 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	
+
 	.page-common .badresult
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	
-	
+
+
 	.icon-about-recommendations
 	{
 		color: var(--main-color) !important;
@@ -1467,8 +1467,8 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	
-	
+
+
 	/*Image borders*/
 	.page-common div.picSurround img, .profile .user-favorites .favorites-list .list .image, .profile .user-comments .comment .image img, .page-common .header-profile-button, .profile .statistics-updates .image, .forum .forum-side-block .forum-side-list img.thumbs
 	{
@@ -1479,8 +1479,8 @@
 	{
 		box-shadow: 0 0 0 1px var(--hover-background),0 0 0 2px var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Profile page*/
 	.user-profile .user-function .icon-user-function, .profile .statistics-updates .data .graph-content, .page-common .content-container .container-right h5, .page-common .pt8
 	{
@@ -1573,14 +1573,14 @@
 	{
 		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/rss.png") !important;
 	}
-	
+
 	/*Manga and anime history*/
 	#content > div:nth-child(2)
 	{
 		color: var(--main-text) !important;
 	}
 
-	
+
 	/*Clubs*/
 	.club-search-form-search .select
 	{
@@ -1615,8 +1615,8 @@
 		background-color: var(--second-background) !important;
 		border-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Account settings*/
 	.page-common .login-form-header-text
 	{
@@ -1664,7 +1664,7 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	
+
 	.membership .about-membership .plan-header, .membership .about-membership .plan, .membership .about-membership .about-new-feature, .membership .about-membership .about-no-ads
 	{
 		background-color: var(--second-background) !important;
@@ -1681,18 +1681,18 @@
 	{
 		color: var(--main-text) !important;
 	}
-	
+
 	/*Favorites*/
 	.page-common .normal_header
-	{		
+	{
 		padding-left: 5px !important;
 	}
 	.page-common .draggable_list li:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Anime & Manga News and Featured Articles*/
 	body.news .menu-category, body.news .content-left, body.news .news-side-block .header, body.news .featured-side-block .header, body.news .news-side-block .news-list .news, body.news .news-side-block .news-list .featured, body.news .news-side-block .featured-list .news, body.news .news-side-block .featured-list .featured, body.news .featured-side-block .news-list .news, body.news .featured-side-block .news-list .featured, body.news .featured-side-block .featured-list .news, body.news .featured-side-block .featured-list .featured, body.news .tag-side-block .header, body.news .columnist-side-block .header, body.news .news-content-block.news-tags h2.news-tags-header, body.news .news-content-block.news-tags .news-tags-table.news td, body.news .news-breadcrumbs, .featured-pickup .featured-pickup-unit .information .pv, .featured-pickup .featured-pickup-unit .information .tags, .featured-content-block-outer
 	{
@@ -1793,8 +1793,8 @@
 	{
 		box-shadow: var(--hover-background) 0 0 2px,var(--hover-background) 0 0 0 1px;
 	}
-	
-	
+
+
 	/*People and Characters */
 	.people-favorites-ranking-table tr.ranking-list:nth-of-type(2n+1) td, .people-favorites-ranking-table .table-header td, .characters-favorites-ranking-table tr.ranking-list:nth-of-type(2n+1) td, .characters-favorites-ranking-table .table-header td
 	{
@@ -1823,8 +1823,8 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Help*/
 	.about-content-box.l, .about-content-box.r
 	{
@@ -1872,7 +1872,7 @@
 		background-color: var(--hover-background) !important;
 	}
 
-	
+
 	/* Thanks to Dark/Night MyAnimeList for the following code */
 	.page-common #headerSmall .banner-header-anime-straming {
 		display: none !important;
@@ -2009,8 +2009,8 @@
 	{
 		display: none !important;
 	}
-	
-	
+
+
 	/*Search all*/
 	#pc_search_1st_rec
 	{
@@ -2032,7 +2032,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-		
+
 	/*Editing anime entires*/
 	#fancybox-outer
 	{
@@ -2049,7 +2049,7 @@
 		background-position-y: -24px !important;
 		transition: none !important;
 	}
-	
+
 	/*Modern list settings*/
 	.ownlist_style_theme .customize-content-left .theme-custom-content, .ownlist_style_theme .customize-content-left .theme-custom-content, .ownlist_style_theme .customize-content-left h3.theme-custom-header, .ace_editor.ace_autocomplete, .ace_editor.ace_autocomplete .ace_line-hover
 	{
@@ -2075,8 +2075,8 @@
 	{
 		background-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Friends*/
 	.majorPad .bgLightBlue, .majorPad .friendHolder
 	{
@@ -2086,8 +2086,8 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Hover details for anime*/
 	.page-common .hoverinfo
 	{
@@ -2097,16 +2097,16 @@
 	{
 		background: none !important;
 	}
-	
-	
+
+
 	/*Shared anime list*/
 	.borderClass[style="background-color: #f6f6f6;"]
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Set to completed warning*/
 	#fancybox-inner
 	{
