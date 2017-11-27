@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.3.4
+@version 1.3.5
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description MyAnimeList dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.4*/
+/*1.3.5*/
 
 	/*Main color variables*/
 	:root
@@ -156,6 +156,9 @@
 		--gray: #8f8f8f;
 		--purple: #9b26af;
 		--yellow: #e7b715;
+
+
+		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
 
 		/*DeepDark colors*/
 		/*
@@ -1401,6 +1404,8 @@
 
 
 	/*Notifications*/
+
+	/*Dropdown*/
 	.page-common .header-notification-dropdown .arrow_box, .page-common .header-notification-view-all a
 	{
 		background-color: var(--main-background) !important;
@@ -1435,6 +1440,42 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*Notification page*/
+	body.notification .notificaiton-category-nav a.active
+	{
+		background-color: var(--second-background) !important;
+	}
+	body.notification .notificaiton-category-nav a.active:hover, body.notification .notificaiton-category-nav a:hover, body.notification .notification-item:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	body.notification .notificaiton-category-nav li, body.notification .notification-item, body.notification .notification-header h3, .page-common #content.container--small-left .left-column
+	{
+		border-color: var(--hover-background) !important;
+	}
+	body.notification .notificaiton-category-nav a .counter
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	body.notification .notificaiton-category-nav a .counter.zero
+	{
+		background-color: var(--second-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	body.notification .notificaiton-category-nav a, body.notification .notification-header.simple h3
+	{
+		color: var(--main-text) !important;
+	}
+	body.notification .notificaiton-category-nav a:hover, body.notification .notification-header .right-menu .item:hover
+	{
+		color: var(--main-color) !important;
+	}
+	body.notification .notification-item-layout .is-read .fa-check-circle
+	{
+		color: var(--main-color) !important;
+	}
+
 
 	/*Notification settings*/
 	.notification_settings .notification-setting-content .settings-notification .setting.header td, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label
