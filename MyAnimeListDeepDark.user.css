@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.3.5
+@version 1.3.6
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description MyAnimeList dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.5*/
+/*1.3.6*/
 
 	/*Main color variables*/
 	:root
@@ -393,9 +393,9 @@
 
 
   	/*Tabs*/
-  	.page-common #menu
+  	.page-common #menu, .page-common #menu.christmas, .page-common #menu.christmas #menu_left #nav li
   	{
-		background-color: var(--main-background) !important;
+		background: var(--main-background) !important;
   	}
   	.page-common #nav li a
   	{
@@ -403,7 +403,7 @@
   	}
   	.page-common #nav li a:hover, .page-common #nav li.hover a, .page-common #nav ul a
   	{
-		background-color: var(--hover-background) !important
+		background: var(--hover-background) !important
   	}
   	.page-common #nav ul a:hover
   	{
