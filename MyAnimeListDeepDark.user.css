@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.0
+@version 1.4.1
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.0*/
+/*1.4.1*/
 
 	/*Main color variables*/
 	:root
@@ -701,6 +701,7 @@
 	}
 
 	/*Progress*/
+	/*
 	.profile .user-statistics .stats-graph .graph.watching, .profile .user-statistics .stats-graph .graph.reading, .profile .user-statistics .stats-status .circle.watching::after, .profile .user-statistics .stats-status .circle.reading::after
 	{
 		background-color: var(--green) !important;
@@ -761,6 +762,7 @@
 	{
 		color: var(--gray) !important;
 	}
+	*/
 
 	.user-status-block .form-user-score
 	{
