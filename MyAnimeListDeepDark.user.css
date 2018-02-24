@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.1
+@version 1.4.2
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -129,6 +129,73 @@
 	"Jisho_夜明け":  "#986E3F"
 }
 
+@advanced dropdown progress "Custom progress colors" {
+  normal "No" <<<EOT
+EOT;
+
+  breeze "Yes" <<<EOT
+.profile .user-statistics .stats-graph .graph.watching, .profile .user-statistics .stats-graph .graph.reading, .profile .user-statistics .stats-status .circle.watching::after, .profile .user-statistics .stats-status .circle.reading::after
+	{
+		background-color: var(--green) !important;
+	}
+	.profile .user-statistics .stats-graph .graph.completed, .profile .user-statistics .stats-status .circle.completed::after, .profile .statistics-updates .data .graph .graph-inner.completed
+	{
+		background-color: var(--main-color) !important;
+	}
+	.profile .user-statistics .stats-graph .graph.on_hold, .profile .user-statistics .stats-status .circle.on_hold::after
+	{
+		background-color: var(--yellow) !important;
+	}
+	.profile .user-statistics .stats-graph .graph.dropped, .profile .user-statistics .stats-status .circle.dropped::after
+	{
+		background-color: var(--red) !important;
+	}
+	.profile .user-statistics .stats-graph, .profile .user-statistics .stats-graph .graph.plan_to_watch, .profile .user-statistics .stats-graph .graph.plan_to_read, .profile .user-statistics .stats-status .circle.plan_to_watch::after, .profile .user-statistics .stats-status .circle.plan_to_read::after
+	{
+		background-color: var(--gray) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.watching,.profile .statistics-updates .data .graph .graph-inner.re-watching,.profile .statistics-updates .data .graph .graph-inner.reading,.profile .statistics-updates .data .graph .graph-inner.re-reading
+	{
+		background-color: var(--green) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.completed
+	{
+		background-color: var(--main-color) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.on_hold
+	{
+		background-color: var(--yellow) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.dropped
+	{
+		background-color: var(--red) !important;
+	}
+	.profile .statistics-updates .data .graph .graph-inner.plan_to_watch,.profile .statistics-updates .data .graph .graph-inner.plan_to_read
+	{
+		background-color: var(--gray) !important;
+	}
+	.profile .statistics-updates .data .text.watching,.profile .statistics-updates .data .text.re-watching,.profile .statistics-updates .data .text.reading,.profile .statistics-updates .data .text.re-reading
+	{
+		color: var(--green) !important;
+	}
+	.profile .statistics-updates .data .text.completed
+	{
+		color: var(--main-color) !important;
+	}
+	.profile .statistics-updates .data .text.on_hold
+	{
+		color: var(--yellow) !important;
+	}
+	.profile .statistics-updates .data .text.dropped
+	{
+		color: var(--red) !important;
+	}
+	.profile .statistics-updates .data .text.plan_to_watch,.profile .statistics-updates .data .text.plan_to_read
+	{
+		color: var(--gray) !important;
+	} EOT;
+}
+
 ==/UserStyle== */
 
 @-moz-document domain("myanimelist.net") {
@@ -137,7 +204,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.1*/
+/*1.4.2*/
 
 	/*Main color variables*/
 	:root
@@ -701,68 +768,7 @@
 	}
 
 	/*Progress*/
-	/*
-	.profile .user-statistics .stats-graph .graph.watching, .profile .user-statistics .stats-graph .graph.reading, .profile .user-statistics .stats-status .circle.watching::after, .profile .user-statistics .stats-status .circle.reading::after
-	{
-		background-color: var(--green) !important;
-	}
-	.profile .user-statistics .stats-graph .graph.completed, .profile .user-statistics .stats-status .circle.completed::after, .profile .statistics-updates .data .graph .graph-inner.completed
-	{
-		background-color: var(--main-color) !important;
-	}
-	.profile .user-statistics .stats-graph .graph.on_hold, .profile .user-statistics .stats-status .circle.on_hold::after
-	{
-		background-color: var(--yellow) !important;
-	}
-	.profile .user-statistics .stats-graph .graph.dropped, .profile .user-statistics .stats-status .circle.dropped::after
-	{
-		background-color: var(--red) !important;
-	}
-	.profile .user-statistics .stats-graph, .profile .user-statistics .stats-graph .graph.plan_to_watch, .profile .user-statistics .stats-graph .graph.plan_to_read, .profile .user-statistics .stats-status .circle.plan_to_watch::after, .profile .user-statistics .stats-status .circle.plan_to_read::after
-	{
-		background-color: var(--gray) !important;
-	}
-	.profile .statistics-updates .data .graph .graph-inner.watching,.profile .statistics-updates .data .graph .graph-inner.re-watching,.profile .statistics-updates .data .graph .graph-inner.reading,.profile .statistics-updates .data .graph .graph-inner.re-reading
-	{
-		background-color: var(--green) !important;
-	}
-	.profile .statistics-updates .data .graph .graph-inner.completed
-	{
-		background-color: var(--main-color) !important;
-	}
-	.profile .statistics-updates .data .graph .graph-inner.on_hold
-	{
-		background-color: var(--yellow) !important;
-	}
-	.profile .statistics-updates .data .graph .graph-inner.dropped
-	{
-		background-color: var(--red) !important;
-	}
-	.profile .statistics-updates .data .graph .graph-inner.plan_to_watch,.profile .statistics-updates .data .graph .graph-inner.plan_to_read
-	{
-		background-color: var(--gray) !important;
-	}
-	.profile .statistics-updates .data .text.watching,.profile .statistics-updates .data .text.re-watching,.profile .statistics-updates .data .text.reading,.profile .statistics-updates .data .text.re-reading
-	{
-		color: var(--green) !important;
-	}
-	.profile .statistics-updates .data .text.completed
-	{
-		color: var(--main-color) !important;
-	}
-	.profile .statistics-updates .data .text.on_hold
-	{
-		color: var(--yellow) !important;
-	}
-	.profile .statistics-updates .data .text.dropped
-	{
-		color: var(--red) !important;
-	}
-	.profile .statistics-updates .data .text.plan_to_watch,.profile .statistics-updates .data .text.plan_to_read
-	{
-		color: var(--gray) !important;
-	}
-	*/
+	/*[[progress]]*/
 
 	.user-status-block .form-user-score
 	{
