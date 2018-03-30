@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.2
+@version 1.4.3
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -196,6 +196,23 @@ EOT;
 	} EOT;
 }
 
+@advanced dropdown logo "Logo" {
+  japanese "Japanese Logo" <<<EOT
+	.page-common #headerSmall
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png") !important;
+	}
+EOT;
+
+  english "English Logo" <<<EOT
+	.page-common #headerSmall
+	{
+		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png") !important;
+	}
+EOT;
+}
+
+
 ==/UserStyle== */
 
 @-moz-document domain("myanimelist.net") {
@@ -204,7 +221,7 @@ EOT;
 
 /*GNU General Public License v3.0*/
 
-/*1.4.2*/
+/*1.4.3*/
 
 	/*Main color variables*/
 	:root
@@ -441,9 +458,8 @@ EOT;
 	.page-common #headerSmall
 	{
 		background-color: var(--second-background) !important;
-		/*background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png") !important;*/
-		background-image: url("https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png") !important;
 	}
+	/*[[logo]]*/
 
 	/*Button*/
 	.page-common #header-menu .header-menu-login .btn-mal-service, .page-common #header-menu .header-menu-login .btn-signup, .page-common #header-menu .header-menu-login .btn-login, .page-common .header-menu-login .btn-signup
