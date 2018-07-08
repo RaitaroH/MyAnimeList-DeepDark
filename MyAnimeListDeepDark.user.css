@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.3
+@version 1.4.4
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -109,7 +109,7 @@
 	"Jisho_夜明け":  "#EFB26C"
 }
 
-@var select dimerText 'Secondary text color' {
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -221,7 +221,7 @@ EOT;
 
 /*GNU General Public License v3.0*/
 
-/*1.4.3*/
+/*1.4.4*/
 
 	/*Main color variables*/
 	:root
@@ -232,7 +232,7 @@ EOT;
 		--second-background: /*[[secondBackground]]*/;
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
 
 		/*MAL colors for stats*/
 		--red: #DA4453;
@@ -251,7 +251,7 @@ EOT;
 		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--dimmer-text: #CCCCCC;
 		*/
 
 		/*KDE colors*/
@@ -261,7 +261,7 @@ EOT;
 		--second-background: #2a2e32;
 		--hover-background: #31363b;
 		--main-text: #eff0f1;
-		--dimer-text: #bdc3c7;
+		--dimmer-text: #bdc3c7;
 		*/
 
 		/*Vertex Dark colors*/
@@ -271,7 +271,7 @@ EOT;
 		--second-background: #353638;
 		--hover-background: #515254;
 		--main-text: #F3F3F5;
-		--dimer-text: #AEAFB0;
+		--dimmer-text: #AEAFB0;
 		*/
 
 		/*Arc Dark colors*/
@@ -281,7 +281,7 @@ EOT;
 		--second-background: #383C4A;
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
-		--dimer-text: #B3BAC5;
+		--dimmer-text: #B3BAC5;
 		*/
 
 		/*Firefox Dark colors*/
@@ -291,7 +291,7 @@ EOT;
 		--second-background: #181D20;
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
-		--dimer-text: #606376;
+		--dimmer-text: #606376;
 		*/
 
 		/*Firefox57 Dark colors*/
@@ -301,7 +301,7 @@ EOT;
 		--second-background: #252526;
 		--hover-background: #323234;
 		--main-text: #F9F9FA;
-		--dimer-text: #D0D0D0;
+		--dimmer-text: #D0D0D0;
 		*/
 
 		/*Discord colors*/
@@ -311,7 +311,7 @@ EOT;
 		--second-background: #2F3136;
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
-		--dimer-text: #ADA8AA;
+		--dimmer-text: #ADA8AA;
 		*/
 
 		/*YouTube dark colors*/
@@ -321,7 +321,7 @@ EOT;
 		--second-background: #232323;
 		--hover-background: #343434;
 		--main-text: #E1E1E1;
-		--dimer-text: #7F7F7F;
+		--dimmer-text: #7F7F7F;
 		*/
 
 		/*Mint-Y-Dark colors*/
@@ -331,7 +331,7 @@ EOT;
 		--second-background: #383838;
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
-		--dimer-text: #D5DADA;
+		--dimmer-text: #D5DADA;
 		*/
 
 		/*9anime colors*/
@@ -341,7 +341,7 @@ EOT;
 		--second-background: #17151C;
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
-		--dimer-text: #747474;
+		--dimmer-text: #747474;
 		*/
 
 		/*Black and white*/
@@ -351,7 +351,7 @@ EOT;
 		--second-background: #0a0a0a;
 		--hover-background: #0f0f0f;
 		--main-text: #b4b4b4;
-		--dimer-text: #828282;
+		--dimmer-text: #828282;
 		*/
 
 		/*Yellow (colors from petrocompletions)*/
@@ -361,7 +361,7 @@ EOT;
 		--second-background: #202222;
 		--hover-background: #353838;
 		--main-text: #EFF0F1;
-		--dimer-text: #9F9999;
+		--dimmer-text: #9F9999;
 		*/
 
 		/*Yellow 2*/
@@ -371,7 +371,7 @@ EOT;
 		--second-background: #0c0a04;
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
-		--dimer-text: #fff8e1;
+		--dimmer-text: #fff8e1;
 		*/
 
 		/*Ubuntu grey colors*/
@@ -381,7 +381,7 @@ EOT;
 		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Ubuntu purple colors*/
@@ -391,7 +391,7 @@ EOT;
 		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Orange*/
@@ -401,7 +401,7 @@ EOT;
 		--second-background: #0e0702;
 		--hover-background: #110903;
 		--main-text: #fff9f5;
-		--dimer-text: #ffede1;
+		--dimmer-text: #ffede1;
 		*/
 
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
@@ -411,7 +411,7 @@ EOT;
 		--second-background: #2A1B1B;
 		--hover-background: #863B2F;
 		--main-text: #EFB26C;
-		--dimer-text: #986E3F;
+		--dimmer-text: #986E3F;
 		*/
 	}
 
@@ -451,7 +451,7 @@ EOT;
 	/*Popup windows text*/
 	body:not(.ownlist)
 	{
-		color: var(--dimer-text);
+		color: var(--dimmer-text);
 	}
 
 	/*Logo*/
@@ -531,7 +531,7 @@ EOT;
 	}
 	.page-common .incrementalSearchResultList .list .off .info.anime .media-type, .page-common .incrementalSearchResultList .list .off .info.manga .media-type, .page-common .incrementalSearchResultList .list .off .info.news .media-type, .page-common .incrementalSearchResultList .list .off .info.featured .media-type, .page-common .incrementalSearchResultList .list .off .info.forum .media-type, .page-common .incrementalSearchResultList .list .on .info .media-type, .page-common .incrementalSearchResultList .list .on .info .extra-info
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.page-common .incrementalSearchResultList .list.list-bottom.focus a
 	{
@@ -628,7 +628,7 @@ EOT;
 	}
 	.auto-recommendations.no-suggestions
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Latest Updated Episode Videos*/
@@ -644,7 +644,7 @@ EOT;
 	}
 	.page-common .fn-grey6
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.index-watch-description .btn-watch-video
 	{
@@ -676,7 +676,7 @@ EOT;
 	/*Anime & Manga News*/
 	.widget.featured .news-list.widget .news-unit .text, .widget.news .news-list.widget .news-unit .text, .news-list .comment-list .text, .news-list .news-unit .text
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.news-list .comment-list, .news-list .news-unit
 	{
@@ -699,7 +699,7 @@ EOT;
 	}
 	.page-common .lightLink, .page-common .lightLink:link, .page-common .lightLink:visited, .page-common .lightLink:active
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.page-common .lightLink:hover
 	{
@@ -710,7 +710,7 @@ EOT;
 	/*Featured Articles*/
 	.news-list .comment-list .information .info, .news-list .news-unit .information .info, .news-list .comment-list .information .pv, .news-list .news-unit .information .pv
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
 	{
@@ -737,7 +737,7 @@ EOT;
 	/*Latest Anime Reviews*/
 	body.index .widget.reviews.left .textReadability
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	body.index .widget.my_list_updates .item, body.index .widget.friend_list_updates .item, body.index .widget.clubs .item, body.index .widget.reviews .item
 	{
@@ -858,7 +858,7 @@ EOT;
 	}
 	.page-common .spaceit
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
@@ -878,7 +878,7 @@ EOT;
 	}
 	.ranking-digest .ranking-unit .info, .ranking-digest .ranking-unit .members, .ranking-digest .ranking-unit .rank
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
@@ -895,7 +895,7 @@ EOT;
 	}
 	.page-common .footer-ranking .ranking-unit ol li .rank, .page-common #footer-block .footer-social-media::after, .page-common #footer-block .footer-recommended::after
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.page-common #footer-block #copyright
 	{
@@ -929,7 +929,7 @@ EOT;
 	}
 	.anime-detail-header-stats .stats-block .score::after, .anime-detail-header-stats .anime-detail-header-affiliate-dialog::before
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Ranking (score)*/
 	.anime-detail-header-stats .stats-block, .anime-detail-header-stats .user-status-block
@@ -964,7 +964,20 @@ EOT;
 	{
 		background-color: var(--main-background) !important;
 	}
-
+	a.left-info-block-manga-store-button, .button[data-v-132ee420]
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.button-left, .button-right, .is-disable
+	{
+		filter: grayscale(100%);
+	}
+	.slider-wrap[data-v-d2f4bf8a]
+	{
+		border-color: var(--hover-background) !important;
+	}
 
 	.page-common h2
 	{
@@ -976,7 +989,7 @@ EOT;
 	}
 	.page-common p, .page-common .textReadability, .page-common span, .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.page-common #profileRows a:hover, .page-common .profileRows a:hover, .detail-characters-list .left-column table:nth-of-type(2n), .detail-characters-list .left-right table:nth-of-type(2n)
 	{
@@ -992,7 +1005,7 @@ EOT;
 	/*Text in polls*/
 	.page-forum .forum_boardrow1
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
@@ -1023,7 +1036,7 @@ EOT;
 	}
 	.page-common .fn-grey2
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.user-status-block .btn-forum-episode, .contents-video-embed .btn-rect
 	{
@@ -1051,7 +1064,7 @@ EOT;
 	}
 	.contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime .link .text
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 
@@ -1221,7 +1234,7 @@ EOT;
 	}
 	.top-ranking-table .title .information
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.top-ranking-table tr:last-of-type
 	{
@@ -1340,7 +1353,7 @@ EOT;
 	}
 	.page-common .fn-grey4
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.page-common .fn-blue1
 	{
@@ -1556,7 +1569,7 @@ EOT;
 	}
 	.message.read .mym_date
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.page-common .textarea
 	{
@@ -1737,7 +1750,7 @@ EOT;
 	/*Comments*/
 	.profile .user-comments .comment .text .comment-text
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.profile .user-comments .comment:nth-of-type(2n+1)
 	{
@@ -1799,7 +1812,7 @@ EOT;
 	}
 	.club-list .table-data td .informantion
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.club-list .table-data td
 	{
@@ -1911,7 +1924,7 @@ EOT;
 	}
 	body.news .menu-category .btn-category
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		border-color: var(--hover-background) !important;
 	}
 	body.news .menu-category .btn-category:hover
@@ -1924,7 +1937,7 @@ EOT;
 	}
 	body.news .news-container .content, body.news .news-container .information, .news-list .comment-list .quotetext
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	body.news .news-container .tags, .news-list .comment-list:nth-of-type(2n)
 	{
@@ -2042,7 +2055,7 @@ EOT;
 	}
 	.pt16, .page-advertising .ad_form_content label.required, .page-advertising .ad_form_content label
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.btn-switch-lang
 	{
@@ -2070,7 +2083,7 @@ EOT;
 	}
 	.membership .membership-faq .question, .membership .membership-faq .answer, .membership .membership-faq .answer .answer-detail, .membership .membership-faq .faq-img
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		border-color: var(--hover-background) !important;
 	}
 	.membership .membership-faq .question:hover, .membership .membership-faq .question.on
@@ -2286,7 +2299,7 @@ EOT;
 	}
 	.ownlist_style_theme .customize-content-left
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.ownlist_style_theme .customize-content-left .header
 	{
@@ -2336,4 +2349,18 @@ EOT;
 	{
 		display: block !important;
 	}
+
+	/*Manga preview*/
+	.header[data-v-65e5eae6], .footer[data-v-65e5eae6]
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.button-buy[data-v-65e5eae6]
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+
 }
