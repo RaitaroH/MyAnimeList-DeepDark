@@ -1,5 +1,5 @@
 # MyAnimeList-DeepDark
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/MAL%20-%20DeepDark.png)
+![alt tag](./Images/MAL%20-%20DeepDark.png)
 Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 
 This is a dark theme for MyAnimeList inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
@@ -14,43 +14,49 @@ Theme as a userstyle [here](https://userstyles.org/styles/146429/myanimelist-dee
 
 ### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
 
+NB: The edit anime entry frame is not themed due to a bug in firefox/forks of firefox. The frame is themed but does not appear as such. You can see in the following images: 
+
+https://i.imgur.com/cn7tICc.png the frame not themed
+
+https://i.imgur.com/hQNRQqi.png the frame themed
+
 # Screenshots
 Main page
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Page.png)
+![alt tag](./Images/Page.png)
 
-I offer the normal logo or 2 katakana variants [マイアニメリスト](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png) (default) and even [私のアニメリスト](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana_V2.png).
+I offer the normal logo or 2 katakana variants [マイアニメリスト](./Images/logo_katakana.png) (default) and even [私のアニメリスト](./Images/logo_katakana_V2.png).
 
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Logo1.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Logo2.png)
+![alt tag](./Images/Logo1.png)
+![alt tag](./Images/Logo2.png)
 
 Top anime page
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Top.png)
+![alt tag](./Images/Top.png)
 
 Reviews
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Reviews.png)
+![alt tag](./Images/Reviews.png)
 
 Seasonal anime
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Seasonal.png)
+![alt tag](./Images/Seasonal.png)
 
 The forum
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Forum.png)
+![alt tag](./Images/Forum.png)
 
 News
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/News.png)
+![alt tag](./Images/News.png)
 
 Character and people pages
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Characters.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/People.png)
+![alt tag](./Images/Characters.png)
+![alt tag](./Images/People.png)
 
 # Colors
 Colors Showcase (the colors are available in the code; different colors can be used)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/ArcDarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/BreezeDarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/DeepDarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/DiscordColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/FirefoxColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Firefox57Colors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/Mint-Y-DarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/VertexDarkColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/YoutubeColors.png)
-![alt tag](https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/9animeColors.png)
+![alt tag](./Images/ArcDarkColors.png)
+![alt tag](./Images/BreezeDarkColors.png)
+![alt tag](./Images/DeepDarkColors.png)
+![alt tag](./Images/DiscordColors.png)
+![alt tag](./Images/FirefoxColors.png)
+![alt tag](./Images/Firefox57Colors.png)
+![alt tag](./Images/Mint-Y-DarkColors.png)
+![alt tag](./Images/VertexDarkColors.png)
+![alt tag](./Images/YoutubeColors.png)
+![alt tag](./Images/9animeColors.png)
