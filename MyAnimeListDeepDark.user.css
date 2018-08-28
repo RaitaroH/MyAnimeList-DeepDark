@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.5
+@version 1.4.6
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -2360,6 +2360,39 @@ EOT;
 		display: block !important;
 	}
 
+		/*Manga store*/
+	.manga-store *, .manga-store .section-title, .detail-preview-container.hasPreview[data-v-8dc9b7cc]::after,
+	.manga-store-preview
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.manga-store .comics-list-tab-area::before
+	{
+		background: var(--hover-background) !important;
+	}
+	a.manga-store-genre-list-toggle, a[data-v-2617fe40], .manga-store .btn-link-detail,
+	.manga-store .detail-card .detail-infoList-item .tag,
+	.manga-store .comics-list-tab-item.is-active,
+	.manga-store-preview-info a.manga-store-preview-button
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.manga-store .comics-list-tab-item.is-active
+	{
+		color: var(--main-color) !important;
+	}
+	/*checkout*/
+	a[data-v-135eaa16]
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	a[data-v-135eaa16]:hover
+	{
+		color: var(--main-text) !important;
+	}
 	/*Manga preview*/
 	.header[data-v-65e5eae6], .footer[data-v-65e5eae6]
 	{
@@ -2372,5 +2405,27 @@ EOT;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
+	/*titles*/
+	.title[data-v-8a87ff5a]
+	{
+		color: var(--main-color) !important;
+	}
 
+	/*Info warning*/
+	.initialize-tutorial
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+
+	.page-common.announcement .announce-sitemap, .page-common.announcement .announce-header
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+	/*Sitemap*/
+	.sitemap__category, .sitemap__category__title
+	{
+		border-color: var(--hover-background) !important;
+	}
 }
