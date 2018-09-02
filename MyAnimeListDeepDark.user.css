@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.6
+@version 1.4.7
 @updateURL https://rawgit.com/RaitaroH/MyAnimeList-DeepDark/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1099,6 +1099,14 @@ EOT;
 	{
 		background-color: var(--second-background) !important;
 	}
+	.btn-detail-recommendations-view-all
+	{
+		background-color: var(--second-background) !important;
+	}
+	.btn-detail-recommendations-view-all:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
 
 
 	/*Stats*/
@@ -1114,6 +1122,16 @@ EOT;
 	.table-recently-updated tr:nth-of-type(2n+1) td
 	{
 		background-color: var(--hover-background) !important;
+	}
+	.statistics-info
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.statistics-info::after, .statistics-info::before
+	{
+		border-top-color: var(--hover-background) !important;
 	}
 
 
@@ -1984,7 +2002,7 @@ EOT;
 	{
 		background-color: var(--gray) !important;
 		border-color: var(--gray) !important;
-		color: var(--main-text) !important;
+		color: var(--main-background) !important;
 	}
 	.news-list .comment-list .information .tags .tag.tag-color2, .news-list .news-unit .information .tags .tag.tag-color2, body.news .tag-side-block .tag-cloud .tag.tag-color2
 	{
