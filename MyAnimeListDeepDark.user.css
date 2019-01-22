@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.8
+@version 1.4.9
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -224,10 +224,19 @@ EOT;
 EOT;
 }
 
+@advanced dropdown reach "Theme background on user anime and manga lists" {
+  yes "Yes" <<<EOT
+	domain("myanimelist.net")
+EOT;
+
+  no "No" <<<EOT
+	regexp("https://myanimelist.net/(?!(animelist|mangalist|ownlist/style/theme)).*")
+EOT;
+}
 
 ==/UserStyle== */
 
-@-moz-document domain("myanimelist.net") {
+@-moz-document /*[[reach]]*/ {
 
 /*Theme made by RaitaroH @https://gitlab.com/RaitaroH/MyAnimeList-DeepDark*/
 
@@ -515,7 +524,7 @@ EOT;
 	{
 		border: 1px solid var(--main-color) !important;
 	}
-	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar .form-select-outer
+	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar .form-select-outer, .page-common #searchBar.searchBar #topSearchButon
 	{
 		height: 22px !important;
 	}
@@ -528,7 +537,7 @@ EOT;
 	{
 		border: 1px solid var(--hover-background) !important;
 	}
-	/*Search dropdown resuslts*/
+	/*Search dropdown results*/
 	.page-common .incrementalSearchResultList, .page-common .incrementalSearchResultList .list.separator, .page-common .incrementalSearchResultList .list, .page-common .incrementalSearchResultList .list:last-of-type, .page-common .incrementalSearchResultList .list:last-of-type
 	{
 		background-color: var(--second-background) !important;
@@ -2042,7 +2051,7 @@ EOT;
 	/*Image border*/
 	body.news .columnist-side-block .columnist-list .columnists-unit-side .image
 	{
-		-webkit-box-shadow: var(--hover-background) 0 0 2px,var(--hover-background) 0 0 0 1px
+		-webkit-box-shadow: var(--hover-background) 0 0 2px,var(--hover-background) 0 0 0 1px;
 	}
 	body.news .news-side-block .news-list img.thumbs, body.news .news-side-block .featured-list img.thumbs, body.news .featured-side-block .news-list img.thumbs, body.news .featured-side-block .featured-list img.thumbs, .news-list .comment-list .image-link, .news-list .news-unit .image-link, body.news .news-content-block.news-tags .news-tags-table.news tr:nth-of-type(2n+1)
 	{
