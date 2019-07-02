@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.9
+@version 1.5.0
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -2149,6 +2149,12 @@ EOT;
 	*[id*=div-gpt-ad] {
 		display: none !important;
 	}
+	#myanimelist:before {
+	    display: none !important;
+	}
+	div[style="width: 100%; margin-bottom:18px; background-color: #def3ff;"] {
+	    display: none !important;
+	}
 	/* > Panel */
 	.widget.right_top_ad.right, .widget.left_bottom_ad.left {
 		display: none !important;
@@ -2178,6 +2184,27 @@ EOT;
 	}
 	.kskdDiv {
 		display: none !important;
+	}
+	/* > Quick Add Anime/Manga */
+	.quickadd-content .quickAdd-anime-result-unit:nth-of-type(odd), .quickadd-content .quickAdd-manga-result-unit:nth-of-type(odd) {
+		background-color: var(--second-background) !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit:nth-of-type(even), .quickadd-content .quickAdd-manga-result-unit:nth-of-type(even) {
+		background-color: var(--hover-background) !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit, .quickadd-content .quickAdd-manga-result-unit {
+		border-bottom: 0px;
+	}
+	.quickadd-content .quickAdd-anime-result-unit .btn-status-add, .quickadd-content .quickAdd-manga-result-unit .btn-status-add {
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit .btn-status-add:hover, .quickadd-content .quickAdd-manga-result-unit .btn-status-add:hover {
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}	
+	.quickadd-content .quickadd-form-search .inputtext:focus, input:focus{
+		outline: none !important;
 	}
 	/* > Add/Edit detailed info */
 	.vrl-unit-container {
