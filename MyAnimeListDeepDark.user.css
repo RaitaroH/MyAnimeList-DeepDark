@@ -467,6 +467,9 @@ EOT;
 	{
 		background-color: var(--second-background) !important;
 	}
+	body:not(.ownlist):before {
+		display: none !important;
+	}
 	/*Popup windows text*/
 	body:not(.ownlist)
 	{
@@ -2152,8 +2155,9 @@ EOT;
 	#myanimelist:before {
 	    display: none !important;
 	}
-	div[style="width: 100%; margin-bottom:18px; background-color: #def3ff;"] {
-	    display: none !important;
+	/* Removal of ad padding on index only */
+	.index #myanimelist .wrapper > div:nth-child(2) {
+		display: none !important;
 	}
 	/* > Panel */
 	.widget.right_top_ad.right, .widget.left_bottom_ad.left {
@@ -2193,7 +2197,7 @@ EOT;
 		background-color: var(--hover-background) !important;
 	}
 	.quickadd-content .quickAdd-anime-result-unit, .quickadd-content .quickAdd-manga-result-unit {
-		border-bottom: 0px;
+		border-bottom: 0px !important;
 	}
 	.quickadd-content .quickAdd-anime-result-unit .btn-status-add, .quickadd-content .quickAdd-manga-result-unit .btn-status-add {
 		background-color: var(--main-background) !important;
