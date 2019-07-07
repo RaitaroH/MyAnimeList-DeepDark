@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.5.1
+@version 1.5.2
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -226,7 +226,7 @@ EOT;
 
 ==/UserStyle== */
 
-@-moz-document regexp("https://myanimelist.net/(?!(animelist|mangalist|ownlist/style/theme)).*") {
+@-moz-document regexp("https:\/\/myanimelist.net\/(?!(animelist|mangalist|ownlist\/style\/theme)).*") {
 
 /*Theme made by RaitaroH @https://gitlab.com/RaitaroH/MyAnimeList-DeepDark*/
 
@@ -2488,5 +2488,23 @@ EOT;
 	.sitemap__category, .sitemap__category__title
 	{
 		border-color: var(--hover-background) !important;
+	}
+
+	/*TOS, policy*/
+	.modal-container[data-v-58d62470]
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;		
+	}
+	.text b[data-v-58d62470]
+	{
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	button[data-v-58d62470]
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 }
