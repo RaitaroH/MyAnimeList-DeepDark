@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.5.0
+@version 1.5.1
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -224,19 +224,9 @@ EOT;
 EOT;
 }
 
-@advanced dropdown reach "Theme background on user anime and manga lists" {
-  yes "Yes" <<<EOT
-	domain("myanimelist.net")
-EOT;
-
-  no "No" <<<EOT
-	regexp("https://myanimelist.net/(?!(animelist|mangalist|ownlist/style/theme)).*")
-EOT;
-}
-
 ==/UserStyle== */
 
-@-moz-document /*[[reach]]*/ {
+@-moz-document regexp("https://myanimelist.net/(?!(animelist|mangalist|ownlist/style/theme)).*") {
 
 /*Theme made by RaitaroH @https://gitlab.com/RaitaroH/MyAnimeList-DeepDark*/
 
