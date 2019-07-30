@@ -1150,7 +1150,7 @@ EOT;
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
 	}
-	a.icon-team-title.manga_db_moderator,.icon-team-title.social_media_moderator, .icon-team-title.social_media_moderator:hover, a.icon-team-title.forum_moderator, a.icon-team-title.review_recommendation_moderator, .icon-team-title.database_administrator, .icon-team-title.news_moderator
+	a.icon-team-title.manga_db_moderator,.icon-team-title.social_media_moderator, .icon-team-title.social_media_moderator:hover, a.icon-team-title.forum_moderator, a.icon-team-title.review_recommendation_moderator, .icon-team-title.database_administrator, .icon-team-title.site_administrator, .icon-team-title.news_moderator
 	{
 		color: var(--main-text) !important;
 		transition: none !important;
