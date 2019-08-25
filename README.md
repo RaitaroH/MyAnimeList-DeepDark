@@ -1,8 +1,10 @@
 # MyAnimeList-DeepDark
-![alt tag](./Images/MAL%20-%20DeepDark.png)
+
+![alt tag](./Images/banner.png)
+
 Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 
-This is a dark theme for MyAnimeList inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
+This is a dark theme for MyAnimeList inspired by FT DeepDark.
 
 Credit for some images and code (ads removal) to [Dark/Night MyAnimeList](https://userstyles.org/styles/120493/dark-night-myanimelist).
 
@@ -15,53 +17,30 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 * This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)).
 * Also see the documentation for information about customizing the theme. :tada:
 
-Theme as a userstyle [here](https://userstyles.org/styles/146429/myanimelist-deepdark).
-
 ### **You can also install all my themes at once from [here](https://gitlab.com/RaitaroH/Import-All-Deepdark).**
 
-NB: The edit anime entry frame is not themed due to a bug in firefox/forks of firefox. The frame is themed but does not appear as such. You can see in the following images: 
+# Install and setup
+
+### Using a browser extension:
+* Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
+
+### Install this theme:
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-3daee9.svg?longCache=true&style=for-the-badge)](https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css)
+  >Installs directly from this repository.
+  >This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+
+NB: The edit anime entry frame is not themed due to a bug in firefox/forks of firefox. The frame is themed but does not appear as such. You can see in the following images:
 
 https://i.imgur.com/cn7tICc.png the frame not themed
 
 https://i.imgur.com/hQNRQqi.png the frame themed
 
 # Screenshots
-Main page
-![alt tag](./Images/Page.png)
 
-I offer the normal logo or 2 katakana variants [マイアニメリスト](./Images/logo_katakana.png) (default) and even [私のアニメリスト](./Images/logo_katakana_V2.png).
+![alt tag](./Images/Pages.gif)
 
-![alt tag](./Images/Logo1.png)
-![alt tag](./Images/Logo2.png)
+![alt tag](./Images/Colors.gif)
 
-Top anime page
-![alt tag](./Images/Top.png)
+Other colors examples from my [Stylus-DeepDark](https://gitlab.com/RaitaroH/Stylus-DeepDark).
 
-Reviews
-![alt tag](./Images/Reviews.png)
-
-Seasonal anime
-![alt tag](./Images/Seasonal.png)
-
-The forum
-![alt tag](./Images/Forum.png)
-
-News
-![alt tag](./Images/News.png)
-
-Character and people pages
-![alt tag](./Images/Characters.png)
-![alt tag](./Images/People.png)
-
-# Colors
-Colors Showcase (the colors are available in the code; different colors can be used)
-![alt tag](./Images/ArcDarkColors.png)
-![alt tag](./Images/BreezeDarkColors.png)
-![alt tag](./Images/DeepDarkColors.png)
-![alt tag](./Images/DiscordColors.png)
-![alt tag](./Images/FirefoxColors.png)
-![alt tag](./Images/Firefox57Colors.png)
-![alt tag](./Images/Mint-Y-DarkColors.png)
-![alt tag](./Images/VertexDarkColors.png)
-![alt tag](./Images/YoutubeColors.png)
-![alt tag](./Images/9animeColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/Images/manager.gif)
