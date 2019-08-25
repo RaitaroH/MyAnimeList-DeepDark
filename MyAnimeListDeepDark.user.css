@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.4.9
+@version 1.5.3
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -224,19 +224,9 @@ EOT;
 EOT;
 }
 
-@advanced dropdown reach "Theme background on user anime and manga lists" {
-  yes "Yes" <<<EOT
-	domain("myanimelist.net")
-EOT;
-
-  no "No" <<<EOT
-	regexp("https://myanimelist.net/(?!(animelist|mangalist|ownlist/style/theme)).*")
-EOT;
-}
-
 ==/UserStyle== */
 
-@-moz-document /*[[reach]]*/ {
+@-moz-document regexp("https:\/\/myanimelist.net\/(?!(animelist|mangalist|ownlist\/style\/theme)).*") {
 
 /*Theme made by RaitaroH @https://gitlab.com/RaitaroH/MyAnimeList-DeepDark*/
 
@@ -466,6 +456,9 @@ EOT;
 	body
 	{
 		background-color: var(--second-background) !important;
+	}
+	body:not(.ownlist):before {
+		display: none !important;
 	}
 	/*Popup windows text*/
 	body:not(.ownlist)
@@ -2149,6 +2142,13 @@ EOT;
 	*[id*=div-gpt-ad] {
 		display: none !important;
 	}
+	#myanimelist:before {
+	    display: none !important;
+	}
+	/* Removal of ad padding on index only */
+	.index #myanimelist .wrapper > div:nth-child(2):not(#menu) {
+		display: none !important;
+	}
 	/* > Panel */
 	.widget.right_top_ad.right, .widget.left_bottom_ad.left {
 		display: none !important;
@@ -2178,6 +2178,27 @@ EOT;
 	}
 	.kskdDiv {
 		display: none !important;
+	}
+	/* > Quick Add Anime/Manga */
+	.quickadd-content .quickAdd-anime-result-unit:nth-of-type(odd), .quickadd-content .quickAdd-manga-result-unit:nth-of-type(odd) {
+		background-color: var(--second-background) !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit:nth-of-type(even), .quickadd-content .quickAdd-manga-result-unit:nth-of-type(even) {
+		background-color: var(--hover-background) !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit, .quickadd-content .quickAdd-manga-result-unit {
+		border-bottom: 0px !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit .btn-status-add, .quickadd-content .quickAdd-manga-result-unit .btn-status-add {
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.quickadd-content .quickAdd-anime-result-unit .btn-status-add:hover, .quickadd-content .quickAdd-manga-result-unit .btn-status-add:hover {
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}	
+	.quickadd-content .quickadd-form-search .inputtext:focus, input:focus{
+		outline: none !important;
 	}
 	/* > Add/Edit detailed info */
 	.vrl-unit-container {
@@ -2467,5 +2488,23 @@ EOT;
 	.sitemap__category, .sitemap__category__title
 	{
 		border-color: var(--hover-background) !important;
+	}
+
+	/*TOS, policy*/
+	.modal-container[data-v-58d62470]
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;		
+	}
+	.text b[data-v-58d62470]
+	{
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	button[data-v-58d62470]
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 }
