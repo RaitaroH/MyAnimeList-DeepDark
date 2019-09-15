@@ -600,8 +600,7 @@
 	}
 	
 	/*Ads*/
-    	.mal-ad-unit
-	{
+    	.mal-ad-unit {
 		display: none !important;
 	}
 
