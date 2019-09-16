@@ -599,10 +599,6 @@
 		}
 	}
 	
-	/*Ads*/
-    	.mal-ad-unit {
-		display: none !important;
-	}
 
 	/*Button*/
 	.page-common #header-menu .header-menu-login .btn-mal-service, .page-common #header-menu .header-menu-login .btn-signup, .page-common #header-menu .header-menu-login .btn-login, .page-common .header-menu-login .btn-signup
@@ -2384,6 +2380,9 @@
 		display: none !important;
 	}
 	.kskdDiv {
+		display: none !important;
+	}
+	.mal-ad-unit {
 		display: none !important;
 	}
 	/* > Quick Add Anime/Manga */
