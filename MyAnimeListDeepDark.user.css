@@ -773,7 +773,7 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
-	.grecaptcha-badge{
+	.grecaptcha-badge {
         display: none !important;
     }
 
