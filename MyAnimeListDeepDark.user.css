@@ -774,8 +774,8 @@
 		color: var(--dimmer-text) !important;
 	}
 	.grecaptcha-badge {
-        display: none !important;
-    }
+		display: none !important;
+	}
 
 	/*Manga on the first page*/
 	#widget-manga-store .widget-slide .btn-anime .link,
@@ -2353,7 +2353,7 @@
 		display: none !important;
 	}
 	#myanimelist:before {
-	    display: none !important;
+		display: none !important;
 	}
 	/* Removal of ad padding on index only */
 	.index #myanimelist .wrapper > div:nth-child(2):not(#menu) {
@@ -2704,24 +2704,25 @@
 	}
 
 	/*TOS, policy*/
-	.modal-container[data-v-2fe8425c]
-	{
+	#gdpr-modal-bottom {
+		background-color: var(--main-background) !important;
+	}
+	
+	#gdpr-modal-bottom .modal-container {
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.modal-content[data-v-2fe8425c] {
-		background-color: var(--main-background) !important;
-	}
-	.modal-wrapper[data-v-2fe8425c] {
+	
+	#gdpr-modal-bottom .modal-wrapper {
 		border-color: var(--second-background) !important;
 	}
-	.text b[data-v-2fe8425c]
-	{
+	
+	#gdpr-modal-bottom .text b {
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	button[data-v-2fe8425c]
-	{
+	
+	#gdpr-modal-bottom button {
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
