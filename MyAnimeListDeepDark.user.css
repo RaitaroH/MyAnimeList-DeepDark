@@ -2679,16 +2679,20 @@
 		color: var(--main-text) !important;
 	}
 	/*Manga preview*/
-	.header[data-v-65e5eae6], .footer[data-v-65e5eae6]
+	.header[data-v-44f6eb97], .footer[data-v-44f6eb97]
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.button-buy[data-v-65e5eae6]
+	.button-buy
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
+	}
+	.cursor.cursor-arrow[data-v-7dc9643a]
+	{
+		filter: brightness(200%);
 	}
 	/*preview button*/
 	.button[data-v-6ae44976], .button[data-v-6ae44976]:hover,
