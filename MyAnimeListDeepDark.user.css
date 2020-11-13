@@ -1147,6 +1147,11 @@
 	{
 		color: var(--dimmer-text) !important;
 	}
+	/*add to favorites... manga*/
+	#favOutput
+	{
+		color: var(--main-color) !important;
+	}
 	/*Ranking (score)*/
 	.anime-detail-header-stats .stats-block, .anime-detail-header-stats .user-status-block
 	{
@@ -2634,9 +2639,10 @@
 		display: block !important;
 	}
 
-		/*Manga store*/
+	/*Manga store*/
 	.manga-store *, .manga-store .section-title, .detail-preview-container.hasPreview[data-v-8dc9b7cc]::after,
-	.manga-store-preview
+	.manga-store-preview,
+	.slider-wrap[data-v-083e412e]
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -2656,8 +2662,13 @@
 	{
 		color: var(--main-color) !important;
 	}
+	.detail-preview-container.hasPreview[data-v-9259a4a8]::after
+	{
+		border-color: var(--hover-background) !important;
+	}
 	/*checkout*/
-	a[data-v-135eaa16]
+	a[data-v-135eaa16],
+	a[data-v-93cd87b2], a[data-v-93cd87b2]:hover
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
@@ -2677,6 +2688,14 @@
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	/*preview button*/
+	.button[data-v-6ae44976], .button[data-v-6ae44976]:hover,
+	a[data-v-aa221466]
+	{
+		background: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
 	/*titles*/
@@ -2725,5 +2744,24 @@
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
+	}
+	
+	/*Cookies policy*/
+	.modal-content[data-v-b80955b6]
+	{
+		background: var(--main-background) !important;
+	}
+	.modal-wrapper[data-v-b80955b6]
+	{
+		border: 0px;
+	}
+	.modal-container[data-v-b80955b6]
+	{
+		background: var(--second-background) !important;
+		border-color: var(--main-color) !important;
+	}
+	.button-wrapper button[data-v-b80955b6]
+	{
+		background-color: var(--main-color) !important;
 	}
 }
