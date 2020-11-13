@@ -1169,9 +1169,10 @@
 	{
 		opacity: .9;
 	}
-	.user-status-block .btn-user-status-add-list:hover
+	.user-status-block .btn-user-status-add-list:hover,
+	.anime-detail-header-stats .btn-affiliate.manga-store:hover
 	{
-		opacity: 1;
+		opacity: 1 !important;
 		color: var(--main-text) !important;
 	}
 	.user-status-block .form-user-score, .user-status-block .form-user-episode, .user-status-block .form-user-episode input[type="text"], .anime-detail-header-stats .anime-detail-header-affiliate-dialog
@@ -1179,6 +1180,14 @@
 		background-color: var(--main-background) !important;
 		color: var(--main-text) !important;
 		border-color: var(--hover-background) !important;
+	}
+	/*buy on store*/
+	.anime-detail-header-stats .btn-affiliate.manga-store
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: .9 !important;
 	}
 	/*Ranking*/
 	.di-t.w100.mt12
