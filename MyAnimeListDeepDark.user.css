@@ -774,8 +774,8 @@
 		color: var(--dimmer-text) !important;
 	}
 	.grecaptcha-badge {
-        display: none !important;
-    }
+		display: none !important;
+	}
 
 	/*Manga on the first page*/
 	#widget-manga-store .widget-slide .btn-anime .link,
@@ -2367,7 +2367,7 @@
 		display: none !important;
 	}
 	#myanimelist:before {
-	    display: none !important;
+		display: none !important;
 	}
 	/* Removal of ad padding on index only */
 	.index #myanimelist .wrapper > div:nth-child(2):not(#menu) {
@@ -2675,6 +2675,19 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.swiper-button-next, .swiper-button-prev
+	{
+		background-color: rgba(255,255,255,.1) !important;
+		filter: grayscale(100%) !important;
+	}
+	.content-book-button-link
+	{
+		background: var(--hover-background) !important;
+	}
+	.swiper-pagination-bullet-active
+	{
+		background: var(--main-color) !important;
+	}
 	/*checkout*/
 	a[data-v-135eaa16],
 	a[data-v-93cd87b2], a[data-v-93cd87b2]:hover
@@ -2688,18 +2701,18 @@
 		color: var(--main-text) !important;
 	}
 	/*Manga preview*/
-	.header[data-v-44f6eb97], .footer[data-v-44f6eb97]
+	.viewer-root .header, .viewer-root .footer
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.button-buy
+	.viewer-root .button-buy
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	.cursor.cursor-arrow[data-v-7dc9643a]
+	.viewer-root .cursor.cursor-arrow[data-v-7dc9643a]
 	{
 		filter: brightness(200%);
 	}
@@ -2735,45 +2748,21 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	/*TOS, policy*/
-	.modal-container[data-v-2fe8425c]
-	{
-		background-color: var(--main-background) !important;
-		border-color: var(--hover-background) !important;
-	}
-	.modal-content[data-v-2fe8425c] {
-		background-color: var(--main-background) !important;
-	}
-	.modal-wrapper[data-v-2fe8425c] {
-		border-color: var(--second-background) !important;
-	}
-	.text b[data-v-2fe8425c]
-	{
-		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	button[data-v-2fe8425c]
-	{
-		background: var(--main-color) !important;
-		border-color: var(--main-color) !important;
-		color: var(--main-text) !important;
-	}
-	
 	/*Cookies policy*/
-	.modal-content[data-v-b80955b6]
+	#gdpr-modal-bottom
 	{
 		background: var(--main-background) !important;
 	}
-	.modal-wrapper[data-v-b80955b6]
+	#gdpr-modal-bottom .modal-wrapper
 	{
 		border: 0px;
 	}
-	.modal-container[data-v-b80955b6]
+	#gdpr-modal-bottom .modal-container
 	{
 		background: var(--second-background) !important;
 		border-color: var(--main-color) !important;
 	}
-	.button-wrapper button[data-v-b80955b6]
+	#gdpr-modal-bottom .button-wrapper button
 	{
 		background-color: var(--main-color) !important;
 	}
