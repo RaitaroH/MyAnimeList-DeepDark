@@ -2328,7 +2328,7 @@
 	{
 		color: var(--hover-background) !important;
 	}
-	.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell.on, .page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell:hover
+	.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell.on, .page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell:hover, .page-advertising .btn-sd-spec-pdf, .page-advertising .btn-sd-spec-pdf:hover, .page-advertising .btn-blue-rect.off
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
@@ -2343,6 +2343,10 @@
 	.page-advertising .ad-spec-sample-list
 	{
 		border-color: var(--hover-background) !important;
+	}
+	.page-advertising #ad_menu.fixed:after 
+	{
+		display: none !important;
 	}
 	.page-common .mauto, .btn-switch-lang, .membership .about-membership .about-extras
 	{
