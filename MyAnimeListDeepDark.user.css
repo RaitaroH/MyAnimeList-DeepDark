@@ -2036,7 +2036,7 @@
 		color: var(--main-text) !important;
 		background-color: var(--main-color) !important;
 	}
-	.page-common .btn-form-submit:hover
+	.page-common .btn-form-submit:hover, body.page_account_setting a.btn:hover
 	{
 		color: var(--main-color) !important;
 		background-color: var(--hover-background) !important;
@@ -2126,7 +2126,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.btn-sns-setting, .btn-sns-setting span, .sns-setting .setting-input-button, .ownlist_style .style-setting .setting-switch input[type="radio"]:checked + label
+	.btn-sns-setting, .btn-sns-setting span, .sns-setting .setting-input-button, .ownlist_style .style-setting .setting-switch input[type="radio"]:checked + label, body.page_account_setting a.btn
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
