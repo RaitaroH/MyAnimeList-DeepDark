@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.7
+@version 1.6.8
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1368,7 +1368,7 @@
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
 	}
-	a.icon-team-title.site_administrator, a.icon-team-title.database_administrator, a.icon-team-title.anime_db_moderator, a.icon-team-title.manga_db_moderator, a.icon-team-title.forum_moderator, a.icon-team-title.news_moderator, a.icon-team-title.review_recommendation_moderator, a.icon-team-title.irc_moderator, a.icon-team-title.social_media_moderator, a.icon-team-title.retired_moderator
+	a.icon-team-title.founder, a.icon-team-title.site_administrator, a.icon-team-title.lead_administrator, a.icon-team-title.community_administrator, a.icon-team-title.database_administrator, a.icon-team-title.anime_db_moderator, a.icon-team-title.manga_db_moderator, a.icon-team-title.forum_moderator, a.icon-team-title.news_moderator, a.icon-team-title.review_recommendation_moderator, a.icon-team-title.irc_moderator, a.icon-team-title.social_media_moderator, a.icon-team-title.retired_moderator
 	{
 		color: var(--main-text) !important;
 		transition: none !important;
@@ -2036,7 +2036,7 @@
 		color: var(--main-text) !important;
 		background-color: var(--main-color) !important;
 	}
-	.page-common .btn-form-submit:hover
+	.page-common .btn-form-submit:hover, body.page_account_setting a.btn:hover
 	{
 		color: var(--main-color) !important;
 		background-color: var(--hover-background) !important;
@@ -2126,7 +2126,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.btn-sns-setting, .btn-sns-setting span, .sns-setting .setting-input-button, .ownlist_style .style-setting .setting-switch input[type="radio"]:checked + label
+	.btn-sns-setting, .btn-sns-setting span, .sns-setting .setting-input-button, .ownlist_style .style-setting .setting-switch input[type="radio"]:checked + label, body.page_account_setting a.btn
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
@@ -2328,7 +2328,7 @@
 	{
 		color: var(--hover-background) !important;
 	}
-	.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell.on, .page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell:hover
+	.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell.on, .page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell:hover, .page-advertising .btn-sd-spec-pdf, .page-advertising .btn-sd-spec-pdf:hover, .page-advertising .btn-blue-rect.off
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
@@ -2344,6 +2344,10 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.page-advertising #ad_menu.fixed:after 
+	{
+		display: none !important;
+	}
 	.page-common .mauto, .btn-switch-lang, .membership .about-membership .about-extras
 	{
 		background-color: var(--second-background) !important;
@@ -2356,6 +2360,10 @@
 	.membership .membership-faq .question:hover, .membership .membership-faq .question.on
 	{
 		background-color: var(--hover-background) !important;
+	}
+	.page-rwd.page-support #myanimelist #content li, .page-rwd.page-support #myanimelist #content h3, .page-rwd.page-support #myanimelist #content h4
+	{
+		color: var(--main-text) !important;
 	}
 
 
