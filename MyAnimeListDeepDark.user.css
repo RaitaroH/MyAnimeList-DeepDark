@@ -1368,7 +1368,7 @@
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
 	}
-	a.icon-team-title.site_administrator, a.icon-team-title.database_administrator, a.icon-team-title.anime_db_moderator, a.icon-team-title.manga_db_moderator, a.icon-team-title.forum_moderator, a.icon-team-title.news_moderator, a.icon-team-title.review_recommendation_moderator, a.icon-team-title.irc_moderator, a.icon-team-title.social_media_moderator, a.icon-team-title.retired_moderator
+	a.icon-team-title.founder, a.icon-team-title.site_administrator, a.icon-team-title.lead_administrator, a.icon-team-title.community_administrator, a.icon-team-title.database_administrator, a.icon-team-title.anime_db_moderator, a.icon-team-title.manga_db_moderator, a.icon-team-title.forum_moderator, a.icon-team-title.news_moderator, a.icon-team-title.review_recommendation_moderator, a.icon-team-title.irc_moderator, a.icon-team-title.social_media_moderator, a.icon-team-title.retired_moderator
 	{
 		color: var(--main-text) !important;
 		transition: none !important;
