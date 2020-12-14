@@ -2000,6 +2000,9 @@
 	.js-truncate-outer .btn-truncate
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/arrows.png") !important;
+		background-size: 17px 44px,30px 30px !important;
+		background-color: var(--main-background) !important;
+		height: 20px !important;
 	}
 	.js-truncate-outer, .profile .user-favorites, .profile .user-favorites .favorites-list .list
 	{
