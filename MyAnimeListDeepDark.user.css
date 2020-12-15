@@ -52,7 +52,7 @@
 
 @var checkbox progress-colors "Custom progress colors" 0
 @var checkbox japanese-logo "Use japanese logo" 0
-@var checkbox bbcode-color "User Profile BBCode color" 0
+@var checkbox bbcode-color "Show user profile BBCode color" 0
 
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
