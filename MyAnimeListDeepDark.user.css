@@ -52,6 +52,7 @@
 
 @var checkbox progress-colors "Custom progress colors" 0
 @var checkbox japanese-logo "Use japanese logo" 0
+@var checkbox bbcode-color "User Profile BBCode color" 1
 
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
@@ -1217,9 +1218,17 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.page-common p, .page-common .textReadability, .page-common span, .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
-	{
-		color: var(--dimmer-text) !important;
+	if bbcode-color == "1" {
+		.page-common p, .page-common .textReadability, .page-common span:not([style^="color"]), .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
+		{
+			color: var(--dimmer-text) !important;
+		}
+	}
+	if bbcode-color == "0" {
+		.page-common p, .page-common .textReadability, .page-common span, .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
+		{
+			color: var(--dimmer-text) !important;
+		}
 	}
 	.page-common #profileRows a:hover, .page-common .profileRows a:hover, .detail-characters-list .left-column table:nth-of-type(2n), .detail-characters-list .left-right table:nth-of-type(2n)
 	{
