@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.21
+@version 1.6.22
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1803,6 +1803,30 @@
 	{
 		color: var(--main-color) !important;
 	}
+	.page-common .header-notification-item-content .actions .result {
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common .header-notification-item-content .actions .action-button.accept {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+		opacity: 0.9 !important;
+	}
+	.page-common .header-notification-item-content .actions .action-button.accept:hover {
+		opacity: 1 !important;
+	}
+	.page-common .header-notification-item-content .actions .action-button.deny {
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .header-notification-item-content .actions .action-button.deny:hover {
+		background-color: var(--main-background) !important;
+	}
+
+
 	/*Notification page*/
 	body.notification .notificaiton-category-nav a.active
 	{
@@ -2900,5 +2924,8 @@
 	#dub-dropdown a:hover {
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
+	}
+	.btn-show-undubbed {
+		color: var(--main-text) !important;
 	}
 }
