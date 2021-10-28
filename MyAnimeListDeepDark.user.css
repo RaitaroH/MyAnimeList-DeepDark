@@ -2947,7 +2947,8 @@
 	{
 		background: var(--main-background) !important;
 	}
-	.page-common #menu.halloween #nav li a {
+	.page-common #menu.halloween #nav li a
+	{
 		height: 100% !important;
 	}
 }
@@ -2976,21 +2977,23 @@
 		background: var(--main-background) !important;
 		border: 2px solid var(--hover-background) !important;
 	}
-	#dub-dropdown a {
+	#dub-dropdown a
+	{
 		background: var(--second-background) !important;
 		border-bottom: 1px solid var(--hover-background) !important;
 		color: var(--main-text) !important;
-		
 	}
-	#dub-dropdown li:last-of-type a {
+	#dub-dropdown li:last-of-type a
+	{
 		border-bottom: 0px !important;
-		
 	}
-	#dub-dropdown a:hover {
+	#dub-dropdown a:hover
+	{
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	.btn-show-undubbed {
+	.btn-show-undubbed
+	{
 		color: var(--dimmer-text) !important;
 	}
 }
