@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.31
+@version 1.6.32
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -54,6 +54,7 @@
 @var checkbox japanese-logo "Use japanese logo" 0
 @var checkbox bbcode "Show user profile BBCode" 0
 @var checkbox scrollbar "Scrollbar" 1
+@var checkbox malxjapan "Hide MALxJapan content" 0
 
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
@@ -2967,6 +2968,14 @@
 	.page-common #menu.halloween #nav li a
 	{
 		height: 100% !important;
+	}
+
+	/*MALxJapan*/
+	if malxjapan == 1 {
+		#content > table > tbody > tr > td:nth-child(2) > div.js-scrollfix-bottom-rel > table > tbody > tr:nth-child(2) > td.pb24
+		{
+			display: none !important
+		}
 	}
 }
 
