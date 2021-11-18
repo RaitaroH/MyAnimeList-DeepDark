@@ -646,8 +646,10 @@
 	{
 	opacity: 1;
 	}
-
-
+	.page-common #header-menu .header-menu-login .btn-mal-service
+	{
+		display: none !important;
+	}
 	/*Tabs*/
 	.page-common #menu, .page-common #menu.christmas, .page-common #menu.christmas #menu_left #nav li
 	{
@@ -690,6 +692,7 @@
 	.page-common #searchBar.searchBar #topSearchText
 	{
 		border: 1px solid var(--hover-background) !important;
+		height: 16px !important;
 	}
 	/*Search dropdown results*/
 	.page-common .incrementalSearchResultList, .page-common .incrementalSearchResultList .list.separator, .page-common .incrementalSearchResultList .list, .page-common .incrementalSearchResultList .list:last-of-type, .page-common .incrementalSearchResultList .list:last-of-type
@@ -1809,7 +1812,10 @@
 	{
 		color: var(--main-color) !important;
 	}
-
+	.page-common .header-message-button .icon
+	{
+		line-height: 30px !important;
+	}
 
 	/*Dropdown menu*/
 	.page-common .header-profile .header-profile-dropdown ul li a, .page-common .header-profile .header-profile-dropdown, .page-common .header-list .header-list-dropdown ul li a, .page-common .header-list .header-list-dropdown
