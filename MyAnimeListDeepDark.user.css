@@ -1599,12 +1599,12 @@
 		background-color: var(--yellow) !important;
 		border-color: var(--yellow) !important;
 	}
-
+	/* Removing for now. MAL changed their image into a fontawesome icon.
 	.top-ranking-table .icon-score-star
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-rank-stars.png") !important;
 	}
-
+	*/
 	.icon-top-ranking-page .prev:hover, .icon-top-ranking-page .next:hover, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist:hover, .page-common .pagination .link-blue-box:hover
 	{
 		background-color: var(--hover-background) !important;
