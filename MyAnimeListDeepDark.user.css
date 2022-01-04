@@ -1917,6 +1917,11 @@
 	.page-common .header-notification-item-content .actions .action-button.deny:hover {
 		background-color: var(--main-background) !important;
 	}
+	
+	/*Fix button font readability */
+	span.result{
+		color : var(--main-text) !important;
+	}
 
 
 	/*Notification page*/
