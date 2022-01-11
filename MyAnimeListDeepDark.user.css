@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.35
+@version 1.6.36
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -739,13 +739,50 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	.seasonal-anime-list .seasonal-anime .image
+	{
+		background-color: var(--main-background) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .js-toggle-text
+	{
+		color: var(--main-text) !important;
+	}
 	.anime-manga-search .genre-link .genre-list, .seasonal-anime-list .seasonal-anime, .seasonal-anime-list .seasonal-anime .prodsrc .eps, .seasonal-anime-list .seasonal-anime .prodsrc .source, .seasonal-anime-list .seasonal-anime .genres, .seasonal-anime-list .seasonal-anime .information
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.seasonal-anime-list .seasonal-anime .prodsrc
+	.seasonal-anime-list .seasonal-anime .information, .seasonal-anime-list .seasonal-anime .properties .property
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .prodsrc, .seasonal-anime-list .seasonal-anime .properties .property:nth-child(even)
 	{
 		background-color: var(--second-background) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble .bubble-item
+	{
+		line-height: 19px !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble
+	{
+		border-color: var(--main-color) !important;
+		background-color: var(--main-color) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble:before
+	{
+		border-right: 5px solid var(--main-color) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble:after
+	{
+		border-right: transparent !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble.anime .bubble-item.content, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble.anime .bubble-item.unit:before
+	{
+		color: var(--main-text) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble
+	{
+		background-color: var(--green) !important;
 	}
 	/*image taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	.seasonal-anime-list .seasonal-anime .information .scormem .score::after, .seasonal-anime-list .seasonal-anime .information .scormem .member::after
