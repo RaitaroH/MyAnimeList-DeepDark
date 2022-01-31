@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.38
+@version 1.6.39
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -831,6 +831,23 @@
 	.anime-search-filter .category-wrapper
 	{
 		border-color: var(--hover-background) !important;
+	}
+	.modal .modal-dialog .modal-content
+	{
+		background-color: var(--main-background) !important;
+	}
+	.modal .modal-dialog .modal-content .modal-header
+	{
+		border-bottom: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.modal .modal-dialog .modal-content .modal-body .broadcasts:nth-child(n+2)
+	{
+		border-top: 1px solid var(--hover-background) !important;
+	}
+	.modal .modal-dialog .modal-content .modal-body .broadcasts .broadcast a:hover
+	{
+		background-color: var(--hover-background) !important;
 	}
 
 	/*Search by Season*/
