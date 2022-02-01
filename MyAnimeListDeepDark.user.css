@@ -1289,13 +1289,13 @@
 		border-color: var(--hover-background) !important;
 		color: var(--dimmer-text) !important;
 	}
-	a.left-info-block-notify-on-air-button
+	a.left-info-block-notify-on-air-button, a.left-info-block-broadcast-button
 	{
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 		border-color: var(--main-color) !important;
 	}
-	a.left-info-block-notify-on-air-button:hover
+	a.left-info-block-notify-on-air-button:hover, a.left-info-block-broadcast-button:hover
 	{
 		opacity: 1 !important;
 		color: var(--main-text) !important;
