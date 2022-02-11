@@ -3041,7 +3041,7 @@
 	{
 		background: var(--main-background) !important;
 	}
-	.page-common #menu.halloween #nav li a
+	.page-common #menu.halloween #nav li a, .page-common #menu.valentine #menu_left #nav li.valentine a
 	{
 		height: 100% !important;
 	}
