@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.39
+@version 1.6.40
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1225,6 +1225,63 @@
 	.ranking-digest .ranking-unit .info, .ranking-digest .ranking-unit .members, .ranking-digest .ranking-unit .rank
 	{
 		color: var(--dimmer-text) !important;
+	}
+
+
+	/*Companies*/
+	.ranking-company .company-favorites-ranking-table .table-header td {
+		border-color: var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+	}
+	.ranking-company .company-favorites-ranking-table .table-header td:first-of-type {
+		border-color: var(--hover-background) !important;
+	}
+	.ranking-company .company-favorites-ranking-table tr.ranking-list:nth-of-type(2n) td {
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.ranking-company .company-favorites-ranking-table tr.ranking-list:nth-of-type(2n+1) td {
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.ranking-company .company-favorites-ranking-table tr:last-of-type {
+		border-color: var(--hover-background) !important;
+	}
+	/*Sketchy but only way I can see to do it for now */
+	#content > div.content-right > div.normal_header.ml8.clearfix.js-search-filter-block {
+		background-color: var(--main-background) !important;
+	}
+	.anime-filter2 .navi-seasonal .horiznav-nav-seasonal, .anime-filter2 .navi-seasonal {
+		background-color: var(--main-background) !important;
+	}
+	.anime-filter .content-left {
+		border-color: var(--hover-background) !important;
+	}
+	.anime-filter2 .navi-seasonal .horiznav-nav-seasonal .btn-type li {
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.anime-filter2 .navi-seasonal .horiznav-nav-seasonal .btn-type li:hover {
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.anime-filter2 .navi-seasonal .horiznav-nav-seasonal .btn-type li.on {
+		background-color: var(--main-color) !important;
+	}
+	.anime-filter2 .navi-seasonal .horiznav-nav-seasonal .btn-type li.on:hover {
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.anime-filter2 .tile-anime-list .seasonal-anime .image {
+		background-color: var(--hover-background) !important;
+	}
+	.anime-filter2 .navi-seasonal .sort-order-block {
+		background: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.view-style2 {
+		filter: grayscale(100%);
 	}
 
 
