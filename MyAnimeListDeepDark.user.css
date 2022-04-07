@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.42
+@version 1.6.43
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -847,6 +847,24 @@
 	}
 	.modal .modal-dialog .modal-content .modal-body .broadcasts .broadcast a:hover
 	{
+		background-color: var(--hover-background) !important;
+	}
+	.mal-modal .mal-modal-dialog .mal-modal-content {
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	.mal-modal .mal-modal-dialog .mal-modal-content button.btn-close {
+		color: var(--main-color) !important;
+		opacity: 1 !important
+	}
+	.mal-modal .mal-modal-dialog .mal-modal-content button.btn-close:hover {
+		color: var(--main-color) !important;
+		opacity: .7 !important;
+	}
+	.mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-header {
+		border-bottom: 1px solid var(--second-background) !important;
+	}
+	.mal-modal .mal-modal-dialog .mal-modal-content .mal-modal-body .broadcasts .broadcast a:hover {
 		background-color: var(--hover-background) !important;
 	}
 
