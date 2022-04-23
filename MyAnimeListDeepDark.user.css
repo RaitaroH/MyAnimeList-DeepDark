@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.43
+@version 1.6.44
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -591,10 +591,6 @@
 		}
 		::-webkit-scrollbar-thumb:hover:active, ::-webkit-scrollbar-thumb:not(:active):hover
 		{
-			background-color: var(--main-color) !important;
-		}
-		::-webkit-scrollbar-thumb:active
-		{
 			background-color: var(--hover-background) !important;
 		}
 	}
@@ -613,6 +609,7 @@
 	{
 		color: var(--dimmer-text) !important;
 		background-image: none !important;
+		background-color: var(--second-background) !important;
 	}
 
 	/*Logo*/
@@ -1047,6 +1044,209 @@
 		border-color: var(--hover-background) !important;
 	}
 
+
+	/*Stacks*/
+	.stacks .header-right .btn-new-stack, .stacks .btn-new-stack {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks .header-right .new-stack-block, .stacks .new-stack-block {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .new-stack-block .new-stack-item:hover {
+		background-color: var(--second-background) !important;
+	}
+	.stacks .tab-area ul li {
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks .tab-area ul li:hover, .stacks .tab-area ul li.on {
+		background-color: var(--main-color) !important;
+	}
+	.stacks .btn-show-spoilers.on i.fas {
+		color: var(--main-color) !important;
+	}
+	.stacks .tag .tag-anime, .stacks .tag .tag-manga, .stacks .tag .tag-challenge {
+		color: var(--main-text) !important;
+		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.4);
+	}
+	.stacks .btn-report.on .fa-ellipsis-h, .stacks .btn-report .fa-ellipsis-h:hover, .stacks .btn-stack .fa-layer-plus:hover, .stacks .btn-stack .fa-layer-minus {
+		color: var(--main-color) !important;
+	}
+	.stacks .tab-area, .stacks .search-list .column-item {
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.stacks .btn-report .report-block {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .btn-stack .balloon, .stacks .btn-stack.on .balloon {
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.stacks .btn-stack .balloon:before, .stacks .btn-stack.on .balloon:before, .stacks .btn-stack .balloon:after, .stacks .btn-stack.on .balloon:after {
+		border-right: 6px solid var(--hover-background) !important;
+	}
+	.stacks .content-left {
+		border-right: 1px solid var(--hover-background) !important;
+	}
+	.stacks .breadcrumbs_area.underline, .stacks h3.underline, .stacks .side-list .column-item, .stacks div.underline, .stacks .two-btn, .stacks .stacks-modal .modal_content .head, .stacks .stacks-modal .modal_content .modal-list .item {
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.stacks .info-block {
+		background-color: var(--second-background) !important;
+	}
+	.stacks .introduction {
+		border-bottom: 1px solid var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.stacks .any_status .mylist, .stacks .any_status .mean_score {
+		color: var(--main-text) !important;
+	}
+	.stacks .any_status strong {
+		color: var(--main-color) !important;
+	}
+	.stacks .any_status .score {
+		background-color: var(--second-background) !important;
+	}
+	.stacks .any_status .score .graph.completed {
+		background-color: var(--main-color) !important;
+	}
+	.stacks .search-side form input {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+		border-right: 0 solid var(--hover-background) !important;
+	}
+	.stacks .search-side form button {
+		background-color: var(--main-background) !important;
+		border: 1px solid var(--hover-background) !important;
+		border-left: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks .search-side .quick-search a {
+		background: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .search-side .quick-search a:hover {
+		background: var(--hover-background) !important;
+		border: 1px solid var(--second-background) !important;
+	}
+	.stacks .search-area .inputButton.notActive {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .search-area .inputtext:hover, .stacks .search-area .inputtext:active, .stacks .search-area .inputtext:focus {
+		border: 1px solid var(--hover-background) !important;
+	}
+	.tile-anime-list .seasonal-anime .edit a.notinmylist {
+		background-color: var(--hover-background) !important;
+	}
+	.stacks input.title {
+		background: var(--hover-background) !important;
+		border: 1px solid var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks textarea.description {
+		background: var(--hover-background) !important;
+		border: 1px solid var(--second-background) !important;
+		color: var(--main-text) !important;
+		resize: vertical !important;
+		outline: none !important;
+	}
+	.stacks .stack-list .item .bar {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .stack-list .item .panel {
+		background-color: var(--second-background) !important;
+	}
+	.stacks .btn.btn-trash, .stacks .btn-delete {
+		background-color:#e52828 !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks .stack-list .item .panel .list_status .status.completed {
+		background-color: var(--main-color) !important;
+	}
+	.stacks .btn.btn-primary {
+		background-color: var(--main-color) !important;
+		color: #fff;
+	}
+	.stacks .btn.btn-default {
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks .radio.box.on {
+		background-color: var(--hover-background) !important;
+	}
+	.stacks .radio input[type=radio]:checked+label:before {
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		-webkit-box-shadow: inset 0 0 0 3px #fff;
+		box-shadow: inset 0 0 0 3px #fff;
+	}
+	.stacks .tag.box {
+		background-color: var(--hover-background) !important;
+	}
+	.stacks .stacks-modal .modal_content {
+		background: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .stacks-modal .modal_content .modal_btn_close {
+		background-color: var(--hover-background) !important;
+	}
+	.stacks .stacks-modal .modal_content .head .search-box input {
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.stacks .stacks-modal .modal_content .modal-list .item.just, .stacks .stacks-modal .modal_content .modal-list .item.added {
+		background-color: var(--hover-background) !important;
+	}
+	.stacks .stacks-modal .modal_content .modal-list .item .modal-btn .fa-plus, .stacks .stacks-modal .modal_content .modal-list .item .modal-btn .fa-minus {
+		color: var(--main-color) !important;
+	}
+	.stacks .stacks-modal .modal_content .modal-list .item .modal-icon div.completed {
+		background-color: var(--main-color) !important;
+	}
+	.stacks .stacks-modal .modal_content .modal-list .item .title span, .stacks .stacks-modal .modal_content .modal-list .item.just .title span {
+		color: var(--main-text) !important;
+	}
+	.stacks .stack-list .item .panel .list_status .balloon {
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.stacks .stack-list .item .panel .list_status .balloon:before {
+		border: 5px solid transparent !important;
+		border-right: 6px solid var(--hover-background) !important;
+	}
+	.stacks .stack-list .item .panel .list_status .balloon:after {
+		border: 5px solid transparent;
+		border-right: 0px solid var(--hover-background) !important;
+	}
+	.stacks .my-list thead td {
+		background-color: var(--hover-background) !important;
+		border-bottom: 0px;
+	}
+	.stacks .my-list tbody td {
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.stacks .my-list tbody tr:nth-child(2n) td {
+		background-color: var(--second-background) !important;
+	}
+	.stacks .my-list tbody td .btn_edit {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.stacks .list-anime-list .seasonal-anime .head {
+		background-color: var(--hover-background) !important;
+	}
+	.stacks .list-anime-list .seasonal-anime .info {
+		background-color: var(--second-background) !important;
+	}
+
+	
 	/*Add button*/
 	.page-common a.button_add.button_add, .page-common a.button_add.button_edit, .page-common a.button_edit.button_add, .page-common a.button_edit.button_edit
 	{
