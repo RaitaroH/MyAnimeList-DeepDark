@@ -2753,6 +2753,9 @@
 	.ad-sticky-wrapper {
 		display: none !important;
 	}
+	.page-common div[class*="-malside"] {
+		display: none !important;
+	}
 	/* > Quick Add Anime/Manga */
 	.quickadd-content .quickAdd-anime-result-unit:nth-of-type(odd), .quickadd-content .quickAdd-manga-result-unit:nth-of-type(odd) {
 		background-color: var(--second-background) !important;
