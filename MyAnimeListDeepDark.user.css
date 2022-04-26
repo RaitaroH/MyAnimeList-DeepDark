@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.44
+@version 1.6.45
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1932,6 +1932,9 @@
 		background-color: var(--yellow) !important;
 		border-color: var(--yellow) !important;
 	}
+    .icon-watch2 .malicon.malicon-movie-episode, .icon-watch2 .malicon.malicon-movie-pv, .icon-watch2 .malicon.malicon-streaming, .icon-watch-pv2 .malicon.malicon-movie-episode, .icon-watch-pv2 .malicon.malicon-movie-pv, .icon-watch-pv2 .malicon.malicon-streaming {
+        color: var(--main-color) !important;
+    }
 	/* Removing for now. MAL changed their image into a fontawesome icon.
 	.top-ranking-table .icon-score-star
 	{
@@ -3340,43 +3343,50 @@
 @-moz-document domain("myanimelist.net") {
 
 	/* MAL (MyAnimeList) Dubs - https://github.com/MAL-Dubs/MAL-Dubs */
-	[title=Dubbed]::after
-	{
+    .page-common .header-dub-button .icon {
+        color: var(--main-text) !important;
+        -webkit-transition-duration: .2s !important;
+        transition-duration: .2s !important;
+        -webkit-transition-property: all !important;
+        transition-property: all !important;
+        -webkit-transition-timing-function: ease-in-out !important;
+        transition-timing-function: ease-in-out !important;
+    }
+    .page-common .header-dub-button .icon:hover {
+        color: var(--main-color) !important;
+    }
+	[title=Dubbed]::after {
 		color: var(--main-color) !important;
 	}
-	[title=Dubbed]:not(.imagelink)::after, [title="Incomplete Dub"]:not(.imagelink)::after
-	{
+    [title=Dubbed].imagelink::after, [title="Incomplete Dub"].imagelink::after {
+        color: var(--main-text) !important;
+    }
+	[title=Dubbed]:not(.imagelink)::after, [title="Incomplete Dub"]:not(.imagelink)::after {
 		background: rgba(0,0,0,0) !important;
 		color: var(--main-color) !important;
 	}
-	.classic [title=Dubbed]::after, .classic [title="Incomplete Dub"]::after
-	{
+	.classic [title=Dubbed]::after, .classic [title="Incomplete Dub"]::after {
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	#dub-dropdown
-	{
+	#dub-dropdown {
 		background: var(--main-background) !important;
 		border: 2px solid var(--hover-background) !important;
 	}
-	#dub-dropdown a
-	{
+	#dub-dropdown a {
 		background: var(--second-background) !important;
 		border-bottom: 1px solid var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	#dub-dropdown li:last-of-type a
-	{
+	#dub-dropdown li:last-of-type a {
 		border-bottom: 0px !important;
 	}
-	#dub-dropdown a:hover
-	{
+	#dub-dropdown a:hover {
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-	.btn-show-undubbed
-	{
+	.btn-show-undubbed {
 		color: var(--dimmer-text) !important;
 	}
 }
