@@ -1932,9 +1932,9 @@
 		background-color: var(--yellow) !important;
 		border-color: var(--yellow) !important;
 	}
-    .icon-watch2 .malicon.malicon-movie-episode, .icon-watch2 .malicon.malicon-movie-pv, .icon-watch2 .malicon.malicon-streaming, .icon-watch-pv2 .malicon.malicon-movie-episode, .icon-watch-pv2 .malicon.malicon-movie-pv, .icon-watch-pv2 .malicon.malicon-streaming {
-        color: var(--main-color) !important;
-    }
+	.icon-watch2 .malicon.malicon-movie-episode, .icon-watch2 .malicon.malicon-movie-pv, .icon-watch2 .malicon.malicon-streaming, .icon-watch-pv2 .malicon.malicon-movie-episode, .icon-watch-pv2 .malicon.malicon-movie-pv, .icon-watch-pv2 .malicon.malicon-streaming {
+		color: var(--main-color) !important;
+	}
 	/* Removing for now. MAL changed their image into a fontawesome icon.
 	.top-ranking-table .icon-score-star
 	{
@@ -3343,24 +3343,24 @@
 @-moz-document domain("myanimelist.net") {
 
 	/* MAL (MyAnimeList) Dubs - https://github.com/MAL-Dubs/MAL-Dubs */
-    .page-common .header-dub-button .icon {
-        color: var(--main-text) !important;
-        -webkit-transition-duration: .2s !important;
-        transition-duration: .2s !important;
-        -webkit-transition-property: all !important;
-        transition-property: all !important;
-        -webkit-transition-timing-function: ease-in-out !important;
-        transition-timing-function: ease-in-out !important;
-    }
-    .page-common .header-dub-button .icon:hover {
-        color: var(--main-color) !important;
-    }
+	.page-common .header-dub-button .icon {
+		color: var(--main-text) !important;
+		-webkit-transition-duration: .2s !important;
+		transition-duration: .2s !important;
+		-webkit-transition-property: all !important;
+		transition-property: all !important;
+		-webkit-transition-timing-function: ease-in-out !important;
+		transition-timing-function: ease-in-out !important;
+	}
+	.page-common .header-dub-button .icon:hover {
+		color: var(--main-color) !important;
+	}
 	[title=Dubbed]::after {
 		color: var(--main-color) !important;
 	}
-    [title=Dubbed].imagelink::after, [title="Incomplete Dub"].imagelink::after {
-        color: var(--main-text) !important;
-    }
+	[title=Dubbed].imagelink::after, [title="Incomplete Dub"].imagelink::after {
+		color: var(--main-text) !important;
+	}
 	[title=Dubbed]:not(.imagelink)::after, [title="Incomplete Dub"]:not(.imagelink)::after {
 		background: rgba(0,0,0,0) !important;
 		color: var(--main-color) !important;
