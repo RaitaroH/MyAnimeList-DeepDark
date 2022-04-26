@@ -1091,7 +1091,7 @@
 	.stacks .content-left {
 		border-right: 1px solid var(--hover-background) !important;
 	}
-	.stacks .breadcrumbs_area.underline, .stacks h3.underline, .stacks .side-list .column-item, .stacks div.underline, .stacks .two-btn, .stacks .stacks-modal .modal_content .head, .stacks .stacks-modal .modal_content .modal-list .item {
+	.stacks .breadcrumbs_area.underline, .stacks h3.underline, .stacks .recent-list .column-item, .stacks .side-list .column-item, .stacks div.underline, .stacks .two-btn, .stacks .stacks-modal .modal_content .head, .stacks .stacks-modal .modal_content .modal-list .item {
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
 	.stacks .info-block {
