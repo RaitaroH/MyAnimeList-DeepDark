@@ -1046,7 +1046,7 @@
 
 
 	/*Stacks*/
-	.stacks .header-right .btn-new-stack, .stacks .btn-new-stack {
+	.stacks .header-right .btn-new-stack, .stacks .btn-new-stack, .profile .mymenu .btn-new-stack {
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
@@ -1057,21 +1057,21 @@
 	.stacks .new-stack-block .new-stack-item:hover {
 		background-color: var(--second-background) !important;
 	}
-	.stacks .tab-area ul li {
+	.stacks .tab-area ul li, .profile .navi .tabs .btn-tab {
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.stacks .tab-area ul li:hover, .stacks .tab-area ul li.on {
+	.stacks .tab-area ul li:hover, .profile .navi .tabs .btn-tab:hover, .stacks .tab-area ul li.on, .profile .navi .tabs .btn-tab.on {
 		background-color: var(--main-color) !important;
 	}
-	.stacks .btn-show-spoilers.on i.fas {
+	.stacks .btn-show-spoilers.on i.fas, .profile .btn-show-spoilers i.fas {
 		color: var(--main-color) !important;
 	}
-	.stacks .tag .tag-anime, .stacks .tag .tag-manga, .stacks .tag .tag-challenge {
+	.stacks .tag .tag-anime, .stacks .tag .tag-manga, .stacks .tag .tag-challenge, .profile .stacks-list .column-item .tag .tag-anime, .profile .stacks-list .column-item .tag .tag-manga, .profile .stacks-list .column-item .tag .tag-challenge {
 		color: var(--main-text) !important;
 		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.4);
 	}
-	.stacks .btn-report.on .fa-ellipsis-h, .stacks .btn-report .fa-ellipsis-h:hover, .stacks .btn-stack .fa-layer-plus:hover, .stacks .btn-stack .fa-layer-minus {
+	.stacks .btn-report.on .fa-ellipsis-h, .stacks .btn-report .fa-ellipsis-h:hover, .stacks .btn-stack .fa-layer-plus:hover, .stacks .btn-stack .fa-layer-minus, .profile .stacks-list .column-item .foot .btn-stack .fa-layer-minus {
 		color: var(--main-color) !important;
 	}
 	.stacks .tab-area, .stacks .search-list .column-item {
@@ -1081,11 +1081,11 @@
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.stacks .btn-stack .balloon, .stacks .btn-stack.on .balloon {
+	.stacks .btn-stack .balloon, .stacks .btn-stack.on .balloon, .profile .stacks-list .column-item .foot .btn-stack .balloon, .profile .stacks-list .column-item .foot .btn-stack.on .balloon {
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.stacks .btn-stack .balloon:before, .stacks .btn-stack.on .balloon:before, .stacks .btn-stack .balloon:after, .stacks .btn-stack.on .balloon:after {
+	.stacks .btn-stack .balloon:before, .stacks .btn-stack.on .balloon:before, .stacks .btn-stack .balloon:after, .stacks .btn-stack.on .balloon:after, .profile .stacks-list .column-item .foot .btn-stack .balloon:before, .profile .stacks-list .column-item .foot .btn-stack .balloon:after, .profile .stacks-list .column-item .foot .btn-stack.on .balloon:before, .profile .stacks-list .column-item .foot .btn-stack.on .balloon:after {
 		border-right: 6px solid var(--hover-background) !important;
 	}
 	.stacks .content-left {
@@ -1094,7 +1094,7 @@
 	.stacks .breadcrumbs_area.underline, .stacks h3.underline, .stacks .recent-list .column-item, .stacks .side-list .column-item, .stacks div.underline, .stacks .two-btn, .stacks .stacks-modal .modal_content .head, .stacks .stacks-modal .modal_content .modal-list .item {
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
-	.stacks .info-block {
+	.stacks .info-block, .profile .mymenu {
 		background-color: var(--second-background) !important;
 	}
 	.stacks .introduction {
@@ -1207,7 +1207,7 @@
 	.stacks .stacks-modal .modal_content .modal-list .item .modal-btn .fa-plus, .stacks .stacks-modal .modal_content .modal-list .item .modal-btn .fa-minus {
 		color: var(--main-color) !important;
 	}
-	.stacks .stacks-modal .modal_content .modal-list .item .modal-icon div.completed {
+	.stacks .stacks-modal .modal_content .modal-list .item .modal-icon div.completed, .profile .stacks-list .column-item .score .graph.completed {
 		background-color: var(--main-color) !important;
 	}
 	.stacks .stacks-modal .modal_content .modal-list .item .title span, .stacks .stacks-modal .modal_content .modal-list .item.just .title span {
@@ -1239,7 +1239,7 @@
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.stacks .list-anime-list .seasonal-anime .head {
+	.stacks .list-anime-list .seasonal-anime .head, .profile .stacks-list .column-item .tag, .profile .stacks-list .column-item .score {
 		background-color: var(--hover-background) !important;
 	}
 	.stacks .list-anime-list .seasonal-anime .info {
