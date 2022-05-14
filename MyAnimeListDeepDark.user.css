@@ -597,7 +597,7 @@
 
 
 	/*Body*/
-	body
+	html, body
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -617,12 +617,12 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-	.page-common #headerSmall
+	.page-common #headerSmall, .global-header__logo a
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/logo.png") !important;
 	}
 	if japanese-logo {
-		.page-common #headerSmall
+		.page-common #headerSmall, .global-header__logo a
 		{
 			background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/logo_katakana.png") !important;
 		}
@@ -3339,6 +3339,38 @@
 		{
 			display: none !important
 		}
+	}
+	
+	/*Auth*/
+	.global-header {
+		background-color: var(--second-background) !important;
+		border-bottom: 0px !important;
+	}
+	.layout-container, .global-footer {
+		background: var(--second-background) !important;
+	}
+	.layout-container__inner {
+		background-color: var(--main-background) !important;
+		box-shadow: 0 0 0 1px var(--hover-background) , 0 0 0 11px var(--hover-background) !important;
+	}
+	.layout-container__inner a {
+		color: var(--main-color) !important;
+	}
+	.layout-container__inner > div > div > form > input.submit-block__button.button.button--primary.btn-recaptcha-submit {
+		background-color: var(--main-color) !important;
+	}
+	.layout-container__inner > div > div > form > input.submit-block__button.button.button--cancel.btn-recaptcha-submit {
+		background-color: var(--hover-background) !important;
+	}
+	.client-block {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.global-footer__inner {
+		color: var(--dimmer-text) !important;
+	}
+	.global-footer__inner a{
+		color: var(--main-color) !important;
 	}
 
 
