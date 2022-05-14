@@ -1071,7 +1071,7 @@
 		color: var(--main-text) !important;
 		text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.4);
 	}
-	.stacks .btn-report.on .fa-ellipsis-h, .stacks .btn-report .fa-ellipsis-h:hover, .stacks .btn-stack .fa-layer-plus:hover, .stacks .btn-stack .fa-layer-minus, .profile .stacks-list .column-item .foot .btn-stack .fa-layer-minus {
+	.stacks .btn-report.on .fa-ellipsis-h, .stacks .btn-report .fa-ellipsis-h:hover, .stacks .btn-stack .fa-layer-plus:hover, .stacks .btn-stack .fa-layer-minus, .profile .stacks-list .column-item .foot .btn-stack .fa-layer-minus, .profile .stacks-list .column-item .foot .btn-stack .fa-layer-plus:hover {
 		color: var(--main-color) !important;
 	}
 	.stacks .tab-area, .stacks .search-list .column-item {
