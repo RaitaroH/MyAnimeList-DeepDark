@@ -1819,7 +1819,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.anime-character
+	.anime-character, .manga-character
 	{
 		background-color: var(--main-background) !important;
 		border-bottom: 0px !important;
@@ -1828,7 +1828,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.anime-character .anime-character-sort-order-block
+	.anime-character .anime-character-sort-order-block, .manga-character .manga-character-sort-order-block
 	{
 		background: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
@@ -2829,25 +2829,25 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.people-character, .people-staff
+	.people-character, .people-staff, .people-manga
 	{
 		background-color: var(--main-background) !important;
 		border-bottom: 0px !important;
 	}
-	.people-character .btn-show-sort:hover, .people-staff .btn-show-sort:hover
+	.people-character .btn-show-sort:hover, .people-staff .btn-show-sort:hover, .people-manga .btn-show-sort:hover
 	{
 		color: var(--main-color) !important;
 	}
-	.people-character .people-character-sort-order-block, .people-staff .people-staff-sort-order-block
+	.people-character .people-character-sort-order-block, .people-staff .people-staff-sort-order-block, .people-manga .people-manga-sort-order-block
 	{
 		background: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.people-character .people-character-sort-order-block .btn-close, .people-staff .people-staff-sort-order-block .btn-close
+	.people-character .people-character-sort-order-block .btn-close, .people-staff .people-staff-sort-order-block .btn-close, .people-manga .people-manga-sort-order-block .btn-close
 	{
 		background-color: var(--second-background) !important;
 	}
-	.people-character .people-character-sort-order-block .sort-order-list .btn-sort-order.circle:hover, .people-staff .people-staff-sort-order-block .sort-order-list .btn-sort-order.circle:hover
+	.people-character .people-character-sort-order-block .sort-order-list .btn-sort-order.circle:hover, .people-staff .people-staff-sort-order-block .sort-order-list .btn-sort-order.circle:hover, .people-manga .people-manga-sort-order-block .sort-order-list .btn-sort-order.circle:hover
 	{
 		color: var(--main-color) !important;
 	}
