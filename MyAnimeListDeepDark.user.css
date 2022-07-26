@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.52
+@version 1.6.53
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -930,7 +930,7 @@
 	}
 
 	/*Latest Updated Episode Videos*/
-	.page-common a, .page-common a:visited
+	.page-common a:not(.interest-stacks-challenge), .page-common a:visited
 	{
 		color: var(--main-color) !important;
 		opacity: .9;
