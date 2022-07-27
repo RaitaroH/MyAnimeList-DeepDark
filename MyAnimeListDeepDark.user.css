@@ -2314,6 +2314,20 @@
 	{
 		color: var(--main-color) !important;
 	}
+	body.notification .notification-item-layout .actions .result {
+		background-color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
+	}
+	body.notification .notification-pagination a, body.notification .notification-pagination span {
+		background-color: var(--main-color) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		border-radius: 2px;
+	}
+	body.notification .notification-pagination a:hover {
+		color: var(--main-color) !important;
+		background-color: var(--hover-background) !important;
+	}
 
 
 	/*Notification settings*/
