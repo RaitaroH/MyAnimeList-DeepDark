@@ -990,6 +990,9 @@
 	{
 		color: var(--hover-background) !important;
 	}
+	.staff .staff-block .staff-bio-unit {
+		border: var(--hover-background) 1px solid;
+	}
 
 
 	/*Recent Anime Discussions*/
