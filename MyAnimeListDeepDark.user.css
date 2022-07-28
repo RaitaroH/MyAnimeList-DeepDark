@@ -1157,6 +1157,10 @@
 		resize: vertical !important;
 		outline: none !important;
 	}
+	.stacks .sticky-toolbar {
+		background-color: var(--main-background) !important;
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
 	.stacks .stack-list .item .bar {
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
@@ -1172,7 +1176,7 @@
 	.stacks .stack-list .item .panel .list_status .status.completed {
 		background-color: var(--main-color) !important;
 	}
-	.stacks .btn.btn-primary {
+	.stacks .btn.btn-primary, .stacks .btn.btn-top {
 		background-color: var(--main-color) !important;
 		color: #fff;
 	}
@@ -1250,6 +1254,9 @@
 	}
 	.stacks .list-anime-list .seasonal-anime .intro {
 		color: var(--dimmer-text) !important;
+	}
+	.stacks .stacks-detail h2.title, .stacks .stacks-detail .tag, .stacks .stacks-detail .any_status {
+		background: var(--main-background) !important;
 	}
 
 	
