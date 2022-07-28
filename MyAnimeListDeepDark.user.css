@@ -1901,6 +1901,21 @@
 	.page-common div #quickReply {
 		background-color: var(--hover-background) !important;
 	}
+	.page-common .btn-topic-normal {
+		background-color: var(--main-color) !important;
+		border: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common .btn-topic-normal:hover {
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.page-common .topic-bottom-reply:before {
+		border-bottom: 12px solid var(--hover-background) !important;
+	}
+	.page-common .border_solid {
+		border-color: var(--hover-background) !important;
+	}
 
 	/*Top anime page*/
 	.top-ranking-table .table-header td
