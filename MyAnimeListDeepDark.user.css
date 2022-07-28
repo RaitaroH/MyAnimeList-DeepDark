@@ -3312,6 +3312,10 @@
 	{
 		background: var(--main-color) !important;
 	}
+	.manga-store .manga-store-tab-menu .tab.on, .manga-store .manga-store-tab-menu .tab:hover {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
 	/*checkout*/
 	a[data-v-135eaa16],
 	a[data-v-93cd87b2], a[data-v-93cd87b2]:hover
