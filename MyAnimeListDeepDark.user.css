@@ -2958,8 +2958,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.page-rwd.page-support #myanimelist #content li, .page-rwd.page-support #myanimelist #content h3, .page-rwd.page-support #myanimelist #content h4
-	{
+	.page-support #myanimelist #content p, .page-support #myanimelist #content li, .page-support #myanimelist #content h3, .page-support #myanimelist #content h4 {
 		color: var(--main-text) !important;
 	}
 
