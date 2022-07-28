@@ -2184,6 +2184,9 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	.page-common .icon-social-login.icon-gp {
+		background-color: var(--hover-background) !important;
+	}
 
 
 	/*User name*/
@@ -2686,6 +2689,7 @@
 	.page-common .icon-sns-connect
 	{
 		filter: grayscale(100%);
+		opacity: 1 !important;
 	}
 	.setting-row.locate-right, .setting-row.show-hidden
 	{
@@ -2742,6 +2746,9 @@
 	.membership .about-membership .about-extras .about-extras-content .header
 	{
 		color: var(--main-text) !important;
+	}
+	.page-common .icon-social-login.connect {
+		opacity: 1 !important;
 	}
 
 	/*Profile Picture Upload*/
