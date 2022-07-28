@@ -52,7 +52,7 @@
 
 @var checkbox progress-colors "Custom progress colors" 0
 @var checkbox japanese-logo "Use japanese logo" 0
-@var checkbox bbcode "Show user profile BBCode" 0
+@var checkbox bbcode "Show Profile/Forum BBCode" 0
 @var checkbox scrollbar "Scrollbar" 1
 @var checkbox malxjapan "Hide MALxJapan content" 0
 
@@ -1678,31 +1678,26 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	if bbcode == "1" {
-		.page-common p, .page-common .textReadability, .page-common span:not([style^="color"]), .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
-		{
+	if bbcode == "0" {
+		.page-common p, .page-common .textReadability, .page-common span, .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited {
 			color: var(--dimmer-text) !important;
 		}
-		u
-		{
+	}
+	if bbcode == "1" {
+		.page-common p, .page-common .textReadability, .page-common span:not(.profile-about-user span), .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited {
+			color: var(--dimmer-text) !important;
+		}
+		u {
 			text-decoration: underline !important;
 		}
-		span[style="text-decoration:line-through;"]
-		{
+		span[style="text-decoration:line-through;"] {
 			text-decoration: line-through !important;
 		}
-		#content > div:nth-child(2) > form > table > tbody > tr:nth-child(16) > td:nth-child(2) > small::after
-		{
+		#content > div:nth-child(2) > form > table > tbody > tr:nth-child(18) > td:nth-child(2) > small::after {
 			content: "\A **DeepDark** If you use the [s](strikethrough) BBCode, it must be used before the [color=red](Color) BBCode to be seen correctly on your profile. \A Example: [quote][s][color=Red][b]Text Here[/b][/color][/s][/quote]" !important;
 			white-space: pre !important; 
 			Color: red !important;
 			font-weight: bold !important;
-		}
-	}
-	if bbcode == "0" {
-		.page-common p, .page-common .textReadability, .page-common span, .page-common td, .page-common .dark_text, .page-common .dark_text:hover, .page-common .dark_text:visited
-		{
-			color: var(--dimmer-text) !important;
 		}
 	}
 	.page-common #profileRows a:hover, .page-common .profileRows a:hover, .detail-characters-list .left-column table:nth-of-type(2n), .detail-characters-list .left-right table:nth-of-type(2n)
