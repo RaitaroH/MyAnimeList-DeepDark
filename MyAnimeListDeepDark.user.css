@@ -694,15 +694,18 @@
 	}
 
 	/*Input*/
-	.page-common .inputtext, .page-common .textarea, .page-common #ignored-user-name
+	.page-common .inputtext, .page-common .textarea, .page-common #ignored-user-name, .page-common select
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover
+	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover, .page-common .textarea:hover, .page-common select:active, .page-common select:focus, .page-common select:hover
 	{
 		border-color: var(--main-color) !important;
+	}
+	.page-common select {
+		font-size: 11px; /* Consistent with MAL's font size */
 	}
 
 	/*Search dropdown results*/
