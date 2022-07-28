@@ -2417,6 +2417,14 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	.page-common #ignored-user-name {
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common #ignored-user-name:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus {
+		border-color: var(--main-color) !important;
+	}
 	.page-common .bgbdrContainer
 	{
 		background-color: var(--second-background) !important;
