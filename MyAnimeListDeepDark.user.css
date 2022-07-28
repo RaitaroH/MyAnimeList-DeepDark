@@ -2945,6 +2945,9 @@
 	{
 		display: none !important;
 	}
+	.page-advertising .ad-pt50.ad-pb50 > img {
+		background-color: #FFF !important;
+	}
 	.page-common .mauto, .btn-switch-lang, .membership .about-membership .about-extras
 	{
 		background-color: var(--second-background) !important;
