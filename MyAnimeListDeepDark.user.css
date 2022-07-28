@@ -2743,6 +2743,33 @@
 		color: var(--main-text) !important;
 	}
 
+	/*Profile Picture Upload*/
+	#content > div:nth-child(2) > form > table > tbody > tr > td:nth-child(2) > div:nth-child(4) > input[type=file]::-webkit-file-upload-button {
+		visibility: hidden;
+		width: 0;
+		position: relative;
+	}
+	#content > div:nth-child(2) > form > table > tbody > tr > td:nth-child(2) > div:nth-child(4) > input[type=file]::before {
+		content: 'Choose File';
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+		padding: 6px 12px;
+		cursor: pointer;
+		outline: none;
+		white-space: nowrap;
+		-webkit-user-select: none;
+	}
+	#content > div:nth-child(2) > form > table > tbody > tr > td:nth-child(2) > div:nth-child(4) > input[type=file]:hover::before {
+		content: 'Choose File';
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		padding: 6px 12px;
+		cursor: pointer;
+		outline: none;
+		white-space: nowrap;
+		-webkit-user-select: none;
+	}
+
 	/*Favorites*/
 	.page-common .normal_header
 	{
