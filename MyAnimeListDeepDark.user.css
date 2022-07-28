@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.57
+@version 1.6.58
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -692,6 +692,22 @@
 		border: 1px solid var(--hover-background) !important;
 		height: 16px !important;
 	}
+
+	/*Input*/
+	.page-common .inputtext, .page-common .textarea, .page-common #ignored-user-name, .page-common select
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover, .page-common .textarea:hover, .page-common select:active, .page-common select:focus, .page-common select:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	.page-common select {
+		font-size: 11px; /* Consistent with MAL's font size */
+	}
+
 	/*Search dropdown results*/
 	.page-common .incrementalSearchResultList, .page-common .incrementalSearchResultList .list.separator, .page-common .incrementalSearchResultList .list, .page-common .incrementalSearchResultList .list:last-of-type, .page-common .incrementalSearchResultList .list:last-of-type
 	{
@@ -2048,16 +2064,6 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	.page-common .inputtext
-	{
-		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover
-	{
-		border-color: var(--main-color) !important;
-	}
 	.season .btn-show-sort:hover
 	{
 		color: var(--main-color) !important;
@@ -2406,16 +2412,6 @@
 	.message.read .mym_date
 	{
 		color: var(--dimmer-text) !important;
-	}
-	.page-common .textarea
-	{
-		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
-	}
-	.page-common .textarea:hover, .page-common .textarea:active, .page-common .textarea:focus
-	{
-		border-color: var(--main-color) !important;
 	}
 	.page-common .bgbdrContainer
 	{
