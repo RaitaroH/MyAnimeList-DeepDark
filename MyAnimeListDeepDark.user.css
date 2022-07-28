@@ -2706,6 +2706,7 @@
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
+		opacity: 1 !important;
 	}
 	.ownlist_style .style-setting .setting-switch input[type="radio"] + label, .ownlist_style #new-style .info
 	{
