@@ -2781,6 +2781,7 @@
 	.page-common .normal_header
 	{
 		padding-left: 5px !important;
+		padding-right: 5px !important;
 	}
 	.page-common .draggable_list li:hover
 	{
