@@ -2726,6 +2726,9 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
+	.ownlist_style .new-theme-list .new-theme-unit:empty {
+		border-color: var(--main-background) !important;
+	}
 
 	.membership .about-membership .plan-header, .membership .about-membership .plan, .membership .about-membership .about-new-feature, .membership .about-membership .about-no-ads
 	{
