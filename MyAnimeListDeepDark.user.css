@@ -700,7 +700,7 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover, .page-common .textarea:hover, .page-common select:active, .page-common select:focus, .page-common select:hover
+	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover, .page-common select:active, .page-common select:focus, .page-common select:hover
 	{
 		border-color: var(--main-color) !important;
 	}
@@ -2553,6 +2553,9 @@
 	{
 		background-color: var(--second-background) !important;
 	}
+	.user-profile .user-status li .user-status-data.online {
+		color: var(--green) !important;
+	}
 	.user-profile h4, .page-common .content-container .container-right h5, .page-common .content-container .container-right .fw-b, .user-profile .user-compatability-graph .bar-outer .bar-outer-positive .bar-inner, div.user-profile-sns
 	{
 		color: var(--main-text) !important;
@@ -2726,6 +2729,9 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
+	.ownlist_style .new-theme-list .new-theme-unit:empty {
+		border-color: var(--main-background) !important;
+	}
 
 	.membership .about-membership .plan-header, .membership .about-membership .plan, .membership .about-membership .about-new-feature, .membership .about-membership .about-no-ads
 	{
@@ -2778,6 +2784,7 @@
 	.page-common .normal_header
 	{
 		padding-left: 5px !important;
+		padding-right: 5px !important;
 	}
 	.page-common .draggable_list li:hover
 	{
