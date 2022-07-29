@@ -2553,6 +2553,9 @@
 	{
 		background-color: var(--second-background) !important;
 	}
+	.user-profile .user-status li .user-status-data.online {
+		color: var(--green) !important;
+	}
 	.user-profile h4, .page-common .content-container .container-right h5, .page-common .content-container .container-right .fw-b, .user-profile .user-compatability-graph .bar-outer .bar-outer-positive .bar-inner, div.user-profile-sns
 	{
 		color: var(--main-text) !important;
