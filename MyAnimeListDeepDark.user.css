@@ -1712,7 +1712,7 @@
 		#content > div:nth-child(2) > form > table > tbody > tr:nth-child(18) > td:nth-child(2) > small::after {
 			content: "\A **DeepDark** If you use the [s](strikethrough) BBCode, it must be used before the [color=red](Color) BBCode to be seen correctly on your profile. \A Example: [quote][s][color=Red][b]Text Here[/b][/color][/s][/quote]" !important;
 			white-space: pre !important; 
-			Color: red !important;
+			color: red !important;
 			font-weight: bold !important;
 		}
 	}
@@ -1738,6 +1738,9 @@
 	.video-block.episode-video .outside-region .outside-region-block
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/arrows.png") !important;
+	}
+	.page-episode-add table.episode-edit .title .label, .page-episode-add .data .episode-data {
+		color: var(--dimmer-text) !important;
 	}
 
 
