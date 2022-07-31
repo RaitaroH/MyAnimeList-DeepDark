@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.59
+@version 1.6.60
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -694,13 +694,13 @@
 	}
 
 	/*Input*/
-	.page-common .inputtext, .page-common .textarea, .page-common #ignored-user-name, .page-common select
+	.page-common .inputtext, .page-common .textarea, .page-common #ignored-user-name, .page-common select, .page-episode-add table .episode-edit input
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover, .page-common select:active, .page-common select:focus, .page-common select:hover
+	.page-common .inputtext:active, .page-common .inputtext:focus, .page-common .inputtext:hover, .page-common .textarea:active, .page-common .textarea:focus, .page-common .textarea:hover, .page-common #ignored-user-name:active, .page-common #ignored-user-name:focus, .page-common #ignored-user-name:hover, .page-common select:active, .page-common select:focus, .page-common select:hover, .page-episode-add table .episode-edit input:active, .page-episode-add table .episode-edit input:focus, .page-episode-add table .episode-edit input:hover
 	{
 		border-color: var(--main-color) !important;
 	}
