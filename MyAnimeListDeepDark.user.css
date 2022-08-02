@@ -1810,6 +1810,41 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	div .review-element.js-review-element
+	{
+		background-color: var(--main-background) !important;
+	}
+	div .review-element.js-review-element div.text, div .review-element.js-review-element div.text span.js-hidden
+	{
+		color: var(--main-text) !important;
+	}
+	div .review-element.js-review-element div .reaction-box
+	{
+		background-color: var(--main-background) !important;
+	}
+	div .review-element.js-review-element div .menu-block
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.review-element .thumbbody .body .rating
+	{
+		color: var(--main-text) !important;
+	}
+	div .review-element .btn-reaction
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	div .review-element .btn-reaction:active, div .review-element .btn-reaction:focus, div .review-element .btn-reaction:hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	div .thumbbody
+	{
+		border-color: var(--hover-background) !important;
+	}
 
 
 	/*Recommendations*/
