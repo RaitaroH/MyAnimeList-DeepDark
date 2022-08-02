@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.61
+@version 1.6.62
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1810,40 +1810,57 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	div .review-element.js-review-element
-	{
+	.review-element.js-review-element {
 		background-color: var(--main-background) !important;
 	}
-	div .review-element.js-review-element div.text, div .review-element.js-review-element div.text span.js-hidden
-	{
+	.review-element.js-review-element .text, .review-element.js-review-element .text span.js-hidden {
 		color: var(--main-text) !important;
 	}
-	div .review-element.js-review-element div .reaction-box
-	{
+	.review-element.js-review-element .reaction-box {
 		background-color: var(--main-background) !important;
 	}
-	div .review-element.js-review-element div .menu-block
+	.review-element.js-review-element .menu-block
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.review-element .thumbbody .body .rating
-	{
+	.review-element .thumbbody .body .rating {
 		color: var(--main-text) !important;
 	}
-	div .review-element .btn-reaction
-	{
-		background-color: var(--main-background) !important;
+	.review-element .btn-reaction {
+		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	div .review-element .btn-reaction:active, div .review-element .btn-reaction:focus, div .review-element .btn-reaction:hover
-	{
+	.review-element .btn-reaction:active, .review-element .btn-reaction:focus, .review-element .btn-reaction:hover {
 		border-color: var(--main-color) !important;
 	}
-	div .thumbbody
-	{
+	.thumbbody {
 		border-color: var(--hover-background) !important;
+	}
+	.review-element .thumbbody .body .tags .tag {
+		background-color: var(--hover-background) !important;
+		border: 1px solid var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.review-element .thumbbody .body .tags .tag.recommended {
+		color: var(--main-color) !important;
+	}
+	.review-element .thumbbody .body .reaction-box .btn-showall:hover {
+		color: var(--main-color) !important;
+	}
+	.review-element .thumbbody .body .tags .tag.not-recommended {
+		color: #a12f31 !important;
+	}
+	.reviews-horiznav-nav-sort-block .review-sort-order-block.show, .reviews-horiznav-nav-sort-block .review-filter-block.show {
+		background: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.reviews-horiznav-nav-sort-block .review-sort-order-block .btn-close, .reviews-horiznav-nav-sort-block .review-filter-block .btn-close {
+		background-color: var(--second-background) !important;
+	}
+	.reviews-horiznav-nav-sort-block .review-sort-order-block .sort-order-list .btn-sort-order:hover {
+		color: var(--main-color) !important;
 	}
 
 
