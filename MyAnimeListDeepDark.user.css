@@ -1744,7 +1744,7 @@
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/arrows.png") !important;
 	}
-	.page-episode-add form .label, .page-episode-add .data .episode-data {
+	.page-episode-add .label, .page-episode-add .data .episode-data {
 		color: var(--dimmer-text) !important;
 	}
 
