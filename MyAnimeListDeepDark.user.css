@@ -1965,12 +1965,12 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.page-forum .btn-forum, .page-forum .btn-forum, .btn-rect-grey1, .page-common .forum-topic-sort
+	.page-forum .btn-forum, .btn-rect-grey1, .page-common .forum-topic-sort
 	{
 		background-color: var(--second-background) !important;
 		border-color: transparent !important;
 	}
-	.page-forum .btn-forum:hover, .page-forum .btn-forum:hover, .btn-rect-grey1:hover
+	.page-forum .btn-forum:hover, .btn-rect-grey1:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
