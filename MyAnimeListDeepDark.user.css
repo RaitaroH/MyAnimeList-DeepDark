@@ -951,12 +951,12 @@
 	}
 
 	/*Latest Updated Episode Videos*/
-	.page-common a, .page-common a:visited
+	.page-common a, .page-common a:visited, .page-common a span, .page-common a span:visited
 	{
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	.page-common a:hover, .page-common a:visited:hover
+	.page-common a:hover, .page-common a:visited:hover, .page-common a span:hover, .page-common a span:visited:hover
 	{
 		color: var(--main-color) !important;
 		opacity: 1;
