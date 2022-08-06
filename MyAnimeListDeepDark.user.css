@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.64
+@version 1.6.65
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -951,12 +951,12 @@
 	}
 
 	/*Latest Updated Episode Videos*/
-	.page-common a, .page-common a:visited
+	.page-common a, .page-common a:visited, .page-common a span, .page-common a span:visited
 	{
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	.page-common a:hover, .page-common a:visited:hover
+	.page-common a:hover, .page-common a:visited:hover, .page-common a span:hover, .page-common a span:visited:hover
 	{
 		color: var(--main-color) !important;
 		opacity: 1;
@@ -1281,56 +1281,56 @@
 	}
 
 	
-	/*Add button*/
-	.page-common a.button_add.button_add, .page-common a.button_add.button_edit, .page-common a.button_edit.button_add, .page-common a.button_edit.button_edit
+	/*Add/edit button*/
+	.page-common a.button_add, .page-common a.button_edit
 	{
 		border-color: transparent !important;
 		background-color: transparent !important;
 	}
-	.page-common a.button_add.button_add:hover, .page-common a.button_add.button_edit:hover, .page-common a.button_edit.button_add:hover, .page-common a.button_edit.button_edit:hover
+	.page-common a.button_add:hover, .page-common a.button_edit:hover
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
 		opacity: 1;
 		transition: none !important;
 	}
-	.page-common a.button_add.button_add.reading, .page-common a.button_add.button_add.watching, .page-common a.button_add.button_edit.reading, .page-common a.button_add.button_edit.watching, .page-common a.button_edit.button_add.reading, .page-common a.button_edit.button_add.watching, .page-common a.button_edit.button_edit.reading, .page-common a.button_edit.button_edit.watching
+	.page-common a.button_edit.reading, .page-common a.button_edit.watching
 	{
 		background-color: var(--green) !important;
 	}
-	.page-common a.button_add.button_add.reading span, .page-common a.button_add.button_add.watching span, .page-common a.button_add.button_edit.reading span, .page-common a.button_add.button_edit.watching span, .page-common a.button_edit.button_add.reading span, .page-common a.button_edit.button_add.watching span, .page-common a.button_edit.button_edit.reading span, .page-common a.button_edit.button_edit.watching span
+	.page-common a.button_edit.reading span, .page-common a.button_edit.watching span
 	{
 		color: #fff !important;
 	}
-	.page-common a.button_add.button_add.plantoread, .page-common a.button_add.button_add.plantowatch, .page-common a.button_add.button_edit.plantoread, .page-common a.button_add.button_edit.plantowatch, .page-common a.button_edit.button_add.plantoread, .page-common a.button_edit.button_add.plantowatch, .page-common a.button_edit.button_edit.plantoread, .page-common a.button_edit.button_edit.plantowatch
+	.page-common a.button_edit.plantoread, .page-common a.button_edit.plantowatch
 	{
 		background-color: var(--gray) !important;
 	}
-	.page-common a.button_add.button_add.plantoread span, .page-common a.button_add.button_add.plantowatch span, .page-common a.button_add.button_edit.plantoread span, .page-common a.button_add.button_edit.plantowatch span, .page-common a.button_edit.button_add.plantoread span, .page-common a.button_edit.button_add.plantowatch span, .page-common a.button_edit.button_edit.plantoread span, .page-common a.button_edit.button_edit.plantowatch span
+	.page-common a.button_edit.plantoread span, .page-common a.button_edit.plantowatch span
 	{
 		color: #fff !important;
 	}
-	.page-common a.button_add.button_add.completed, .page-common a.button_add.button_edit.completed, .page-common a.button_edit.button_add.completed, .page-common a.button_edit.button_edit.completed
+	.page-common a.button_edit.completed
 	{
 		background-color: var(--main-color) !important;
 	}
-	.page-common a.button_add.button_add.completed span, .page-common a.button_add.button_edit.completed span, .page-common a.button_edit.button_add.completed span, .page-common a.button_edit.button_edit.completed span
+	.page-common a.button_edit.completed span, .page-common a.button_edit.completed i
 	{
 		color: #fff !important;
 	}
-	.page-common a.button_add.button_add.dropped, .page-common a.button_add.button_edit.dropped, .page-common a.button_edit.button_add.dropped, .page-common a.button_edit.button_edit.dropped
+	.page-common a.button_edit.dropped
 	{
 		background-color: var(--red) !important;
 	}
-	.page-common a.button_add.button_add.dropped span, .page-common a.button_add.button_edit.dropped span, .page-common a.button_edit.button_add.dropped span, .page-common a.button_edit.button_edit.dropped span
+	.page-common a.button_edit.dropped span
 	{
 		color: #fff !important;
 	}
-	.page-common a.button_add.button_add.on-hold, .page-common a.button_add.button_edit.on-hold, .page-common a.button_edit.button_add.on-hold, .page-common a.button_edit.button_edit.on-hold
+	.page-common a.button_edit.on-hold
 	{
 		background-color: var(--yellow) !important;
 	}
-	.page-common a.button_add.button_add.on-hold span, .page-common a.button_add.button_edit.on-hold span, .page-common a.button_edit.button_add.on-hold span, .page-common a.button_edit.button_edit.on-hold span
+	.page-common a.button_edit.on-hold span
 	{
 		color: #fff !important;
 	}
@@ -1965,12 +1965,12 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.page-forum .btn-forum, .page-forum .btn-forum, .btn-rect-grey1, .page-common .forum-topic-sort
+	.page-forum .btn-forum, .btn-rect-grey1, .page-common .forum-topic-sort
 	{
 		background-color: var(--second-background) !important;
 		border-color: transparent !important;
 	}
-	.page-forum .btn-forum:hover, .page-forum .btn-forum:hover, .btn-rect-grey1:hover
+	.page-forum .btn-forum:hover, .btn-rect-grey1:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
