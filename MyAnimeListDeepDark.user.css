@@ -1281,13 +1281,13 @@
 	}
 
 	
-	/*Add button*/
-	.page-common a.button_edit
+	/*Add/edit button*/
+	.page-common a.button_add, .page-common a.button_edit
 	{
 		border-color: transparent !important;
 		background-color: transparent !important;
 	}
-	.page-common a.button_edit:hover
+	.page-common a.button_add:hover, .page-common a.button_edit:hover
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
