@@ -668,7 +668,7 @@
 
 
 	/*Search*/
-	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-text, .news.featured .featured-search-side .featured-search-input-submit
+	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-submit
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -2857,6 +2857,9 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+    .news div .featured-side-block {
+        width: 300px !important;
+    }
 	body.news .menu-category .btn-category.selected
 	{
 		color: var(--main-text) !important;
