@@ -2938,11 +2938,34 @@
 	{
 		color: var(--main-text) !important;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags li
+	.news .news-container .tags .tag.tag-color1
+	{
+		color: var(--red) !important;
+	}
+	.news .news-container .tags .tag.tag-color2
+	{
+		color: var(--yellow) !important;
+	}
+	.news .news-container .tags .tag.tag-color3
+	{
+		color: var(--green) !important;
+	}
+	.news .news-container .tags .tag.tag-color4
+	{
+		color: var(--main-color) !important;
+	}
+	.news .news-container .tags .tag.tag-color5
+	{
+		color: var(--purple) !important;
+	}
+	.news .news-container .tags .tag.tag-color6
+	{
+		color: var(--gray) !important;
+	}
+	.news .news-content-block.news-tags .menu-category-tags li
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
-		color: var(--main-text) !important;
 	}
 	body.news .news-content-block.news-tags .menu-category-tags li:active, body.news .news-content-block.news-tags .menu-category-tags li:focus, body.news .news-content-block.news-tags .menu-category-tags li:hover
 	{
