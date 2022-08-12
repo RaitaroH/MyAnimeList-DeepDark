@@ -2617,6 +2617,10 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.user-profile .user-compatability-graph .bar-outer .bar-outer-negative .fn-grey3
+	{
+		color: var(--dimmer-text) !important;
+	}
 	.user-profile .user-button .btn-profile-submit, .user-profile .user-button .btn-profile-submit:hover
 	{
 		color: var(--main-text) !important;
