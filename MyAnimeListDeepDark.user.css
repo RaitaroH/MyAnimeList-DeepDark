@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.71
+@version 1.6.72
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -792,6 +792,13 @@
 	{
 		border-right: 5px solid var(--green) !important;
 	}
+	.seasonal-anime-list .seasonal-anime .information.watching .information-item.buttons .js-user-status-block .js-btn-add-episode,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .watching ~ .js-user-status-block .js-btn-add-episode,
+	.seasonal-anime-list .seasonal-anime .information.reading .information-item.buttons .js-user-status-block .js-btn-add-episode,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .reading ~ .js-user-status-block .js-btn-add-episode,
+	{
+		color: var(--green) !important;
+	}
 	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble,
 	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .completed + .bubble
 	{
@@ -813,6 +820,11 @@
 	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .on-hold + .bubble:before
 	{
 		border-right: 5px solid var(--yellow) !important;
+	}
+	.seasonal-anime-list .seasonal-anime .information.on-hold .information-item.buttons .js-user-status-block .js-btn-add-episode,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .on-hold ~ .js-user-status-block .js-btn-add-episode
+	{
+		color: var(--yellow) !important;
 	}
 	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble:after
 	{
