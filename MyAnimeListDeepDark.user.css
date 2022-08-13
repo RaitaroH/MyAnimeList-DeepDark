@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.70
+@version 1.6.71
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -668,7 +668,7 @@
 
 
 	/*Search*/
-	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-submit, .stacks .search-side form button
+	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-submit, .stacks .search-side form button, .anime-search-form-block .anime-search-form-search .inputButton
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -676,7 +676,8 @@
 	}
 	.page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus, .page-common #searchBar.searchBar #topSearchText:hover,
     .news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:focus, .news.featured .featured-search-side .featured-search-input-text:hover,
-    .stacks .search-side form input:active, .stacks .search-side form input:focus, .stacks .search-side form input:hover
+    .stacks .search-side form input:active, .stacks .search-side form input:focus, .stacks .search-side form input:hover,
+	.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus, .anime-search-form-block .anime-search-form-search .inputtext:hover
 	{
 		border: 1px solid var(--main-color) !important;
 	}
@@ -740,12 +741,6 @@
 
 
 	/*Search results*/
-	.anime-search-form-block .anime-search-form-search .inputtext, .anime-search-form-block .anime-search-form-search .inputButton
-	{
-		background-color: var(--second-background) !important;
-		color: var(--main-text) !important;
-		border-color: var(--hover-background) !important;
-	}
 	.anime-search-form-block .anime-search-form-search .inputtext:hover,.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus
 	{
 		border-color: var(--main-color) !important;
@@ -2304,7 +2299,15 @@
 	}
 
 
-	/*Notifications*/
+	/*Maintenance notifications*/
+	.page-common div.text-ribbon.ga-click.ga-impression div
+	{
+		background-color: var(--yellow) !important;
+	}
+	.page-common div.text-ribbon.ga-click.ga-impression div a:active, .page-common div.text-ribbon.ga-click.ga-impression div a:hover
+	{
+		text-decoration: underline !important;
+	}
 
 	/*Dropdown*/
 	.page-common .header-notification-dropdown .arrow_box, .page-common .header-notification-view-all a
