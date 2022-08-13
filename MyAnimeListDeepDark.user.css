@@ -777,30 +777,40 @@
 	{
 		line-height: 19px !important;
 	}
-	.seasonal-anime-list .seasonal-anime .information.watching .information-item.buttons .bubble, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .watching + .bubble
+	.seasonal-anime-list .seasonal-anime .information.watching .information-item.buttons .bubble,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .watching + .bubble,
+	.seasonal-anime-list .seasonal-anime .information.reading .information-item.buttons .bubble,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .reading + .bubble
 	{
 		border-color: var(--green) !important;
 		background-color: var(--green) !important;
 	}
-	.seasonal-anime-list .seasonal-anime .information.watching .information-item.buttons .bubble:before, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .watching + .bubble:before
+	.seasonal-anime-list .seasonal-anime .information.watching .information-item.buttons .bubble:before,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .watching + .bubble:before
+	.seasonal-anime-list .seasonal-anime .information.reading .information-item.buttons .bubble:before,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .reading + .bubble:before
 	{
 		border-right: 5px solid var(--green) !important;
 	}
-	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .completed + .bubble
+	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .completed + .bubble
 	{
 		border-color: var(--main-color) !important;
 		background-color: var(--main-color) !important;
 	}
-	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble:before, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .completed + .bubble:before
+	.seasonal-anime-list .seasonal-anime .information.completed .information-item.buttons .bubble:before,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .completed + .bubble:before
 	{
 		border-right: 5px solid var(--main-color) !important;
 	}
-	.seasonal-anime-list .seasonal-anime .information.on-hold .information-item.buttons .bubble, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .on-hold + .bubble
+	.seasonal-anime-list .seasonal-anime .information.on-hold .information-item.buttons .bubble,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .on-hold + .bubble
 	{
 		border-color: var(--yellow) !important;
 		background-color: var(--yellow) !important;
 	}
-	.seasonal-anime-list .seasonal-anime .information.on-hold .information-item.buttons .bubble:before, .seasonal-anime-list .seasonal-anime .information .information-item.buttons .on-hold + .bubble:before
+	.seasonal-anime-list .seasonal-anime .information.on-hold .information-item.buttons .bubble:before,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .on-hold + .bubble:before
 	{
 		border-right: 5px solid var(--yellow) !important;
 	}
