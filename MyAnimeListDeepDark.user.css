@@ -795,7 +795,7 @@
 	.seasonal-anime-list .seasonal-anime .information.watching .information-item.buttons .js-user-status-block .js-btn-add-episode,
 	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .watching ~ .js-user-status-block .js-btn-add-episode,
 	.seasonal-anime-list .seasonal-anime .information.reading .information-item.buttons .js-user-status-block .js-btn-add-episode,
-	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .reading ~ .js-user-status-block .js-btn-add-episode,
+	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .reading ~ .js-user-status-block .js-btn-add-episode
 	{
 		color: var(--green) !important;
 	}
@@ -843,7 +843,10 @@
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon_pict_score_mem.png") !important;
 	}
-
+	.seasonal-anime-list .seasonal-anime .airing
+	{
+		color: var(--green) !important;
+	}
 	.seasonal-anime-list .seasonal-anime .genres .genre
 	{
 		background-color: transparent !important;
