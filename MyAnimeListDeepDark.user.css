@@ -1127,8 +1127,11 @@
 	.stacks .tab-area ul li:hover, .profile .navi .tabs .btn-tab:hover, .stacks .tab-area ul li.on, .profile .navi .tabs .btn-tab.on {
 		background-color: var(--main-color) !important;
 	}
-	.stacks .btn-show-spoilers.on i.fas, .profile .btn-show-spoilers i.fas {
+	.stacks .btn-show-spoilers.on i.fas, .profile .btn-show-spoilers.on i.fas {
 		color: var(--main-color) !important;
+	}
+	.stacks .btn-show-spoilers:not(.on) i.fas, .profile .btn-show-spoilers:not(.on) i.fas {
+		color: var(--hover-background) !important;
 	}
 	.stacks .tag .tag-anime, .stacks .tag .tag-manga, .stacks .tag .tag-challenge, .profile .stacks-list .column-item .tag .tag-anime, .profile .stacks-list .column-item .tag .tag-manga, .profile .stacks-list .column-item .tag .tag-challenge {
 		color: var(--main-text) !important;
