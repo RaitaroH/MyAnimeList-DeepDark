@@ -1140,9 +1140,16 @@
 	.stacks .tab-area, .stacks .search-list .column-item {
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
-	.stacks .btn-report .report-block {
+	.stacks .btn-report .report-block, .profile .btn-report .report-block {
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
+	}
+	.profile .sort-order-block.sort {
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.profile .stacks-list .column-item, .profile .js-stacks-navi {
+		border-color: var(--hover-background) !important;
 	}
 	.stacks .btn-stack .balloon, .stacks .btn-stack.on .balloon, .profile .stacks-list .column-item .foot .btn-stack .balloon, .profile .stacks-list .column-item .foot .btn-stack.on .balloon {
 		background-color: var(--hover-background) !important;
