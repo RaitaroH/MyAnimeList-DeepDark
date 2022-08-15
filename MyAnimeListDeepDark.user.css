@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.73
+@version 1.6.74
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -2009,35 +2009,47 @@
 		background-color: var(--main-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	#episodeRoll tr, #episodeList tr
+	#episodeRoll tr, #episodeList tr, #characterList tr
 	{
 		background-color: var(--main-background) !important;
 	}
-	#episodeRoll .table-header td, #episodeList .table-header td
+	#episodeRoll .table-header td, #episodeList .table-header td, #characterList .table-header td
 	{
 		border-color: var(--main-background) !important;
 		background-color: var(--hover-background) !important;
 	}
-	#episodeRoll .table-header td.check, #episodeList .table-header td.check
+	#episodeRoll .table-header td.check, #episodeList .table-header td.check, #characterList .table-header td.check
 	{
 		border-left-color: var(--hover-background) !important;
 	}
-	#episodeRoll .table-header td.actor, #episodeList .table-header td.actor
+	#episodeRoll .table-header td.actor, #episodeList .table-header td.actor, #characterList .table-header td.actor
 	{
 		border-right-color: var(--hover-background) !important;
 	}
-	#episodeRoll .data-role.on, #episodeRoll .data-role:hover, #episodeList .data-actor.on, #episodeList .data-actor:hover
+	#episodeRoll .data-role.on, #episodeRoll .data-role:hover,
+	#episodeList .data-actor.on, #episodeList .data-actor:hover,
+	#characterList .data-role.on, #characterList .data-role:hover
+	#characterList .data-actor.on, #characterList .data-actor:hover
 	{
 		background-color: var(--hover-background) !important;
 	}
-	#episodeRoll .data-actor-cell .data-actor-list, #episodeList .data-actor-cell .data-actor-list
+	#episodeRoll .data-actor-cell .data-actor-list, #episodeList .data-actor-cell .data-actor-list, #characterList .data-actor-cell .data-actor-list
 	{
 		color: var(--dimmer-text) !important;
 	}
-	#episodeRoll .edit-character-list .js-edit-character, #episodeList .edit-character-list .js-edit-character
+	#episodeRoll .edit-character-list .js-edit-character, #episodeList .edit-character-list .js-edit-character, #characterList .edit-character-list .js-edit-character
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
+	}
+	#characterList input[type="button"]
+	{
+		background-color: var(--main-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	#characterList input[type="button"]:active, #characterList input[type="button"]:focus, #characterList input[type="button"]:hover
+	{
+		border-color: var(--main-color) !important;
 	}
 
 
