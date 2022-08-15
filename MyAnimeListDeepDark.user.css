@@ -2009,6 +2009,36 @@
 		background-color: var(--main-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
+	#episodeRoll tr, #episodeList tr
+	{
+		background-color: var(--main-background) !important;
+	}
+	#episodeRoll .table-header td, #episodeList .table-header td
+	{
+		border-color: var(--main-background) !important;
+		background-color: var(--hover-background) !important;
+	}
+	#episodeRoll .table-header td.check, #episodeList .table-header td.check
+	{
+		border-left-color: var(--hover-background) !important;
+	}
+	#episodeRoll .table-header td.actor, #episodeList .table-header td.actor
+	{
+		border-right-color: var(--hover-background) !important;
+	}
+	#episodeRoll .data-role.on, #episodeRoll .data-role:hover, #episodeList .data-actor.on, #episodeList .data-actor:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
+	#episodeRoll .data-actor-cell .data-actor-list, #episodeList .data-actor-cell .data-actor-list
+	{
+		color: var(--dimmer-text) !important;
+	}
+	#episodeRoll .edit-character-list .js-edit-character, #episodeList .edit-character-list .js-edit-character
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
 
 
 	/*Forum*/
