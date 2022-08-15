@@ -1998,6 +1998,17 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	.episode-edit-staff .edit-roll-list-block, .episode-edit-character .edit-roll-list-block.edit-character-list-block
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		border-left: 1px solid var(--hover-background) !important;
+	}
+	#episodeRole > li, #primaryVoiceActorList > li
+	{
+		background-color: var(--main-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
 
 
 	/*Forum*/
