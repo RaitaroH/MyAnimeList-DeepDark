@@ -1983,6 +1983,21 @@
 	.anime-character .anime-character-sort-order-block .sort-order-list .btn-sort-order.circle:hover {
 		color: var(--main-color) !important;
 	}
+	.episode-character-list, .episode-character-list li
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.btn-episode-character-pulldown
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.episode-character-list li:hover, .btn-episode-character-pulldown:hover
+	{
+		background-color: var(--hover-background) !important;
+	}
 
 
 	/*Forum*/
