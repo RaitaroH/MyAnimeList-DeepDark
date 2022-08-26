@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.75
+@version 1.6.76
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1415,29 +1415,26 @@
 		{
 			background-color: var(--gray) !important;
 		}
-		.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading
-		{
-			color: var(--green) !important;
-		}
-		.profile .statistics-updates .data .text.completed
-		{
-			color: var(--main-color) !important;
-		}
-		.profile .statistics-updates .data .text.on_hold
-		{
-			color: var(--yellow) !important;
-		}
-		.profile .statistics-updates .data .text.dropped
-		{
-			color: var(--red) !important;
-		}
-		.profile .statistics-updates .data .text.plan_to_watch, .profile .statistics-updates .data .text.plan_to_read
-		{
-			color: var(--gray) !important;
-		}
 	}
-	.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading {
+	.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading
+	{
 		color: var(--green) !important;
+	}
+	.profile .statistics-updates .data .text.completed
+	{
+		color: var(--main-color) !important;
+	}
+	.profile .statistics-updates .data .text.on_hold
+	{
+		color: var(--yellow) !important;
+	}
+	.profile .statistics-updates .data .text.dropped
+	{
+		color: var(--red) !important;
+	}
+	.profile .statistics-updates .data .text.plan_to_watch, .profile .statistics-updates .data .text.plan_to_read
+	{
+		color: var(--gray) !important;
 	}
 	.profile .user-statistics .stats-graph
 	{
