@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.77
+@version 1.6.78
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -668,7 +668,7 @@
 
 
 	/*Search*/
-	.page-common #searchBar.searchBar #topSearchValue, .page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-submit, .stacks .search-side form button, .anime-search-form-block .anime-search-form-search .inputButton
+	.page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon, .news.featured .featured-search-side .featured-search-input-submit, .stacks .search-side form button, .anime-search-form-block .anime-search-form-search .inputButton, .club-search-form-search form .inputButton
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -677,7 +677,8 @@
 	.page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus, .page-common #searchBar.searchBar #topSearchText:hover,
     .news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:focus, .news.featured .featured-search-side .featured-search-input-text:hover,
     .stacks .search-side form input:active, .stacks .search-side form input:focus, .stacks .search-side form input:hover,
-	.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus, .anime-search-form-block .anime-search-form-search .inputtext:hover
+	.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus, .anime-search-form-block .anime-search-form-search .inputtext:hover,
+	.club-search-form-search .inputtext:active, .club-search-form-search .inputtext:focus, .club-search-form-search .inputtext:hover
 	{
 		border: 1px solid var(--main-color) !important;
 	}
@@ -685,10 +686,10 @@
 	{
 		height: 22px !important;
 	}
-	.page-common #searchBar.searchBar #topSearchValue:hover
+	.page-common #searchBar.searchBar #topSearchValue:active, .page-common #searchBar.searchBar #topSearchValue:focus, .page-common #searchBar.searchBar #topSearchValue:hover
 	{
 		background-color: var(--hover-background) !important;
-		color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 	.page-common #searchBar.searchBar #topSearchText
 	{
@@ -2839,7 +2840,16 @@
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.club-search-form-search .inputtext, .page-common .word-break
+	.club-search-form-search .select:active, .club-search-form-search .select:focus, .club-search-form-search .select:hover
+	{
+		background-color: var(--hover-background) !important;
+		border: 1px solid var(--main-color) !important;
+	}
+	.club-search-form-search .select option
+	{
+		color: var(--main-text) !important;
+	}
+	.page-common .word-break
 	{
 		color: var(--main-text) !important;
 	}
