@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.78
+@version 1.6.79
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -714,6 +714,10 @@
 	}
 	.page-common select {
 		font-size: 11px; /* Consistent with MAL's font size */
+	}
+	.page-common #ignored-user-name, .page-common #dialog .mt12 input, .page-episode-add #edit_episode_submission_title, .page-episode-add #edit_episode_submission_title_japanese, .page-episode-add #edit_episode_submission_title_romanized, .page-episode-add #video_title, .page-episode-add #video_url
+	{
+		border: 1px solid;
 	}
 
 	/*Search dropdown results*/
@@ -2244,10 +2248,6 @@
 	.season .btn-show-sort:hover
 	{
 		color: var(--main-color) !important;
-	}
-	.season .btn-show-kids, .season .btn-show-r18
-	{
-		filter: grayscale(100%);
 	}
 	.page-common .inputButton, .seasonal-anime-list .anime-header
 	{
