@@ -2245,10 +2245,6 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.season .btn-show-kids, .season .btn-show-r18
-	{
-		filter: grayscale(100%);
-	}
 	.page-common .inputButton, .seasonal-anime-list .anime-header
 	{
 		background-color:  var(--main-color) !important;
