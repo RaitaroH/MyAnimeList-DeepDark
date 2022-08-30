@@ -715,6 +715,10 @@
 	.page-common select {
 		font-size: 11px; /* Consistent with MAL's font size */
 	}
+	.page-common #ignored-user-name, .page-common #dialog .mt12 input, .page-episode-add #edit_episode_submission_title, .page-episode-add #edit_episode_submission_title_japanese, .page-episode-add #edit_episode_submission_title_romanized, .page-episode-add #video_title, .page-episode-add #video_url
+	{
+		border: 1px solid;
+	}
 
 	/*Search dropdown results*/
 	.page-common .incrementalSearchResultList, .page-common .incrementalSearchResultList .list.separator, .page-common .incrementalSearchResultList .list, .page-common .incrementalSearchResultList .list:last-of-type, .page-common .incrementalSearchResultList .list:last-of-type
