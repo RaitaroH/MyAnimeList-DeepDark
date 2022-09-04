@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.79
+@version 1.6.80
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1152,7 +1152,7 @@
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.profile .sort-order-block.sort {
+	.profile .sort-order-block.sort, .stacks .sort-order-block.sort {
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
