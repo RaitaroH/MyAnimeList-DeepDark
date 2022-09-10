@@ -3649,6 +3649,21 @@
 		background-color: var(--hover-background) !important;
 	}
 
+	/*Press*/
+	.page-pressroom .di-t
+	{
+		background-color: var(--main-background) !important;
+	}
+	.page-pressroom .press-data
+	{
+		border-block: none !important;
+	}
+	.page-pressroom h1[data="AllotmentAnnounce"]
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+
 	/*Sitemap*/
 	.sitemap__category, .sitemap__category__title
 	{
