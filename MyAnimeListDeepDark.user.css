@@ -3643,6 +3643,12 @@
 		border-color: var(--hover-background) !important;
 	}
 
+	/*Terms of use*/
+	.page-common .mal-address
+	{
+		background-color: var(--hover-background) !important;
+	}
+
 	/*Sitemap*/
 	.sitemap__category, .sitemap__category__title
 	{
