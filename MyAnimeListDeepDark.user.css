@@ -2843,6 +2843,11 @@
 		color: var(--main-text) !important;
 	}
 
+	/*Friends updates*/
+	.page-common .mal-modal-dialog .modal-profile-comment-form, .page-common .mal-modal-dialog .modal-profile-comment-quote
+	{
+		background-color: var(--hover-background) !important;
+	}
 
 	/*Clubs*/
 	.club-search-form-search .select
