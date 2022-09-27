@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.82
+@version 1.6.83
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1110,6 +1110,23 @@
 	body.index .widget.my_list_updates .item, body.index .widget.friend_list_updates .item, body.index .widget.clubs .item, body.index .widget.reviews .item
 	{
 		border-color: var(--hover-background) !important;
+	}
+	.page-common .widget-content .footer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .widget-content .footer .btn-settings
+	{
+		color: var(--main-color) !important;
+	}
+	.page-common .widget-content .footer .dialog-settings
+	{
+		background-color: var(--second-background) !important;
+	}
+	.page-common .widget-content .footer .dialog-settings th
+	{
+		background-color: var(--hover-background) !important;
 	}
 
 
@@ -2552,7 +2569,9 @@
 
 
 	/*Notification settings*/
-	.notification_settings .notification-setting-content .settings-notification .setting.header td, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label
+	.notification_settings .notification-setting-content .settings-notification .setting.header td,
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label,
+	.page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label
 	{
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
@@ -2561,12 +2580,14 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::before, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::before, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after,
+	.page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label, .page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label::before, .page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label::after
 	{
 		color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after,
+	.page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label::after
 	{
 		background-color: var(--main-color) !important;
 	}
