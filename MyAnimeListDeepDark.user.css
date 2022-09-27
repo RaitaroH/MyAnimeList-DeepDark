@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.6.82
+@version 1.6.83
 @updateURL https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1111,6 +1111,23 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.page-common .widget-content .footer
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .widget-content .footer .btn-settings
+	{
+		color: var(--main-color) !important;
+	}
+	.page-common .widget-content .footer .dialog-settings
+	{
+		background-color: var(--second-background) !important;
+	}
+	.page-common .widget-content .footer .dialog-settings th
+	{
+		background-color: var(--hover-background) !important;
+	}
 
 
 	/*Stacks*/
@@ -1421,29 +1438,39 @@
 			background-color: var(--gray) !important;
 		}
 	}
-	.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading
+	.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading,
+	.page-common .history-updates .work-and-friend .work-status .watching, .page-common .history-updates .work-and-friend .work-status .re-watching, .page-common .history-updates .work-and-friend .work-status .reading, .page-common .history-updates .work-and-friend .work-status .re-reading
 	{
 		color: var(--green) !important;
 	}
-	.profile .statistics-updates .data .text.completed
+	.profile .statistics-updates .data .text.completed, .page-common .history-updates .work-and-friend .work-status .completed
 	{
 		color: var(--main-color) !important;
 	}
-	.profile .statistics-updates .data .text.on_hold
+	.profile .statistics-updates .data .text.on_hold, .page-common .history-updates .work-and-friend .work-status .on_hold
 	{
 		color: var(--yellow) !important;
 	}
-	.profile .statistics-updates .data .text.dropped
+	.profile .statistics-updates .data .text.dropped, .page-common .history-updates .work-and-friend .work-status .dropped
 	{
 		color: var(--red) !important;
 	}
-	.profile .statistics-updates .data .text.plan_to_watch, .profile .statistics-updates .data .text.plan_to_read
+	.profile .statistics-updates .data .text.plan_to_watch, .profile .statistics-updates .data .text.plan_to_read,
+	.page-common .history-updates .work-and-friend .work-status .plan_to_watch, .page-common .history-updates .work-and-friend .work-status .plan_to_read
 	{
 		color: var(--gray) !important;
 	}
-	.profile .user-statistics .stats-graph
+	.profile .user-statistics .stats-graph, .page-common .history-updates .work-and-friend .work-graph
 	{
 		background-color: var(--hover-background) !important;
+	}
+	.page-common .history-updates .work-and-friend .work-graph
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .history-updates div.item.js-history-updates-item .body
+	{
+		border-color: var(--hover-background) !important;
 	}
 
 	.user-status-block .form-user-score
@@ -2542,7 +2569,9 @@
 
 
 	/*Notification settings*/
-	.notification_settings .notification-setting-content .settings-notification .setting.header td, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label
+	.notification_settings .notification-setting-content .settings-notification .setting.header td,
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"]:checked + label,
+	.page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label
 	{
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
@@ -2551,12 +2580,14 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::before, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::before, .notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after,
+	.page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label, .page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label::before, .page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label::after
 	{
 		color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after
+	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type="checkbox"] + label::after,
+	.page-common .widget-content .footer .dialog-settings td.switch input[type="checkbox"]:checked + label::after
 	{
 		background-color: var(--main-color) !important;
 	}
@@ -2833,6 +2864,11 @@
 		color: var(--main-text) !important;
 	}
 
+	/*Friends updates*/
+	.page-common .mal-modal-dialog .modal-profile-comment-form, .page-common .mal-modal-dialog .modal-profile-comment-quote
+	{
+		background-color: var(--hover-background) !important;
+	}
 
 	/*Clubs*/
 	.club-search-form-search .select
