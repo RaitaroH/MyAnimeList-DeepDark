@@ -1421,29 +1421,39 @@
 			background-color: var(--gray) !important;
 		}
 	}
-	.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading
+	.profile .statistics-updates .data .text.watching, .profile .statistics-updates .data .text.re-watching, .profile .statistics-updates .data .text.reading, .profile .statistics-updates .data .text.re-reading,
+	.page-common .history-updates .work-and-friend .work-status .watching, .page-common .history-updates .work-and-friend .work-status .re-watching, .page-common .history-updates .work-and-friend .work-status .reading, .page-common .history-updates .work-and-friend .work-status .re-reading
 	{
 		color: var(--green) !important;
 	}
-	.profile .statistics-updates .data .text.completed
+	.profile .statistics-updates .data .text.completed, .page-common .history-updates .work-and-friend .work-status .completed
 	{
 		color: var(--main-color) !important;
 	}
-	.profile .statistics-updates .data .text.on_hold
+	.profile .statistics-updates .data .text.on_hold, .page-common .history-updates .work-and-friend .work-status .on_hold
 	{
 		color: var(--yellow) !important;
 	}
-	.profile .statistics-updates .data .text.dropped
+	.profile .statistics-updates .data .text.dropped, .page-common .history-updates .work-and-friend .work-status .dropped
 	{
 		color: var(--red) !important;
 	}
-	.profile .statistics-updates .data .text.plan_to_watch, .profile .statistics-updates .data .text.plan_to_read
+	.profile .statistics-updates .data .text.plan_to_watch, .profile .statistics-updates .data .text.plan_to_read,
+	.page-common .history-updates .work-and-friend .work-status .plan_to_watch, .page-common .history-updates .work-and-friend .work-status .plan_to_read
 	{
 		color: var(--gray) !important;
 	}
-	.profile .user-statistics .stats-graph
+	.profile .user-statistics .stats-graph, .page-common .history-updates .work-and-friend .work-graph
 	{
 		background-color: var(--hover-background) !important;
+	}
+	.page-common .history-updates .work-and-friend .work-graph
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.page-common .history-updates div.item.js-history-updates-item .body
+	{
+		border-color: var(--hover-background) !important;
 	}
 
 	.user-status-block .form-user-score
