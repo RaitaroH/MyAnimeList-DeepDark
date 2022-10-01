@@ -3023,8 +3023,15 @@
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	.membership .about-membership .about-extras .about-extras-content .header
+	.membership .about-membership .about-extras .about-extras-content .header, .membership .membership-payment .form-table .title, .membership .membership-payment .btn-supporter-policy
 	{
+		color: var(--main-text) !important;
+	}
+	.membership .membership-payment .form-table.border-bottom, .payment .textPaymentPolicyContainer:after {
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.payment .payment-method input.payment-radio[type=radio]+label, .membership .membership-payment .text-payment-notice {
+		background-color: var(--main-background) !important;
 		color: var(--main-text) !important;
 	}
 	.page-common .icon-social-login.connect {
