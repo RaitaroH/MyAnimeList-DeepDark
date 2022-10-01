@@ -1427,7 +1427,7 @@
 		{
 			background-color: var(--green) !important;
 		}
-		.profile .user-statistics .stats-graph .graph.completed, .profile .user-statistics .stats-status .circle.completed::after, .profile .statistics-updates .data .graph .graph-inner.completed
+		.profile .user-statistics .stats-graph .graph.completed, .profile .user-statistics .stats-status .circle.completed::after, .profile .statistics-updates .data .graph .graph-inner.completed, .history_content_wrapper .history-updates .wrok-graph-inner.completed
 		{
 			background-color: var(--main-color) !important;
 		}
@@ -2780,11 +2780,11 @@
 	{
 		background-color: transparent !important;
 	}
-	.user-profile .user-function .icon-user-function, .user-profile .user-status.border-top, .user-profile h4, .page-common .content-container .container-left, .page-common .content-container .container-right h5, .profile .statistics-updates .data .graph, .user-profile .user-compatability-graph .bar-outer
+	.user-profile .user-function .icon-user-function, .user-profile .user-status.border-top, .user-profile h4, .page-common .content-container .container-left, .page-common .content-container .container-right h5, .profile .statistics-updates .data .graph, .user-profile .user-compatability-graph .bar-outer, .history_content_wrapper .history-updates .work-graph
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.user-profile .user-function .icon-user-function:hover, .profile .statistics-updates .data .graph
+	.user-profile .user-function .icon-user-function:hover, .profile .statistics-updates .data .graph, .history_content_wrapper .history-updates .work-graph
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -2888,6 +2888,15 @@
 	#content > div:nth-child(2)
 	{
 		color: var(--main-text) !important;
+	}
+	.history_content_wrapper .history-updates .navi-btn:hover, .history_content_wrapper .history-updates .notes-btn {
+		color: var(--main-color) !important;
+	}
+	.history_content_wrapper .history-updates .item:not(:last-child) .body {
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.history_content_wrapper .history-updates .notes {
+		background-color:  var(--hover-background) !important;
 	}
 
 	/*Friends updates*/
