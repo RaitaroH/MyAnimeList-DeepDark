@@ -675,8 +675,8 @@
 		border-color: var(--hover-background) !important;
 	}
 	.page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus, .page-common #searchBar.searchBar #topSearchText:hover,
-    .news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:focus, .news.featured .featured-search-side .featured-search-input-text:hover,
-    .stacks .search-side form input:active, .stacks .search-side form input:focus, .stacks .search-side form input:hover,
+	.news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:focus, .news.featured .featured-search-side .featured-search-input-text:hover,
+	.stacks .search-side form input:active, .stacks .search-side form input:focus, .stacks .search-side form input:hover,
 	.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus, .anime-search-form-block .anime-search-form-search .inputtext:hover,
 	.club-search-form-search .inputtext:active, .club-search-form-search .inputtext:focus, .club-search-form-search .inputtext:hover
 	{
@@ -985,7 +985,33 @@
 	.page-common .mal-side-koukoku
 	{
 		display: none !important;
-	} 
+	}
+	body.index .widget-container .widget.friend_list_updates .footer {
+		background-color: var(--main-background) !important;
+		border-top: 1px solid var(--hover-background) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .btn-settings, body.index .widget-container .widget.friend_list_updates .navi-btn:hover {
+		color: var(--main-color) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings, body.index .widget-container .widget.friend_list_updates .footer .dialog-settings table th {
+		background-color: var(--second-background) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings table th, body.index .widget-container .widget.friend_list_updates .footer .dialog-settings table td {
+		border: 1px solid var(--second-background) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings .switch input[type=checkbox]+label {
+		border: 1px solid var(--main-color) !important;
+		color: var(--main-color) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings .switch input[type=checkbox]:checked+label {
+		background-color: var(--hover-background) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings .switch input[type=checkbox]+label:after {
+		background-color: var(--main-color) !important;
+	}
+	body.index .widget-container .widget.friend_list_updates .footer .dialog-settings .switch input[type=checkbox]+label:before {
+		color: var(--main-color) !important;
+	}
 
 	/*Manga on the first page*/
 	#widget-manga-store .widget-slide .btn-anime .link,
@@ -3033,8 +3059,8 @@
 		border-color: var(--hover-background) !important;
 	}
 	.news div .featured-side-block, .stacks div .search-side {
-    	width: 300px !important;
-    }
+		width: 300px !important;
+	}
 	body.news .menu-category .btn-category.selected
 	{
 		color: var(--main-text) !important;
