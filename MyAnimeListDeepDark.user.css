@@ -3769,6 +3769,9 @@
 	{
 		height: 100% !important;
 	}
+	#content > div.js-categories-seasonal > div:nth-child(1) > div:nth-child(2):not(.seasonal-anime-list .seasonal-anime) {
+		background: var(--second-background) !important;
+	}
 
 	/*MALxJapan*/
 	if malxjapan == 1 {
