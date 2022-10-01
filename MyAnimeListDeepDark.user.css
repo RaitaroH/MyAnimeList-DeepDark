@@ -2166,6 +2166,14 @@
 	.page-common .border_solid {
 		border-color: var(--hover-background) !important;
 	}
+	a.mal-btn, button.mal-btn {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		border: 1px solid var(--mal-btn-border-color);
+	}
+	a.mal-btn:hover, button.mal-btn:hover {
+		color: var(--main-text) !important;
+	}
 
 	/*Top anime page*/
 	.top-ranking-table .table-header td
