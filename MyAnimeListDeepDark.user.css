@@ -1202,11 +1202,13 @@
 	.profile .stacks-list .column-item, .profile .js-stacks-navi {
 		border-color: var(--hover-background) !important;
 	}
-	.stacks .btn-stack .balloon, .stacks .btn-stack.on .balloon, .profile .stacks-list .column-item .foot .btn-stack .balloon, .profile .stacks-list .column-item .foot .btn-stack.on .balloon {
+	.stacks .stack-balloon .balloon, .stacks .stack-balloon.on .balloon,
+	.profile .stacks-list .column-item .foot .stack-balloon .balloon, .profile .stacks-list .column-item .foot .stack-balloon.on .balloon {
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.stacks .btn-stack .balloon:before, .stacks .btn-stack.on .balloon:before, .stacks .btn-stack .balloon:after, .stacks .btn-stack.on .balloon:after, .profile .stacks-list .column-item .foot .btn-stack .balloon:before, .profile .stacks-list .column-item .foot .btn-stack .balloon:after, .profile .stacks-list .column-item .foot .btn-stack.on .balloon:before, .profile .stacks-list .column-item .foot .btn-stack.on .balloon:after {
+	.stacks .stack-balloon .balloon:before, .stacks .stack-balloon.on .balloon:before, .stacks .stack-balloon .balloon:after, .stacks .stack-balloon.on .balloon:after,
+	.profile .stacks-list .column-item .foot .stack-balloon .balloon:before, .profile .stacks-list .column-item .foot .stack-balloon .balloon:after, .profile .stacks-list .column-item .foot .stack-balloon.on .balloon:before, .profile .stacks-list .column-item .foot .stack-balloon.on .balloon:after {
 		border-right: 6px solid var(--hover-background) !important;
 	}
 	.stacks .content-left {
