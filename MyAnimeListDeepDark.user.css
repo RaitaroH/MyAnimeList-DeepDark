@@ -1386,7 +1386,7 @@
 	{
 		background-color: var(--green) !important;
 	}
-	.page-common a.button_edit.reading span, .page-common a.button_edit.watching span
+	.page-common a.button_edit.reading span, .page-common a.button_edit.watching span, .page-common a.button_edit.reading i, .page-common a.button_edit.watching i
 	{
 		color: #fff !important;
 	}
