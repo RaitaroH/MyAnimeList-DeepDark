@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.04
+@version 1.7.05
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -707,6 +707,13 @@
 	{
 		border: 1px solid var(--hover-background) !important;
 		height: 16px !important;
+	}
+	.page-common .inputButton.notActive, .page-common .inputButton.notActive:hover,
+	.page-common .inputButton:disabled, .page-common .inputButton:disabled:hover
+	{
+		background-color: var(--hover-background) !important;
+		border: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Input*/
