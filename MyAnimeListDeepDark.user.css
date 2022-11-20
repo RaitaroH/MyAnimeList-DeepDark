@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.04
+@version 1.7.05
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -671,6 +671,7 @@
 	.page-common #searchBar.searchBar #topSearchText, .page-common #searchBar.searchBar #topSearchButon.notActive, .page-common #searchBar.searchBar #topSearchButon,
 	.news.featured .featured-search-side .featured-search-input-submit,
 	.stacks .search-side form button,
+	.stacks .search-area .inputButton,
 	.anime-search-form-block .anime-search-form-search .inputButton,
 	.club-search-form-search form .inputButton,
 	.quickadd-form-block .quickadd-form-search .inputButton,
@@ -684,6 +685,7 @@
 	.page-common #searchBar.searchBar #topSearchText:active, .page-common #searchBar.searchBar #topSearchText:focus, .page-common #searchBar.searchBar #topSearchText:hover,
 	.news.featured .featured-search-side .featured-search-input-text:active, .news.featured .featured-search-side .featured-search-input-text:focus, .news.featured .featured-search-side .featured-search-input-text:hover,
 	.stacks .search-side form input:active, .stacks .search-side form input:focus, .stacks .search-side form input:hover,
+	.stacks .search-area .inputtext:active, .stacks .search-area .inputtext:focus, .stacks .search-area .inputtext:hover,
 	.anime-search-form-block .anime-search-form-search .inputtext:active, .anime-search-form-block .anime-search-form-search .inputtext:focus, .anime-search-form-block .anime-search-form-search .inputtext:hover,
 	.club-search-form-search .inputtext:active, .club-search-form-search .inputtext:focus, .club-search-form-search .inputtext:hover,
 	.quickadd-form-block .quickadd-form-search .inputtext:active, .quickadd-form-block .quickadd-form-search .inputtext:focus, .quickadd-form-block .quickadd-form-search .inputtext:hover,
@@ -705,6 +707,13 @@
 	{
 		border: 1px solid var(--hover-background) !important;
 		height: 16px !important;
+	}
+	.page-common .inputButton.notActive, .page-common .inputButton.notActive:hover,
+	.page-common .inputButton:disabled, .page-common .inputButton:disabled:hover
+	{
+		background-color: var(--hover-background) !important;
+		border: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
 	}
 
 	/*Input*/
@@ -1241,13 +1250,6 @@
 	.stacks .search-side .quick-search a:hover {
 		background: var(--hover-background) !important;
 		border: 1px solid var(--second-background) !important;
-	}
-	.stacks .search-area .inputButton.notActive {
-		background-color: var(--second-background) !important;
-		border: 1px solid var(--hover-background) !important;
-	}
-	.stacks .search-area .inputtext:hover, .stacks .search-area .inputtext:active, .stacks .search-area .inputtext:focus {
-		border: 1px solid var(--hover-background) !important;
 	}
 	.tile-anime-list .seasonal-anime .edit a.notinmylist {
 		background-color: var(--hover-background) !important;
@@ -2808,9 +2810,9 @@
 
 	.page-common .badresult
 	{
-		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-color) !important;
+		background-color: var(--red) !important;
+		border-color: var(--red) !important;
+		color: var(--main-text) !important;
 	}
 
 
