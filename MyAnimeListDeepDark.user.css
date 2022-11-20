@@ -2808,9 +2808,9 @@
 
 	.page-common .badresult
 	{
-		background-color: var(--second-background) !important;
-		border-color: var(--hover-background) !important;
-		color: var(--main-color) !important;
+		background-color: var(--red) !important;
+		border-color: var(--red) !important;
+		color: var(--main-text) !important;
 	}
 
 
