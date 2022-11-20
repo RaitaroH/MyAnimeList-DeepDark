@@ -1217,6 +1217,14 @@
 	.profile .stacks-list .column-item .foot .stack-balloon .balloon:before, .profile .stacks-list .column-item .foot .stack-balloon .balloon:after, .profile .stacks-list .column-item .foot .stack-balloon.on .balloon:before, .profile .stacks-list .column-item .foot .stack-balloon.on .balloon:after {
 		border-right: 6px solid var(--hover-background) !important;
 	}
+	.page-common .stack-balloon .fa-layer-plus
+	{
+		color: var(--gray) !important;
+	}
+	.page-common .stack-balloon .fa-layer-minus, .page-common .stack-balloon .fa-layer-plus:hover
+	{
+		color: var(--main-color) !important;
+	}
 	.stacks .content-left {
 		border-right: 1px solid var(--hover-background) !important;
 	}
