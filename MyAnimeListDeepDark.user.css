@@ -2857,6 +2857,10 @@
 	{
 		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon_profile_sprite2.png") !important;
 	}
+	.user-profile .user-function .icon-user-function.icon-message.disabled, .user-profile .user-function .icon-user-function.icon-request.disabled
+	{
+		background-color: var(--hover-background) !important;
+	}
 	.user-profile .user-status li, .user-profile .user-compatability-graph .bar-outer
 	{
 		background-color: var(--second-background) !important;
