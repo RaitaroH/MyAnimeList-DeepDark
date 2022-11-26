@@ -78,7 +78,7 @@
 
 ==/UserStyle== */
 
-/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/MyAnimeList-DeepDark*/
+/* Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark */
 
 /*GNU General Public License v3.0*/
 
@@ -619,12 +619,12 @@
 	}
 	.page-common #headerSmall, .global-header__logo a
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/logo.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo.png) !important;
 	}
 	if japanese-logo {
 		.page-common #headerSmall, .global-header__logo a
 		{
-			background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/logo_katakana.png") !important;
+			background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/logo_katakana.png) !important;
 		}
 	}
 	.page-common .logo_size {
@@ -865,7 +865,7 @@
 	/*image taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	.seasonal-anime-list .seasonal-anime .information .scormem .score::after, .seasonal-anime-list .seasonal-anime .information .scormem .member::after
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon_pict_score_mem.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon_pict_score_mem.png) !important;
 	}
 	.seasonal-anime-list .seasonal-anime .airing, .seasonal-anime-list .seasonal-anime .publishing
 	{
@@ -1511,18 +1511,18 @@
 
 	.user-status-block .form-user-score
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-star-score.png"),url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-triangles-completed.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-star-score.png),url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png) !important;
 	}
 	.user-status-block .form-user-status
 	{
 		background-color: transparent !important;
 		border-color: var(--hover-background) !important;
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-triangles-completed.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png) !important;
 		color: var(--main-text) !important;
 	}
 	.user-status-block .form-user-status[data-class="completed"], .user-status-block .form-user-status[data-class="reading"], .user-status-block .form-user-status[data-class="watching"], .user-status-block .form-user-status[data-class="dropped"], .user-status-block .form-user-status[data-class="plantoread"], .user-status-block .form-user-status[data-class="plantowatch"], .user-status-block .form-user-status[data-class="on-hold"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-triangles-completed.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png) !important;
 		color: var(--main-text) !important;
 	}
 	.user-status-block .form-user-status[data-class="completed"]
@@ -1858,7 +1858,7 @@
 	/*Videos*/
 	.video-block.episode-video .outside-region .outside-region-block
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/arrows.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/arrows.png) !important;
 	}
 	.page-episode-add .label, .page-episode-add .data .episode-data {
 		color: var(--dimmer-text) !important;
@@ -1876,7 +1876,7 @@
 	}
 	.episode_list .episode-list-header .episode-number .btn-sort-outer
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-sort-triangle.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-sort-triangle.png) !important;
 	}
 	.episode_list .episode-list-data:nth-of-type(2n) td
 	{
@@ -2306,7 +2306,7 @@
 	/* Removing for now. MAL changed their image into a fontawesome icon.
 	.top-ranking-table .icon-score-star
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-rank-stars.png") !important;
+		background-image: url(https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-rank-stars.png) !important;
 	}
 	*/
 	.icon-top-ranking-page .prev:hover, .icon-top-ranking-page .next:hover, .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist:hover, .page-common .pagination .link-blue-box:hover
@@ -2463,7 +2463,7 @@
 
 	.forum .forum-search-side .forum-search-select
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-triangles.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles.png) !important;
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
@@ -2723,7 +2723,7 @@
 	}
 	.mym_checkboxes input[type="checkbox"] + label
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon-checkbox-set2.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-checkbox-set2.png) !important;
 	}
 	.pmessage-select > a, .total_messages
 	{
@@ -2756,7 +2756,7 @@
 	/*Image and code taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	img[src*="ignorethread.gif"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/ignorethread.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/ignorethread.png) !important;
 		box-sizing: border-box;
 		width: 12px;
 		height: 12px;
@@ -2765,7 +2765,7 @@
 	/*Image and code taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	img[src*="watch_y.gif"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/watch_y.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/watch_y.png) !important;
 		box-sizing: border-box;
 		width: 15px;
 		height: 15px;
@@ -2773,7 +2773,7 @@
 	}
 	img[src*="watch_n.gif"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/watch_n.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/watch_n.png) !important;
 		box-sizing: border-box;
 		width: 15px;
 		height: 15px;
@@ -2781,7 +2781,7 @@
 	}
 	img[src*="images/bad-off.gif"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/bad-off.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/bad-off.png) !important;
 		height: 0px;
 		width: 0px;
 		margin: 0px auto;
@@ -2789,7 +2789,7 @@
 	}
 	img[src*="images/cancel-fsg.gif"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/cancel-fsg.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/cancel-fsg.png) !important;
 		height: 0px;
 		width: 0px;
 		margin: 0px auto;
@@ -2797,7 +2797,7 @@
 	}
 	img[src*="images/good-off.gif"]
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/good-off.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/good-off.png) !important;
 		height: 0px;
 		width: 0px;
 		margin: 0px auto;
@@ -2871,7 +2871,7 @@
 	}
 	.user-profile .user-function .icon-user-function
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/icon_profile_sprite2.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon_profile_sprite2.png) !important;
 	}
 	.user-profile .user-function .icon-user-function.icon-message.disabled, .user-profile .user-function .icon-user-function.icon-request.disabled
 	{
@@ -2902,7 +2902,7 @@
 	}
 	.js-truncate-outer .btn-truncate
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/arrows.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/arrows.png) !important;
 		background-size: 17px 44px,30px 30px !important;
 		background-color: var(--main-background) !important;
 		height: 20px !important;
@@ -2966,7 +2966,7 @@
 	/*RSS*/
 	.user-profile h4.icon-rss::after
 	{
-		background-image: url("https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/rss.png") !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/rss.png) !important;
 	}
 
 	/*Manga and anime history*/
@@ -3610,7 +3610,7 @@
 	}
 	#fancybox-close
 	{
-		background: url(https://gitlab.com/RaitaroH/MyAnimeList-DeepDark/raw/master/Images/close_sprite.png) no-repeat !important;
+		background: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/close_sprite.png) no-repeat !important;
 		height: 24px !important;
 		width: 24px !important;
 		position: absolute !important;
