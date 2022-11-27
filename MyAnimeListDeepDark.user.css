@@ -863,6 +863,10 @@
 	{
 		background-color: var(--green) !important;
 	}
+	.seasonal-anime-list .seasonal-anime .genres .genre.explicit a
+	{
+		color: var(--red) !important;
+	}
 	/*image taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	.seasonal-anime-list .seasonal-anime .information .scormem .score::after, .seasonal-anime-list .seasonal-anime .information .scormem .member::after
 	{
