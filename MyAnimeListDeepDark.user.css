@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.08
+@version 1.7.09
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -863,6 +863,10 @@
 	{
 		background-color: var(--green) !important;
 	}
+	.seasonal-anime-list .seasonal-anime .genres .genre.explicit a
+	{
+		color: var(--red) !important;
+	}
 	/*image taken from https://userstyles.org/styles/120493/dark-night-myanimelist*/
 	.seasonal-anime-list .seasonal-anime .information .scormem .score::after, .seasonal-anime-list .seasonal-anime .information .scormem .member::after
 	{
@@ -1050,6 +1054,10 @@
 	{
 		color: var(--main-color) !important;
 		opacity: 1;
+	}
+	.page-common .notice_open_public, .page-common .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
+	{
+		color: var(--red) !important;
 	}
 	.page-common .fn-grey6
 	{
@@ -2593,9 +2601,9 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.page-common .header-notification-item-header .is-read .fa-check-circle
+	.page-common .header-notification-item-header .is-read .fa-check:hover, .page-common .header-notification-item-header .is-read .fa-circle-check
 	{
-		color: var(--main-color) !important;
+		color: var(--green) !important;
 	}
 	.page-common .header-notification-item-content .actions .result {
 		background-color: var(--second-background) !important;
@@ -3350,9 +3358,13 @@
 	{
 		background-color: var(--main-background) !important;
 	}
-	.pt16, .page-advertising .ad_form_content label.required, .page-advertising .ad_form_content label
+	.pt16, .page-advertising .ad_form_content label
 	{
 		color: var(--dimmer-text) !important;
+	}
+	.page-advertising .ad_form_content label.required, .page-advertising .ad_form_content .text-blue1
+	{
+		color: var(--blue) !important;
 	}
 	.btn-switch-lang
 	{
