@@ -3350,9 +3350,13 @@
 	{
 		background-color: var(--main-background) !important;
 	}
-	.pt16, .page-advertising .ad_form_content label.required, .page-advertising .ad_form_content label
+	.pt16, .page-advertising .ad_form_content label
 	{
 		color: var(--dimmer-text) !important;
+	}
+	.page-advertising .ad_form_content label.required, .page-advertising .ad_form_content .text-blue1
+	{
+		color: var(--blue) !important;
 	}
 	.btn-switch-lang
 	{
