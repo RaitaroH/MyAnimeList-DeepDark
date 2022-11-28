@@ -3054,10 +3054,15 @@
 		filter: grayscale(100%);
 		opacity: 1 !important;
 	}
-	.setting-row.locate-right, .setting-row.show-hidden
+	.setting-row.locate-right
 	{
+		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
+	}
+	.setting-row.show-hidden td, .setting-row.show-hidden td span
+	{
 		background-color: var(--main-background) !important;
+		color: var(--select-background) !important;
 	}
 	.settings-cunstom-forum-title input:disabled, .sns-setting .table tr:nth-of-type(2n+1) td
 	{
