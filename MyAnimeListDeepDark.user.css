@@ -3914,6 +3914,18 @@
 		color: var(--main-color) !important;
 	}
 
+	/*Staff*/
+	.staff .staff_wrap div.staff:nth-of-type(2n+1)
+	{
+		background-color: var(--main-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+	.staff .staff_wrap div.staff:nth-of-type(2n)
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--dimmer-text) !important;
+	}
+
 
 /*Support for addon scripts*/
 
