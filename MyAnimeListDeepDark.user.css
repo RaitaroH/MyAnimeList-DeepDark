@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.10
+@version 1.7.11
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1055,7 +1055,7 @@
 		color: var(--main-color) !important;
 		opacity: 1;
 	}
-	.page-common .notice_open_public, .page-common .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
+	.page-common .notice_open_public, .page-common .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common .badresult-text, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
 	{
 		color: var(--red) !important;
 	}
@@ -1126,33 +1126,6 @@
 	.page-common .lightLink:hover
 	{
 		color: var(--main-color) !important;
-	}
-
-
-	/*Featured Articles*/
-	.news-list .comment-list .information .info, .news-list .news-unit .information .info, .news-list .comment-list .information .pv, .news-list .news-unit .information .pv
-	{
-		color: var(--dimmer-text) !important;
-	}
-	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
-	{
-		background-color: transparent !important;
-	}
-	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial, .news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover
-	{
-		color: var(--main-text) !important;
-		border-color: var(--main-color) !important;
-		background-color: var(--main-color) !important;
-	}
-	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
-	{
-		color: #fff !important;
-		border-color: var(--red) !important;
-		background-color: var(--red) !important;
-	}
-	.news-list .comment-list .information .pv, .news-list .news-unit .information .pv, .news-list .comment-list .information .tags, .news-list .news-unit .information .tags
-	{
-		border-color: var(--hover-background) !important;
 	}
 
 
@@ -2144,9 +2117,28 @@
 		border-color: var(--hover-background) !important;
 		background-color: var(--hover-background) !important;
 	}
-	a.icon-team-title.founder, a.icon-team-title.site_administrator, a.icon-team-title.lead_administrator, a.icon-team-title.community_administrator, a.icon-team-title.database_administrator, a.icon-team-title.anime_db_moderator, a.icon-team-title.manga_db_moderator, a.icon-team-title.forum_moderator, a.icon-team-title.news_moderator, a.icon-team-title.review_recommendation_moderator, a.icon-team-title.irc_moderator, a.icon-team-title.social_media_moderator, a.icon-team-title.retired_moderator, a.icon-team-title.event_bot, a.icon-team-title.community_moderator, a.icon-team-title.founder:visited, a.icon-team-title.site_administrator:visited, a.icon-team-title.lead_administrator:visited, a.icon-team-title.community_administrator:visited, a.icon-team-title.database_administrator:visited, a.icon-team-title.anime_db_moderator:visited, a.icon-team-title.manga_db_moderator:visited, a.icon-team-title.forum_moderator:visited, a.icon-team-title.news_moderator:visited, a.icon-team-title.review_recommendation_moderator:visited, a.icon-team-title.irc_moderator:visited, a.icon-team-title.social_media_moderator:visited, a.icon-team-title.retired_moderator:visited, a.icon-team-title.event_bot:visited, a.icon-team-title.community_moderator:visited
+	a.icon-team-title.founder, a.icon-team-title.founder:visited,
+	a.icon-team-title.site_administrator, a.icon-team-title.site_administrator:visited,
+	a.icon-team-title.lead_administrator, a.icon-team-title.lead_administrator:visited,
+	a.icon-team-title.community_administrator, a.icon-team-title.community_administrator:visited,
+	a.icon-team-title.database_administrator, a.icon-team-title.database_administrator:visited,
+	a.icon-team-title.forum_moderator, a.icon-team-title.forum_moderator:visited, 
+	a.icon-team-title.news_moderator, a.icon-team-title.news_moderator:visited,
+	a.icon-team-title.review_recommendation_moderator, a.icon-team-title.review_recommendation_moderator:visited,
+	a.icon-team-title.irc_moderator, a.icon-team-title.irc_moderator:visited,
+	a.icon-team-title.social_media_moderator, a.icon-team-title.social_media_moderator:visited,
+	a.icon-team-title.retired_moderator, a.icon-team-title.retired_moderator:visited,
+	a.icon-team-title.event_bot, a.icon-team-title.event_bot:visited,
+	a.icon-team-title.community_moderator, a.icon-team-title.community_moderator:visited,
+	a.icon-team-title.rewrite_moderator, a.icon-team-title.rewrite_moderator:hover
 	{
 		color: var(--main-text) !important;
+		transition: none !important;
+	}
+	a.icon-team-title.anime_db_moderator, a.icon-team-title.anime_db_moderator:visited,
+	a.icon-team-title.manga_db_moderator, a.icon-team-title.manga_db_moderator:visited
+	{
+		color: var(--main-background) !important;
 		transition: none !important;
 	}
 	.page-forum .sig
@@ -3210,6 +3202,37 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.news-list .comment-list .information .info, .news-list .news-unit .information .info, .news-list .comment-list .information .pv, .news-list .news-unit .information .pv
+	{
+		color: var(--dimmer-text) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover,
+	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover
+	{
+		background-color: transparent !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial, .news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover,
+	.news-list .news-unit .information .tags .tag.tag-color-feature-advertorial, .news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover,
+	.featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-advertorial
+	{
+		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
+		background-color: var(--main-color) !important;
+	}
+	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler, .news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover,
+	.news-list .news-unit .information .tags .tag.tag-color-feature-spoiler, .news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover,
+	.news .news-container .tags-inner-attributes .tag.tag-color-feature-spoiler,
+	.featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-spoiler
+	{
+		color: #fff !important;
+		border-color: var(--red) !important;
+		background-color: var(--red) !important;
+	}
+	.news-list .comment-list .information .pv, .news-list .news-unit .information .pv, .news-list .comment-list .information .tags, .news-list .news-unit .information .tags
+	{
+		border-color: var(--hover-background) !important;
+	}
+
 	/*Tags*/
 	body.news .menu-category .btn-edit-tags
 	{
@@ -3217,19 +3240,23 @@
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	.news-list .comment-list .information .tags .tag.tag-color1, .news-list .news-unit .information .tags .tag.tag-color1, body.news .tag-side-block .tag-cloud .tag.tag-color1, .featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-spoiler, body.news .news-side-block .news-list .text-color-spoiler, body.news .news-side-block .featured-list .text-color-spoiler, body.news .featured-side-block .news-list .text-color-spoiler, body.news .featured-side-block .featured-list .text-color-spoiler
+	.news-list .comment-list .information .tags .tag.tag-color1, .news-list .news-unit .information .tags .tag.tag-color1, body.news .tag-side-block .tag-cloud .tag.tag-color1,
+	body.news .news-side-block .news-list .text-color-spoiler, body.news .news-side-block .featured-list .text-color-spoiler,
+	body.news .featured-side-block .news-list .text-color-spoiler, body.news .featured-side-block .featured-list .text-color-spoiler
 	{
 		background-color: var(--red) !important;
 		border-color: var(--red) !important;
 		color: #fff !important;
 	}
-	.news-list .comment-list .information .tags .tag.tag-color4, .news-list .news-unit .information .tags .tag.tag-color4, body.news .tag-side-block .tag-cloud .tag.tag-color4, .featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-advertorial
+	.news-list .comment-list .information .tags .tag.tag-color4, .news-list .news-unit .information .tags .tag.tag-color4, body.news .tag-side-block .tag-cloud .tag.tag-color4
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	.news-list .comment-list .information .tags .tag.tag-color6, .news-list .news-unit .information .tags .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag, .news-list .comment-list .information .tags .tag, .news-list .news-unit .information .tags .tag
+	.news-list .comment-list .information .tags .tag.tag-color6, .news-list .news-unit .information .tags .tag.tag-color6, body.news .tag-side-block .tag-cloud .tag.tag-color6,
+	.news .tag-side-block .tag-cloud .tag,
+	.news-list .comment-list .information .tags .tag, .news-list .news-unit .information .tags .tag
 	{
 		background-color: var(--gray) !important;
 		border-color: var(--gray) !important;
@@ -3277,9 +3304,13 @@
 	{
 		color: var(--purple) !important;
 	}
-	.news .news-container .tags .tag.tag-color6
+	.news .news-container .tags .tag, .news .news-container .tags .tag.tag-color6
 	{
 		color: var(--gray) !important;
+	}
+	.news .news-container .tags
+	{
+		padding-left: 8px !important;
 	}
 	.news .news-content-block.news-tags .menu-category-tags li
 	{
