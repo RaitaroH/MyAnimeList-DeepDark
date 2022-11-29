@@ -1055,7 +1055,7 @@
 		color: var(--main-color) !important;
 		opacity: 1;
 	}
-	.page-common .notice_open_public, .page-common .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
+	.page-common .notice_open_public, .page-common .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common .badresult-text, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
 	{
 		color: var(--red) !important;
 	}
