@@ -1296,7 +1296,7 @@
 	.stacks .tag.box {
 		background-color: var(--hover-background) !important;
 	}
-	.page-common .restacks-modal .modal_contents {
+	.page-common .restacks-modal .modal_contents, .stacks .stacks-modal .modal_content {
 		background: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
@@ -1356,6 +1356,10 @@
 	}
 	.stacks .stacks-detail h2.title, .stacks .stacks-detail .tag, .stacks .stacks-detail .any_status {
 		background: var(--main-background) !important;
+	}
+	.stacks .stacks-modal h2.title
+	{
+		background-color: var(--second-background) !important;
 	}
 
 	
