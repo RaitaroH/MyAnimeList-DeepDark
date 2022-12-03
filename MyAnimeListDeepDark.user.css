@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.11
+@version 1.7.12
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1055,7 +1055,15 @@
 		color: var(--main-color) !important;
 		opacity: 1;
 	}
-	.page-common .notice_open_public, .page-common .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common .badresult-text, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
+	.page-common .notice_open_public, .page-common .broadcasts .info, .page-common .broadcast-item.notavailable .caption:after, .stacks .caution, .page-common .badresult-text, .page-common [style="color: red;"], .page-common [style="color: #b25959;"]
+	{
+		color: var(--red) !important;
+	}
+	.page-common .modal_btn_close
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.page-common .modal_btn_close .fa-times-circle:hover
 	{
 		color: var(--red) !important;
 	}
@@ -1149,11 +1157,11 @@
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	.stacks .header-right .new-stack-block, .stacks .new-stack-block {
+	.page-common .header-right .new-stack-block, .page-common .new-stack-block {
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.stacks .new-stack-block .new-stack-item:hover {
+	.page-common .new-stack-block .new-stack-item:hover {
 		background-color: var(--second-background) !important;
 	}
 	.stacks .tab-area ul li, .profile .navi .tabs .btn-tab {
@@ -1296,12 +1304,9 @@
 	.stacks .tag.box {
 		background-color: var(--hover-background) !important;
 	}
-	.page-common .restacks-modal .modal_contents {
+	.page-common .restacks-modal .modal_contents, .stacks .stacks-modal .modal_content {
 		background: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
-	}
-	.page-common .restacks-modal .modal_contents .modal_btn_close {
-		background-color: var(--hover-background) !important;
 	}
 	.page-common .restacks-modal .modal_contents .head .search-box input {
 		background: var(--second-background) !important;
@@ -1356,6 +1361,10 @@
 	}
 	.stacks .stacks-detail h2.title, .stacks .stacks-detail .tag, .stacks .stacks-detail .any_status {
 		background: var(--main-background) !important;
+	}
+	.stacks .stacks-modal h2.title
+	{
+		background-color: var(--second-background) !important;
 	}
 
 	
