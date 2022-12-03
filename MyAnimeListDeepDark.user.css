@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.12
+@version 1.7.13
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1219,7 +1219,9 @@
 		border-right: 1px solid var(--hover-background) !important;
 	}
 	.stacks .breadcrumbs_area.underline, .stacks h3.underline, .stacks .recent-list .column-item, .stacks .side-list .column-item, .stacks div.underline, .stacks .two-btn,
-	.page-common .restacks-modal .modal_contents .head, .page-common .restacks-modal .modal_contents .modal-list .item {
+	.page-common .restacks-modal .modal_contents .head, .page-common .restacks-modal .modal_contents .modal-list .item,
+	.stacks .stacks-modal .head, .stacks .stacks-modal .item
+	{
 		border-bottom: 1px solid var(--hover-background) !important;
 	}
 	.stacks .info-block, .profile .mymenu {
@@ -1251,18 +1253,6 @@
 	}
 	.tile-anime-list .seasonal-anime .edit a.notinmylist {
 		background-color: var(--hover-background) !important;
-	}
-	.stacks input.title {
-		background: var(--hover-background) !important;
-		border: 1px solid var(--second-background) !important;
-		color: var(--main-text) !important;
-	}
-	.stacks textarea.description {
-		background: var(--hover-background) !important;
-		border: 1px solid var(--second-background) !important;
-		color: var(--main-text) !important;
-		resize: vertical !important;
-		outline: none !important;
 	}
 	.stacks .sticky-toolbar {
 		background-color: var(--main-background) !important;
@@ -1312,10 +1302,14 @@
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	.page-common .restacks-modal .modal_contents .modal-list .item.just, .page-common .restacks-modal .modal_contents .modal-list .item.added {
+	.page-common .restacks-modal .modal_contents .modal-list .item.just, .page-common .restacks-modal .modal_contents .modal-list .item.added
+	.stacks .stacks-modal .item.just, .stacks .stacks-modal .item.added
+	{
 		background-color: var(--hover-background) !important;
 	}
-	.page-common .restacks-modal .modal_contents .modal-list .item .modal-btn .fa-plus, .page-common .restacks-modal .modal_contents .modal-list .item .modal-btn .fa-minus {
+	.page-common .restacks-modal .modal_contents .modal-list .item .modal-btn .fa-plus, .page-common .restacks-modal .modal_contents .modal-list .item .modal-btn .fa-minus
+	.stacks .stacks-modal .modal-btn .fa-plus, .stacks .stacks-modal .modal-btn .fa-minus
+	{
 		color: var(--main-color) !important;
 	}
 	.page-common .restacks-modal .modal_contents .modal-list .item .modal-icon div.completed, .profile .stacks-list .column-item .score .graph.completed {
@@ -1365,6 +1359,14 @@
 	.stacks .stacks-modal h2.title
 	{
 		background-color: var(--second-background) !important;
+	}
+	.stacks .same-stack-list-block
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.stacks .stacks-modal .search-box
+	{
+		border-color: var(--hover-background) !important;
 	}
 
 	
