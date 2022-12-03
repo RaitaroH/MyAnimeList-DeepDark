@@ -1252,18 +1252,6 @@
 	.tile-anime-list .seasonal-anime .edit a.notinmylist {
 		background-color: var(--hover-background) !important;
 	}
-	.stacks input.title {
-		background: var(--hover-background) !important;
-		border: 1px solid var(--second-background) !important;
-		color: var(--main-text) !important;
-	}
-	.stacks textarea.description {
-		background: var(--hover-background) !important;
-		border: 1px solid var(--second-background) !important;
-		color: var(--main-text) !important;
-		resize: vertical !important;
-		outline: none !important;
-	}
 	.stacks .sticky-toolbar {
 		background-color: var(--main-background) !important;
 		border-bottom: 1px solid var(--hover-background) !important;
@@ -1365,6 +1353,10 @@
 	.stacks .stacks-modal h2.title
 	{
 		background-color: var(--second-background) !important;
+	}
+	.stacks .same-stack-list-block
+	{
+		background-color: var(--hover-background) !important;
 	}
 
 	
