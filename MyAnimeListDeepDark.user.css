@@ -2881,9 +2881,14 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.user-profile .user-function .icon-user-function
+	/*.user-profile .user-function .icon-user-function
 	{
 		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon_profile_sprite2.png) !important;
+	}*/
+	.user-profile .user-function .icon-user-function.icon-comment i.fas, .user-profile .user-function .icon-user-function.icon-message i.fas, 
+	.user-profile .user-function .icon-user-function.icon-request i.fas, .user-profile .user-function .icon-user-function.icon-remove i.fas, 
+	.user-profile .user-function .icon-user-function.icon-gift i.fas {
+		color: var(--main-color) !important;
 	}
 	.user-profile .user-function .icon-user-function.icon-message.disabled, .user-profile .user-function .icon-user-function.icon-request.disabled
 	{
