@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.14
+@version 1.7.15
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -2255,6 +2255,16 @@
 	.mal-tipmenu a, .mal-tipmenu a:hover {
 		 color: var(--main-text) !important;
 	}
+	.page-common .topic-reply-box {
+		background-color: var(--hover-background) !important;
+	}
+	.page-common .topic-reply-box:before {
+		border-bottom: 12px solid var(--hover-background) !important;
+	}
+	a[data-ga-click-type="gift-entry-forum"] {
+		border-radius: 0px !important;
+		opacity: 1 !important;
+	}
 
 	/*Top anime page*/
 	.top-ranking-table .table-header td
@@ -3130,6 +3140,40 @@
 	}
 	.membership .membership-payment .form-table.border-bottom, .payment .textPaymentPolicyContainer:after {
 		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.membership .membership-manager .membership-nav {
+		border-bottom: 1px solid var(--hover-background) !important;;
+	}
+	.membership .membership-manager .membership-nav .btn-nav {
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.membership .membership-manager .membership-nav .btn-nav.on {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.membership .membership-manager .membership-nav .btn-nav:hover {
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	.membership .membership-manager .status-table .title, .membership .membership-manager .status-table .data {
+		color: var(--main-text) !important;
+	}
+	.membership .membership-manager .status-table.bg-color {
+		background-color: var(--second-background) !important;
+	}
+	.membership .membership-manager .status-table {
+		border-bottom: 0px;
+	}
+	.membership .btn-plan {
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+		text-shadow: 0px 0px;
+	}
+	a[data-ga-click-type="gift-entry-buy-gift-mygifts"]:visited, a[data-ga-click-type="gift-entry-buy-gift-mygifts"]:visited:hover, 
+	a[data-ga-click-type="gift-entry-buy-gift-purchasedgifts"]:visited, a[data-ga-click-type="gift-entry-buy-gift-purchasedgifts"]:visited:hover {
+		color: var(--main-text) !important;
 	}
 	.payment .payment-method input.payment-radio[type=radio]+label, .membership .membership-payment .text-payment-notice {
 		background-color: var(--main-background) !important;
