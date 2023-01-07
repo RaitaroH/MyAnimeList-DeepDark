@@ -2593,6 +2593,16 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	.page-common .header-notification-dropdown-inner h3 .mark-all, .notification .notification-section .notification-header .mark-all
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	.page-common .header-notification-dropdown-inner h3 .mark-all:hover, .notification .notification-section .notification-header .mark-all:hover
+	{
+		color: var(--main-color) !important;
+		opacity: 1;
+	}
 	.page-common .header-notification-item:hover, .page-common .header-notification-view-all a:hover
 	{
 		background-color: var(--hover-background) !important;
