@@ -4041,12 +4041,7 @@
 	/* MAL (MyAnimeList) Dubs - https://github.com/MAL-Dubs/MAL-Dubs */
 	.page-common .header-dub-button .icon {
 		color: var(--main-text) !important;
-		-webkit-transition-duration: .2s !important;
-		transition-duration: .2s !important;
-		-webkit-transition-property: all !important;
-		transition-property: all !important;
-		-webkit-transition-timing-function: ease-in-out !important;
-		transition-timing-function: ease-in-out !important;
+		opacity: 1 !important;
 	}
 	.page-common .header-dub-button .icon:hover {
 		color: var(--main-color) !important;
