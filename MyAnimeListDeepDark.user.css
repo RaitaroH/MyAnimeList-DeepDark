@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.19
+@version 1.7.20
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -1504,18 +1504,16 @@
 
 	.user-status-block .form-user-score
 	{
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-star-score.png),url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png) !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-star-score.png) !important;
 	}
 	.user-status-block .form-user-status
 	{
 		background-color: transparent !important;
 		border-color: var(--hover-background) !important;
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png) !important;
 		color: var(--main-text) !important;
 	}
 	.user-status-block .form-user-status[data-class="completed"], .user-status-block .form-user-status[data-class="reading"], .user-status-block .form-user-status[data-class="watching"], .user-status-block .form-user-status[data-class="dropped"], .user-status-block .form-user-status[data-class="plantoread"], .user-status-block .form-user-status[data-class="plantowatch"], .user-status-block .form-user-status[data-class="on-hold"]
 	{
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/icon-triangles-completed.png) !important;
 		color: var(--main-text) !important;
 	}
 	.user-status-block .form-user-status[data-class="completed"]
