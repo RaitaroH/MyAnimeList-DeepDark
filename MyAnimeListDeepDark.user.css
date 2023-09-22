@@ -2283,15 +2283,15 @@
 		background-color: var(--main-color) !important;
 		border-color: var(--second-background) !important;
 	}
-    .sceditor-button div:before {
-        color: var(--main-color) !important;
-    }
-    div.sceditor-group:not(:last-child) {
-        border-right: 1px solid var(--hover-background) !important;
-    }
-    .sceditor-button:hover, .sceditor-button:active, .sceditor-button.active {
-        background: var(--hover-background) !important;
-    }
+	.sceditor-button div:before {
+		color: var(--main-color) !important;
+	}
+	div.sceditor-group:not(:last-child) {
+		border-right: 1px solid var(--hover-background) !important;
+	}
+	.sceditor-button:hover, .sceditor-button:active, .sceditor-button.active {
+		background: var(--hover-background) !important;
+	}
 	.page-forum .forum .message .replied {
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -2303,16 +2303,16 @@
 		border-radius: 0px !important;
 		opacity: 1 !important;
 	}
-    .mal-dropdown-outer .mal-dropdown-menu, .mal-dropdown-outer .mal-dropdown-menu .divider {
-        background-color: var(--second-background) !important;
-        border: 1px solid var(--hover-background) !important;
-    }
-    .mal-dropdown-outer .mal-dropdown-menu a.item, .mal-dropdown-outer .mal-dropdown-menu button.item {
-        color: var(--main-color) !important;
-    }
-    .mal-dropdown-outer .mal-dropdown-menu button.item:active {
-        background-color: var(--second-background) !important;
-    }
+	.mal-dropdown-outer .mal-dropdown-menu, .mal-dropdown-outer .mal-dropdown-menu .divider {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.mal-dropdown-outer .mal-dropdown-menu a.item, .mal-dropdown-outer .mal-dropdown-menu button.item {
+		color: var(--main-color) !important;
+	}
+	.mal-dropdown-outer .mal-dropdown-menu button.item:active {
+		background-color: var(--second-background) !important;
+	}
 
 	/*Top anime page*/
 	.top-ranking-table .table-header td
@@ -3053,6 +3053,88 @@
 	.user-profile h4.icon-rss::after
 	{
 		background-image: url(https://raw.githubusercontent.com/RaitaroH/MyAnimeList-DeepDark/master/Images/rss.png) !important;
+	}
+	/*User Statistics*/
+	.mal-badge.new-statistics {
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+		opacity: 1 !important;
+	}
+	.mal-badge.new-statistics:hover {
+		color: var(--main-text) !important;
+	}
+	g[class="amcharts-Sprite-group amcharts-Container-group"] {
+		fill: var(--main-color) !important;
+	}
+	.profile .navi .tabs .btn-tab.on a {
+		color: var(--main-text) !important;
+	}
+	.profile .navi .tabs .btn-tab:hover {
+		background-color:  var(--hover-background) !important;
+	}
+	.profile .navi .tabs .btn-tab:hover a {
+		color: var(--main-color) !important;
+	}
+	.profile .navi .tabs .btn-tab a {
+		color: var(--main-text) !important;
+	}
+	.profile .navi, .profile.statistics .content-container .container-right h3 {
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.profile.statistics .mal-badge.anime, .profile.statistics .mal-badge.manga {
+		display: none !important;
+	}
+	.profile.statistics .chart-container-rf .right {
+		border-left: 1px solid var(--hover-background) !important;
+	}
+	.profile.statistics .chart-container-rf .right .filter {
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+	#profile-stats-anime-genre-table table, #profile-stats-manga-genre-table table {
+		border: 1px solid var(--second-background) !important;
+	}
+	#profile-stats-anime-genre-table table .list-table-header .header-title, #profile-stats-manga-genre-table table .list-table-header .header-title {
+		background: var(--second-background) !important;
+		border-bottom: 1px solid var(--second-background) !important;
+	}
+	#profile-stats-anime-genre-table table>tbody:nth-of-type(2n), #profile-stats-manga-genre-table table>tbody:nth-of-type(2n) {
+		background-color: var(--second-background) !important;
+	}
+	#profile-stats-anime-genre-table table .list-item .data, #profile-stats-manga-genre-table table .list-item .data {
+		border-bottom: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	#profile-stats-anime-genre-table table tfoot td, #profile-stats-manga-genre-table table tfoot td {
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	#profile-stats-anime-genre-table .filter, #profile-stats-manga-genre-table .filter {
+		background: var(--second-background) !important;
+	}
+	#profile-stats-anime-genre-table table .list-item .data.ratio>div .mal-progress, #profile-stats-manga-genre-table table .list-item .data.ratio>div .mal-progress {
+		background-color: var(--hover-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.mal-progress .mal-progress-bar.primary {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.profile.statistics .filter button.mal-btn.outline.primary.active {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	#profile-stats-anime-genre-sets > div.chart-container-rf > div.right > div.mal-alert.danger, #profile-stats-manga-genre-sets > div.chart-container-rf > div.right > div.mal-alert.danger {
+		background-color: var(--hover-background) !important;
+	}
+	.profile.statistics .content-container .container-right a.mal-btn.large.pressed.outline.noborder:empty {
+		opacity: 0 !important;
+		cursor: default !important;
+	}
+	#profile-stats-anime-overview-dist-info, #profile-stats-manga-overview-dist-info, #profile-stats-anime-score-dist-info, 
+	div[data-id="profile-stats-mal-alert-body"], #profile-stats-manga-score-dist-info, #profile-stats-manga-genre-table-info {
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 
 	/*Manga and anime history*/
