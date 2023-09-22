@@ -2203,7 +2203,7 @@
 		color: var(--main-text) !important;
 	}
 	.mal-navbar {
-		background-color: var(--hover-background) !important;
+		background-color: var(--main-background) !important;
 	}
 	.mal-navbar.transparent {
 		background-color: transparent !important;
@@ -2218,11 +2218,13 @@
 	.page-forum .sig-container {
 		border-color: var(--hover-background) !important;
 	}
-	a.mal-btn.outline, button.mal-btn.outline {
+	a.mal-btn.outline, button.mal-btn.outline, button.mal-btn.secondary.outline {
 		--mal-btn-border-color: var(--main-color) !important;
+		border: 1px solid var(--main-color) !important;
 	}
-	a.mal-btn.outline:hover, button.mal-btn.outline:hover {
+	a.mal-btn.outline:hover, button.mal-btn.outline:hover, button.mal-btn.secondary.outline:hover {
 		--mal-btn-highlight-border-color: var(--main-color) !important;
+		border: 1px solid var(--main-color) !important;
 	}
 	.page-forum .topic-poll .topic-poll-result .topic-poll-option .bar .bar-data {
 		background-color: var(--main-color) !important;
@@ -2252,17 +2254,65 @@
 	}
 	.mal-tipmenu a, .mal-tipmenu a:hover {
 		 color: var(--main-text) !important;
+		 background-color: var(--main-color) !important;
+		 opacity: 1 !important;
 	}
 	.page-common .topic-reply-box {
-		background-color: var(--hover-background) !important;
+		background-color: var(--main-background) !important;
 	}
 	.page-common .topic-reply-box:before {
 		border-bottom: 12px solid var(--hover-background) !important;
+	}
+	.sceditor-container, div.sceditor-outer div.mal-tab-item.preview {
+		background: var(--second-background) !important;
+		border: 1px solid var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	div.sceditor-toolbar {
+		background: var(--second-background) !important;
+		border-bottom: 1px solid var(--hover-background) !important;
+	}
+	.page-forum .topic-reply-box div.sceditor-outer ul.mal-tabs a.item.active {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.mal-tabs a.item {
+		background-color: var(--second-background) !important;
+	}
+	.mal-tabs a.item.active {
+		background-color: var(--main-color) !important;
+		border-color: var(--second-background) !important;
+	}
+    .sceditor-button div:before {
+        color: var(--main-color) !important;
+    }
+    div.sceditor-group:not(:last-child) {
+        border-right: 1px solid var(--hover-background) !important;
+    }
+    .sceditor-button:hover, .sceditor-button:active, .sceditor-button.active {
+        background: var(--hover-background) !important;
+    }
+	.page-forum .forum .message .replied {
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	.page-forum .forum .message .replied .replied-container .js-replyto-target {
+		color: var(--main-color) !important;
 	}
 	a[data-ga-click-type="gift-entry-forum"] {
 		border-radius: 0px !important;
 		opacity: 1 !important;
 	}
+    .mal-dropdown-outer .mal-dropdown-menu, .mal-dropdown-outer .mal-dropdown-menu .divider {
+        background-color: var(--second-background) !important;
+        border: 1px solid var(--hover-background) !important;
+    }
+    .mal-dropdown-outer .mal-dropdown-menu a.item, .mal-dropdown-outer .mal-dropdown-menu button.item {
+        color: var(--main-color) !important;
+    }
+    .mal-dropdown-outer .mal-dropdown-menu button.item:active {
+        background-color: var(--second-background) !important;
+    }
 
 	/*Top anime page*/
 	.top-ranking-table .table-header td
