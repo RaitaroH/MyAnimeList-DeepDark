@@ -2307,6 +2307,7 @@
 	.mal-tabs a.item.active {
 		background-color: var(--main-color) !important;
 		border-color: var(--second-background) !important;
+		color: var(--main-text) !important;
 	}
 	.sceditor-button div:before {
 		color: var(--main-color) !important;
