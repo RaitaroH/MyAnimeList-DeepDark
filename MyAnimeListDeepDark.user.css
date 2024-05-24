@@ -1969,15 +1969,6 @@
 		border: 1px solid var(--hover-background) !important;
 		color: var(--dimmer-text) !important;
 	}
-	.review-element .thumbbody .body .tags .tag.recommended {
-		color: var(--main-color) !important;
-	}
-	.review-element .thumbbody .body .reaction-box .btn-showall:hover {
-		color: var(--main-color) !important;
-	}
-	.review-element .thumbbody .body .tags .tag.not-recommended {
-		color: #a12f31 !important;
-	}
 	.reviews-horiznav-nav-sort-block .review-sort-order-block.show, .reviews-horiznav-nav-sort-block .review-filter-block.show {
 		background: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
@@ -1987,6 +1978,27 @@
 	}
 	.reviews-horiznav-nav-sort-block .review-sort-order-block .sort-order-list .btn-sort-order:hover {
 		color: var(--main-color) !important;
+	}
+	if progress-colors {
+		.review-element .thumbbody .body .tags .tag.recommended {
+			color: var(--main-color) !important;
+		}
+		.review-element .thumbbody .body .reaction-box .btn-showall:hover {
+			color: var(--main-color) !important;
+		}
+		.review-element .thumbbody .body .tags .tag.not-recommended {
+			color: var(--red) !important;
+		}
+		div.anime-info-review__header.mal-navbar .review-ratio__bar .recommended__bar {
+			background: var(--main-color) !important;
+		}
+		div.anime-info-review__header.mal-navbar .review-ratio__bar .mixed_feeling__bar,  {
+			background: var(--gray) !important;
+			opacity: 100%;
+		}
+		div.anime-info-review__header.mal-navbar .review-ratio__bar .not_recommended__bar {
+			background: var(--red) !important;
+		}
 	}
 
 
