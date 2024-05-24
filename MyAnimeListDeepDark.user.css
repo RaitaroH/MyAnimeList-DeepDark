@@ -1153,9 +1153,16 @@
 
 
 	/*Stacks*/
-	.stacks .header-right .btn-new-stack, .stacks .btn-new-stack, .profile .mymenu .btn-new-stack {
+	.stacks .header-right .btn-new-stack, .profile .mymenu .btn-new-stack {
 		background-color: var(--main-color) !important;
 		color: var(--main-text) !important;
+	}
+	.stacks.my-stacks .tab-area .btn-new-stack-wrapper .btn-new-stack {
+		color: var(--main-color) !important;
+		opacity: 0.9;
+	}
+	.stacks.my-stacks .tab-area .btn-new-stack-wrapper .btn-new-stack:hover {
+		opacity: 1;
 	}
 	.page-common .header-right .new-stack-block, .page-common .new-stack-block {
 		background-color: var(--second-background) !important;
