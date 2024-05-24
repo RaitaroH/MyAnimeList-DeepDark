@@ -1729,6 +1729,12 @@
 	{
 		color: inherit !important;
 	}
+	.related-entries .entries-tile .entry:nth-child(4n), .related-entries .entries-tile .entry:nth-child(4n-1) {
+		background-color: var(--second-background) !important;
+	}
+	.related-entries .entries-tile .entry:nth-child(odd):after {
+		border-right: var(--hover-background) 1px solid !important;
+	}
 
 	/*add to favorites... manga*/
 	#favOutput
