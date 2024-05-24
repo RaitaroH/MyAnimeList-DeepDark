@@ -4118,7 +4118,7 @@
 
 	/*MALxJapan*/
 	if malxjapan == 1 {
-		#content > table > tbody > tr > td:nth-child(2) > div.js-scrollfix-bottom-rel > table > tbody > tr:nth-child(2) > td.pb24
+		#content > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(3)
 		{
 			display: none !important
 		}
