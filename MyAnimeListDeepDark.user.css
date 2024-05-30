@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.22
+@version 1.7.23
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -4144,7 +4144,7 @@
 
 	/*MALxJapan*/
 	if malxjapan == 1 {
-		#content > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(3)
+		#content > table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:has(.mxj)
 		{
 			display: none !important
 		}
