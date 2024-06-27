@@ -2156,6 +2156,11 @@
 	a.icon-team-title.lead_administrator, a.icon-team-title.lead_administrator:visited,
 	a.icon-team-title.community_administrator, a.icon-team-title.community_administrator:visited,
 	a.icon-team-title.database_administrator, a.icon-team-title.database_administrator:visited,
+	a.icon-team-title.anime_db_administrator, a.icon-team-title.anime_db_administrator:visited,
+	a.icon-team-title.manga_db_administrator, a.icon-team-title.manga_db_administrator:visited, 
+	a.icon-team-title.content_administrator, a.icon-team-title.content_administrator:visited,
+	a.icon-team-title.anime_db_moderator, a.icon-team-title.anime_db_moderator:visited,
+	a.icon-team-title.manga_db_moderator, a.icon-team-title.manga_db_moderator:visited,
 	a.icon-team-title.forum_moderator, a.icon-team-title.forum_moderator:visited, 
 	a.icon-team-title.news_moderator, a.icon-team-title.news_moderator:visited,
 	a.icon-team-title.review_recommendation_moderator, a.icon-team-title.review_recommendation_moderator:visited,
@@ -2167,12 +2172,6 @@
 	a.icon-team-title.rewrite_moderator, a.icon-team-title.rewrite_moderator:hover
 	{
 		color: var(--main-text) !important;
-		transition: none !important;
-	}
-	a.icon-team-title.anime_db_moderator, a.icon-team-title.anime_db_moderator:visited,
-	a.icon-team-title.manga_db_moderator, a.icon-team-title.manga_db_moderator:visited
-	{
-		color: var(--main-background) !important;
 		transition: none !important;
 	}
 	.page-forum .sig
