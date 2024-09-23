@@ -31,6 +31,7 @@ https://i.imgur.com/hQNRQqi.png the frame themed
 ### Theme colors dont look correct:
 * Make sure your theme is up to date.
 * With MyAnimeList's addition of their own dark mode, your appearance needs to be set to Light in the [preferences](https://myanimelist.net/editprofile.php) for MyAnimeList-DeepDark to work correctly.
+* As of September 2024 you will need to enable "Circumvent CSP 'style-­src' via adoptedSty­leSheets" in the Stylus options for this theme to work.
 
 # Screenshots
 
