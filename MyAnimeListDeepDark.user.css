@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name MyAnimeList DeepDark
-@namespace gitlab.com/RaitaroH/MyAnimeList-DeepDark
+@namespace  https://github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.24
+@version 1.7.25
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -2497,6 +2497,89 @@
 		filter: invert(1) brightness(200%);
 	}
 
+	/*Manga Adapted to Anime*/
+	.navi-adapted, .horiznav-nav-adapted {
+		background-color: var(--hover-background) !important;
+	}
+	.navi-adapted .horiznav-nav-adapted .btn-adapted .btn-type:hover, .navi-adapted .horiznav-nav-adapted .btn-adapted .btn-type.on {
+		background-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.navi-adapted .horiznav-nav-adapted .btn-adapted .btn-type {
+		background-color: var(--second-background) !important;
+	}
+	.navi-adapted .horiznav-nav-adapted .btn-adapted .btn-type a {
+		color: var(--main-text) !important;
+	}
+	.navi-adapted .horiznav-nav-adapted {
+		border-bottom: var(--main-color) 1px solid !important;
+	}
+	.adapted-manga-list .seasonal-anime {
+		border: var(--hover-background) 1px solid !important;
+	}
+	.adapted-manga-list .seasonal-anime .prodsrc {
+		background-color: var(--second-background) !important;
+	}
+	.adapted-manga-list .seasonal-anime .genres {
+		background-color: var(--hover-background) !important;
+		border-bottom: var(--hover-background) 1px solid !important;
+	}
+	.adapted-manga-list .seasonal-anime .genres .genre {
+		background-color: var(--hover-background) !important;
+		border: var(--hover-background) 1px solid !important;
+	}
+	.adapted-manga-list .seasonal-anime .information {
+		background-color: var(--hover-background) !important;
+		border-top: 1px solid var(--hover-background) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information .information-item {
+		color: var(--main-text) !important;
+	}
+	.adapted-manga-list .seasonal-anime .properties .property {
+		background-color: var(--hover-background) !important;
+	}
+	.adapted-manga-list .seasonal-anime .properties .property:nth-child(even) {
+		background-color: var(--second-background) !important;
+	}
+	.adapted-manga-list .seasonal-anime .toggle-text {
+		color: var(--main-text) !important;
+	}
+	.adapted .adapted-sort-order-block {
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--second-background) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information.reading .information-item.buttons .bubble   
+	{
+		background-color: var(--green) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information.reading .information-item.buttons .bubble:after {
+		border-right: 6px solid var(--green) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information .information-item.buttons .bubble.manga .bubble-item.content,
+	.adapted-manga-list .seasonal-anime .information .information-item.buttons .bubble.manga .bubble-item.unit:before{
+		color: var(--main-text) !important;
+	}
+	#content > div.js-block-list.tile.mt16 > div > div > div.information.reading > div.information-item.buttons > div.js-user-status-block > span > i {
+		color: var(--green) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information.completed .information-item.buttons .bubble   
+	{
+		background-color: var(--main-color) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information.completed .information-item.buttons .bubble:after {
+		border-right: 6px solid var(--main-color) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information.on-hold .information-item.buttons .bubble   
+	{
+		background-color: var(--yellow) !important;
+	}
+	.adapted-manga-list .seasonal-anime .information.on-hold .information-item.buttons .bubble:after {
+		border-right: 6px solid var(--yellow) !important;
+	}
+	
+	#content > div.js-block-list.tile.mt16 > div > div > div.information.on-hold > div.information-item.buttons > div.js-user-status-block > span > i {
+		color: var(--yellow) !important;
+	}
 
 	/*Episode*/
 	.watch .video-menu-category .btn-category.on
