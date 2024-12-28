@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace  https://github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.25
+@version 1.7.26
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -2733,10 +2733,6 @@
 
 
 	/*Maintenance notifications*/
-	.page-common div.text-ribbon.ga-click.ga-impression div
-	{
-		background-color: var(--yellow) !important;
-	}
 	.page-common div.text-ribbon.ga-click.ga-impression div a:active, .page-common div.text-ribbon.ga-click.ga-impression div a:hover
 	{
 		text-decoration: underline !important;
@@ -3049,7 +3045,7 @@
 
 
 	/*Profile page*/
-	.user-profile .user-function .icon-user-function, .profile .statistics-updates .data .graph-content, .page-common .content-container .container-right h5, .page-common .pt8
+	.user-profile .user-function .icon-user-function, .profile .statistics-updates .data .graph-content, .page-common .content-container .container-right h5, .page-common .pt8:not(.page-common div.text-ribbon.ga-click.ga-impression div)
 	{
 		background-color: transparent !important;
 	}
