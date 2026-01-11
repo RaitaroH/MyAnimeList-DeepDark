@@ -2,7 +2,7 @@
 @name MyAnimeList DeepDark
 @namespace  https://github.com/RaitaroH/MyAnimeList-DeepDark
 @homepageURL https://github.com/RaitaroH/MyAnimeList-DeepDark
-@version 1.7.26
+@version 1.7.27
 @updateURL https://github.com/RaitaroH/MyAnimeList-DeepDark/raw/master/MyAnimeListDeepDark.user.css
 @description  Satisfy thy craving for anime and organization. May the dark be kinder on thine eyes. (MyAnimeList Dark Theme)
 @author RaitaroH
@@ -4221,6 +4221,12 @@
 	}
 	.page-common #menu.easter2023:not(.color-pc-constant) #menu_left, li.easter2023:not(.color-pc-constant) {
 		background: var(--main-background) !important;
+	}
+	/*Remove yearly wrap-up gif icon*/
+	.page-common.wrapup #headerSmall #header-menu .header-list .header-list-button .fa-list-ul {
+		--fa: "\f0ca";
+		--fa--fa: "\f0ca\f0ca";
+		background-image: none !important;
 	}
 
 	/*MALxJapan*/
